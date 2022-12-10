@@ -11,6 +11,7 @@
 		184E933229401A97005FE1E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* ContentView.swift */; };
 		184E933429401A98005FE1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184E933329401A98005FE1E0 /* Assets.xcassets */; };
 		184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184E933629401A98005FE1E0 /* Preview Assets.xcassets */; };
+		18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C35A6E294417DE00A649FC /* CircleProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		184E933629401A98005FE1E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		184E934129401D8E005FE1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		184E9342294025D7005FE1E0 /* Steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steps.entitlements; sourceTree = "<group>"; };
+		18C35A6E294417DE00A649FC /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				184E934129401D8E005FE1E0 /* Info.plist */,
 				184E932F29401A97005FE1E0 /* StepsApp.swift */,
 				184E933129401A97005FE1E0 /* ContentView.swift */,
+				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
 				184E933529401A98005FE1E0 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
 				184E933229401A97005FE1E0 /* ContentView.swift in Sources */,
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 			);

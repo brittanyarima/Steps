@@ -1,0 +1,32 @@
+//
+//  CircleProgressBar.swift
+//  Steps
+//
+//  Created by Brittany Rima on 12/9/22.
+//
+
+import SwiftUI
+
+struct CircleProgressBar: View {
+    let value: Int
+    let maxValue: Int
+
+    var body: some View {
+        ZStack {
+            Circle()
+                .stroke(.gray, lineWidth: 10)
+
+            Circle()
+                .trim(from: 0, to: CGFloat(self.value) / CGFloat(self.maxValue))
+                .stroke(.blue, style: StrokeStyle(lineWidth: 10, lineCap: .round))
+                .rotationEffect(Angle(degrees: -90.0))
+        }
+        .padding()
+    }
+}
+
+struct CircleProgressBar_Previews: PreviewProvider {
+    static var previews: some View {
+        CircleProgressBar(value: 3000, maxValue: 10000)
+    }
+}
