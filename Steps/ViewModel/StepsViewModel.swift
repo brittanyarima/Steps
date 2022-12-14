@@ -16,7 +16,6 @@ class StepsViewModel: ObservableObject {
 
    func loadSteps() {
         let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
-
         let today = Date()
         let startOfDay = Calendar.current.startOfDay(for: today)
         let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: today, options: .strictStartDate)
@@ -25,7 +24,9 @@ class StepsViewModel: ObservableObject {
             guard let result = result, let sum = result.sumQuantity() else {
                 return
             }
-            self.steps = Int(sum.doubleValue(for: HKUnit.count()))
+            DispatchQueue.main.async {
+                self.steps = Int(sum.doubleValue(for: HKUnit.count()))
+            }
         }
 
         healthStore.requestAuthorization(toShare: [stepsQuantityType], read: [stepsQuantityType]) { success, error in

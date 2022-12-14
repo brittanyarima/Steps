@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct StepsDetailView: View {
+    @ObservedObject var viewModel: StepsViewModel
 
     var body: some View {
         VStack {
-            Text("Detail")
+            // fun fact
+
+            CircleProgressBar(value: viewModel.steps, maxValue: viewModel.goal)
         }
     }
 }
 
 struct StepsDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        StepsDetailView()
+        StepsDetailView(viewModel: StepsViewModel())
     }
 }

@@ -23,13 +23,14 @@ struct CircleProgressBar: View {
 
             VStack {
                 Text("\(value)")
-                    .font(.system(size: 82))
+                    .font(.system(size: 60))
 
-                Text("Szteps")
-                    .font(.title2)
+                Text("Steps")
+                    .font(.title3)
                     .foregroundColor(.secondary)
             }
         }
+        .frame(width: 250, height: 250)
         .padding()
     }
 }

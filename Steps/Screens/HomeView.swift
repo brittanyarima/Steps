@@ -15,7 +15,7 @@ struct HomeView: View {
         NavigationStack {
             VStack {
                 NavigationLink {
-                    
+                    StepsDetailView(viewModel: viewModel)
                 } label: {
                     Text("Steps: \(viewModel.steps)")
                         .padding()

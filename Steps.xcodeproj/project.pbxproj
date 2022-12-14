@@ -116,7 +116,7 @@
 			children = (
 				184E932F29401A97005FE1E0 /* StepsApp.swift */,
 				184E9342294025D7005FE1E0 /* Steps.entitlements */,
-				18C81E15294A934B0058138F /* StepsViewModel.swift */,
+				18C81E17294A95820058138F /* ViewModel */,
 				184E934129401D8E005FE1E0 /* Info.plist */,
 				185DB3F6294948DA003BCC48 /* Screens */,
 				185DB3F7294948E1003BCC48 /* Views */,
@@ -172,6 +172,14 @@
 				185DB40D2949514E003BCC48 /* Info.plist */,
 			);
 			path = StepsWidget;
+			sourceTree = "<group>";
+		};
+		18C81E17294A95820058138F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18C81E15294A934B0058138F /* StepsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
