@@ -21,6 +21,8 @@
 		185DB40C2949514E003BCC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185DB40B2949514E003BCC48 /* Assets.xcassets */; };
 		185DB4102949514E003BCC48 /* StepsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C35A6E294417DE00A649FC /* CircleProgressBar.swift */; };
+		18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E13294A923B0058138F /* StepsDetailView.swift */; };
+		18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E15294A934B0058138F /* StepsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		185DB40B2949514E003BCC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185DB40D2949514E003BCC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C35A6E294417DE00A649FC /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
+		18C81E13294A923B0058138F /* StepsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsDetailView.swift; sourceTree = "<group>"; };
+		18C81E15294A934B0058138F /* StepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			children = (
 				184E932F29401A97005FE1E0 /* StepsApp.swift */,
 				184E9342294025D7005FE1E0 /* Steps.entitlements */,
+				18C81E15294A934B0058138F /* StepsViewModel.swift */,
 				184E934129401D8E005FE1E0 /* Info.plist */,
 				185DB3F6294948DA003BCC48 /* Screens */,
 				185DB3F7294948E1003BCC48 /* Views */,
@@ -136,6 +141,7 @@
 				184E933129401A97005FE1E0 /* HomeView.swift */,
 				185DB3F829494947003BCC48 /* BadgeView.swift */,
 				185DB3FA2949495B003BCC48 /* SettingsView.swift */,
+				18C81E13294A923B0058138F /* StepsDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -271,7 +277,9 @@
 			files = (
 				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
 				185DB3F929494947003BCC48 /* BadgeView.swift in Sources */,
+				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
+				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,
 				184E933229401A97005FE1E0 /* HomeView.swift in Sources */,
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
