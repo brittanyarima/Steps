@@ -14,8 +14,38 @@
 		185DB3F5294948D2003BCC48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3F4294948D2003BCC48 /* MainView.swift */; };
 		185DB3F929494947003BCC48 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3F829494947003BCC48 /* BadgeView.swift */; };
 		185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3FA2949495B003BCC48 /* SettingsView.swift */; };
+		185DB4032949514D003BCC48 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DB4022949514D003BCC48 /* WidgetKit.framework */; };
+		185DB4052949514D003BCC48 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DB4042949514D003BCC48 /* SwiftUI.framework */; };
+		185DB4082949514D003BCC48 /* StepsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB4072949514D003BCC48 /* StepsWidgetBundle.swift */; };
+		185DB40A2949514D003BCC48 /* StepsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB4092949514D003BCC48 /* StepsWidget.swift */; };
+		185DB40C2949514E003BCC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185DB40B2949514E003BCC48 /* Assets.xcassets */; };
+		185DB4102949514E003BCC48 /* StepsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C35A6E294417DE00A649FC /* CircleProgressBar.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185DB40E2949514E003BCC48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184E932429401A97005FE1E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185DB3FF2949514D003BCC48;
+			remoteInfo = StepsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		185DB4142949514E003BCC48 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				185DB4102949514E003BCC48 /* StepsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +58,13 @@
 		185DB3F4294948D2003BCC48 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		185DB3F829494947003BCC48 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		185DB3FA2949495B003BCC48 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		185DB4022949514D003BCC48 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		185DB4042949514D003BCC48 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		185DB4072949514D003BCC48 /* StepsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidgetBundle.swift; sourceTree = "<group>"; };
+		185DB4092949514D003BCC48 /* StepsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidget.swift; sourceTree = "<group>"; };
+		185DB40B2949514E003BCC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		185DB40D2949514E003BCC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C35A6E294417DE00A649FC /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +76,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		185DB3FD2949514D003BCC48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185DB4052949514D003BCC48 /* SwiftUI.framework in Frameworks */,
+				185DB4032949514D003BCC48 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				184E932E29401A97005FE1E0 /* Steps */,
+				185DB4062949514D003BCC48 /* StepsWidget */,
+				185DB4012949514D003BCC48 /* Frameworks */,
 				184E932D29401A97005FE1E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				184E932C29401A97005FE1E0 /* Steps.app */,
+				185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +148,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		185DB4012949514D003BCC48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185DB4022949514D003BCC48 /* WidgetKit.framework */,
+				185DB4042949514D003BCC48 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		185DB4062949514D003BCC48 /* StepsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				185DB4072949514D003BCC48 /* StepsWidgetBundle.swift */,
+				185DB4092949514D003BCC48 /* StepsWidget.swift */,
+				185DB40B2949514E003BCC48 /* Assets.xcassets */,
+				185DB40D2949514E003BCC48 /* Info.plist */,
+			);
+			path = StepsWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,15 +178,34 @@
 				184E932829401A97005FE1E0 /* Sources */,
 				184E932929401A97005FE1E0 /* Frameworks */,
 				184E932A29401A97005FE1E0 /* Resources */,
+				185DB4142949514E003BCC48 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				185DB40F2949514E003BCC48 /* PBXTargetDependency */,
 			);
 			name = Steps;
 			productName = Steps;
 			productReference = 184E932C29401A97005FE1E0 /* Steps.app */;
 			productType = "com.apple.product-type.application";
+		};
+		185DB3FF2949514D003BCC48 /* StepsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185DB4112949514E003BCC48 /* Build configuration list for PBXNativeTarget "StepsWidgetExtension" */;
+			buildPhases = (
+				185DB3FC2949514D003BCC48 /* Sources */,
+				185DB3FD2949514D003BCC48 /* Frameworks */,
+				185DB3FE2949514D003BCC48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepsWidgetExtension;
+			productName = StepsWidgetExtension;
+			productReference = 185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,6 +218,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					184E932B29401A97005FE1E0 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					185DB3FF2949514D003BCC48 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -148,6 +239,7 @@
 			projectRoot = "";
 			targets = (
 				184E932B29401A97005FE1E0 /* Steps */,
+				185DB3FF2949514D003BCC48 /* StepsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +251,14 @@
 			files = (
 				184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */,
 				184E933429401A98005FE1E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185DB3FE2949514D003BCC48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185DB40C2949514E003BCC48 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +278,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		185DB3FC2949514D003BCC48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185DB4082949514D003BCC48 /* StepsWidgetBundle.swift in Sources */,
+				185DB40A2949514D003BCC48 /* StepsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		185DB40F2949514E003BCC48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185DB3FF2949514D003BCC48 /* StepsWidgetExtension */;
+			targetProxy = 185DB40E2949514E003BCC48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		184E933829401A98005FE1E0 /* Debug */ = {
@@ -298,6 +415,7 @@
 		184E933B29401A98005FE1E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Steps/Steps.entitlements;
@@ -330,6 +448,7 @@
 		184E933C29401A98005FE1E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Steps/Steps.entitlements;
@@ -359,6 +478,60 @@
 			};
 			name = Release;
 		};
+		185DB4122949514E003BCC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGU49S8C2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.StepsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		185DB4132949514E003BCC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGU49S8C2X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.StepsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -376,6 +549,15 @@
 			buildConfigurations = (
 				184E933B29401A98005FE1E0 /* Debug */,
 				184E933C29401A98005FE1E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185DB4112949514E003BCC48 /* Build configuration list for PBXNativeTarget "StepsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185DB4122949514E003BCC48 /* Debug */,
+				185DB4132949514E003BCC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
