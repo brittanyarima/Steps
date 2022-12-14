@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		184E933029401A97005FE1E0 /* StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E932F29401A97005FE1E0 /* StepsApp.swift */; };
-		184E933229401A97005FE1E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* ContentView.swift */; };
+		184E933229401A97005FE1E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* HomeView.swift */; };
 		184E933429401A98005FE1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184E933329401A98005FE1E0 /* Assets.xcassets */; };
 		184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184E933629401A98005FE1E0 /* Preview Assets.xcassets */; };
+		185DB3F5294948D2003BCC48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3F4294948D2003BCC48 /* MainView.swift */; };
+		185DB3F929494947003BCC48 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3F829494947003BCC48 /* BadgeView.swift */; };
+		185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3FA2949495B003BCC48 /* SettingsView.swift */; };
 		18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C35A6E294417DE00A649FC /* CircleProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184E932F29401A97005FE1E0 /* StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsApp.swift; sourceTree = "<group>"; };
-		184E933129401A97005FE1E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		184E933129401A97005FE1E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		184E933329401A98005FE1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184E933629401A98005FE1E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		184E934129401D8E005FE1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		184E9342294025D7005FE1E0 /* Steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steps.entitlements; sourceTree = "<group>"; };
+		185DB3F4294948D2003BCC48 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		185DB3F829494947003BCC48 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		185DB3FA2949495B003BCC48 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		18C35A6E294417DE00A649FC /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,11 +61,11 @@
 		184E932E29401A97005FE1E0 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
+				184E932F29401A97005FE1E0 /* StepsApp.swift */,
 				184E9342294025D7005FE1E0 /* Steps.entitlements */,
 				184E934129401D8E005FE1E0 /* Info.plist */,
-				184E932F29401A97005FE1E0 /* StepsApp.swift */,
-				184E933129401A97005FE1E0 /* ContentView.swift */,
-				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
+				185DB3F6294948DA003BCC48 /* Screens */,
+				185DB3F7294948E1003BCC48 /* Views */,
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
 				184E933529401A98005FE1E0 /* Preview Content */,
 			);
@@ -72,6 +78,25 @@
 				184E933629401A98005FE1E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		185DB3F6294948DA003BCC48 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				185DB3F4294948D2003BCC48 /* MainView.swift */,
+				184E933129401A97005FE1E0 /* HomeView.swift */,
+				185DB3F829494947003BCC48 /* BadgeView.swift */,
+				185DB3FA2949495B003BCC48 /* SettingsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		185DB3F7294948E1003BCC48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
-				184E933229401A97005FE1E0 /* ContentView.swift in Sources */,
+				185DB3F929494947003BCC48 /* BadgeView.swift in Sources */,
+				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
+				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,
+				184E933229401A97005FE1E0 /* HomeView.swift in Sources */,
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

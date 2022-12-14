@@ -25,7 +25,7 @@ struct CircleProgressBar: View {
                 Text("\(value)")
                     .font(.system(size: 82))
 
-                Text("Steps")
+                Text("Szteps")
                     .font(.title2)
                     .foregroundColor(.secondary)
             }
