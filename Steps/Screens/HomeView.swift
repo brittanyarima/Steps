@@ -17,7 +17,7 @@ struct HomeView: View {
                 NavigationLink {
                     StepsDetailView(viewModel: viewModel)
                 } label: {
-                    Text("Steps: \(viewModel.steps)")
+                    Text("Steps: \(viewModel.currentSteps)")
                         .padding()
                         .background(.tertiary)
                 }
@@ -26,8 +26,6 @@ struct HomeView: View {
             .onAppear(perform: viewModel.loadSteps)
         }
     }
-
-
 }
 
 struct HomeView_Previews: PreviewProvider {

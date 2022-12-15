@@ -10,26 +10,30 @@ import HealthKit
 
 class StepsViewModel: ObservableObject {
     let healthStore = HKHealthStore()
+    var query: HKStatisticsCollectionQuery?
     
-    @Published var steps = 0
+    @Published var currentSteps = 0
     @Published var goal = 10000
+    var stepsPerDay = [Int]()
 
-   func loadSteps() {
-        let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
-        let today = Date()
-        let startOfDay = Calendar.current.startOfDay(for: today)
-        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: today, options: .strictStartDate)
+    func loadSteps() {
+        let now = Date()
+        let stepCount = HKQuantityType.quantityType(forIdentifier: .stepCount)!
 
-        let query = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { query, result, error in
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictStartDate)
+
+        let query = HKStatisticsQuery(quantityType: stepCount, quantitySamplePredicate: predicate, options: .cumulativeSum) { query, result, error in
             guard let result = result, let sum = result.sumQuantity() else {
                 return
             }
+
             DispatchQueue.main.async {
-                self.steps = Int(sum.doubleValue(for: HKUnit.count()))
+                self.currentSteps = Int(sum.doubleValue(for: HKUnit.count()))
             }
         }
 
-        healthStore.requestAuthorization(toShare: [stepsQuantityType], read: [stepsQuantityType]) { success, error in
+        healthStore.requestAuthorization(toShare: [stepCount], read: [stepCount]) { success, error in
             if success {
                 self.healthStore.execute(query)
             } else {
@@ -38,4 +42,34 @@ class StepsViewModel: ObservableObject {
             }
         }
     }
+
+
+// https://youtu.be/ohgrzM9gfvM
+
+//    func calculateSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
+//        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
+//        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+//        let anchorDate = Date.sundayAt12AM()
+//        let daily = DateComponents(day: 1)
+//
+//        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
+//
+//        HKStatisticsCollectionQuery(quantityType: stepType, quantitySamplePredicate: predicate, options: .cumulativeSum, anchorDate: anchorDate, intervalComponents: daily)
+//
+//        query?.initialResultsHandler = { query, statisticsCollection, error in
+//            completion(statisticsCollection)
+//        }
+//
+//        if let query = self.query {
+//            healthStore.execute(query)
+//        }
+//    }
+//
+//    func requestAuthorization(completion: @escaping (Bool) -> Void) {
+//        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
+//        let healthStore = healthStore
+//        healthStore.requestAuthorization(toShare: [], read: [stepType]) { success, error in
+//            completion(success)
+//        }
+//    }
 }

@@ -20,9 +20,11 @@
 		185DB40A2949514D003BCC48 /* StepsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB4092949514D003BCC48 /* StepsWidget.swift */; };
 		185DB40C2949514E003BCC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185DB40B2949514E003BCC48 /* Assets.xcassets */; };
 		185DB4102949514E003BCC48 /* StepsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1FB1A294AAB93009B87EF /* Date+Ext.swift */; };
 		18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C35A6E294417DE00A649FC /* CircleProgressBar.swift */; };
 		18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E13294A923B0058138F /* StepsDetailView.swift */; };
 		18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E15294A934B0058138F /* StepsViewModel.swift */; };
+		18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E18294A9B350058138F /* WeekStepsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +69,11 @@
 		185DB4092949514D003BCC48 /* StepsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidget.swift; sourceTree = "<group>"; };
 		185DB40B2949514E003BCC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185DB40D2949514E003BCC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A1FB1A294AAB93009B87EF /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		18C35A6E294417DE00A649FC /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
 		18C81E13294A923B0058138F /* StepsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsDetailView.swift; sourceTree = "<group>"; };
 		18C81E15294A934B0058138F /* StepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewModel.swift; sourceTree = "<group>"; };
+		18C81E18294A9B350058138F /* WeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStepsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 				18C81E17294A95820058138F /* ViewModel */,
 				184E934129401D8E005FE1E0 /* Info.plist */,
 				185DB3F6294948DA003BCC48 /* Screens */,
+				18A1FB1C294AAC1B009B87EF /* Utilities */,
 				185DB3F7294948E1003BCC48 /* Views */,
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
 				184E933529401A98005FE1E0 /* Preview Content */,
@@ -150,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
+				18C81E18294A9B350058138F /* WeekStepsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +178,14 @@
 				185DB40D2949514E003BCC48 /* Info.plist */,
 			);
 			path = StepsWidget;
+			sourceTree = "<group>";
+		};
+		18A1FB1C294AAC1B009B87EF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				18A1FB1A294AAB93009B87EF /* Date+Ext.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		18C81E17294A95820058138F /* ViewModel */ = {
@@ -288,9 +302,11 @@
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
 				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
+				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,
 				184E933229401A97005FE1E0 /* HomeView.swift in Sources */,
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
+				18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
