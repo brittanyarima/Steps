@@ -22,12 +22,7 @@ class StepsViewModel: ObservableObject {
     }
 
     var currentSteps: Int {
-        for day in steps {
-            if day.date.formatted(.dateTime.day()) == Date().formatted(.dateTime.day()) {
-                return day.count
-            }
-        }
-        return 0
+        steps.last?.count ?? 0
     }
 
     func calculateSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
