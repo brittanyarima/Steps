@@ -13,7 +13,7 @@ class StepsViewModel: ObservableObject {
     var query: HKStatisticsCollectionQuery?
 
     @Published var steps: [Step] = []
-    @Published var goas = 10000
+    @Published var goal = 8000
 
     init() {
         if HKHealthStore.isHealthDataAvailable() {
@@ -49,7 +49,10 @@ class StepsViewModel: ObservableObject {
         statsCollection.enumerateStatistics(from: startDate, to: endDate) { stats, stop in
             let count = stats.sumQuantity()?.doubleValue(for: .count())
             let step = Step(count: Int(count ?? 0), date: stats.startDate)
-            self.steps.append(step)
+            
+            DispatchQueue.main.async {
+                self.steps.append(step)
+            }
         }
     }
 
