@@ -14,7 +14,6 @@ struct StepsDetailView: View {
         VStack {
             // fun fact
 
-            CircleProgressBar(value: viewModel.currentSteps, maxValue: viewModel.goal)
         }
     }
 }
