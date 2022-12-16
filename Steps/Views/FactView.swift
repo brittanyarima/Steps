@@ -8,29 +8,30 @@
 import SwiftUI
 
 struct FactView: View {
+    @ObservedObject var viewModel: StepsViewModel
+
     var body: some View {
         HStack {
             Image(systemName: "soccerball")
                 .font(.title)
-                .padding(.horizontal)
+                .padding(.horizontal, 2)
                 .foregroundColor(.secondary)
 
-            Text("You've walked about **2** soccer fields so far today. Keep it up!")
+            Text(viewModel.soccerFieldsWalkedString)
+                .font(.footnote)
+                .fontWeight(.light)
 
             Spacer()
         }
-        .frame(width: 350)
-        .padding(8)
+        .frame(width: 300)
+        .padding()
         .background(Color(.tertiarySystemFill))
         .cornerRadius(12)
-
     }
 }
 
 struct FactView_Previews: PreviewProvider {
     static var previews: some View {
-        FactView()
+        FactView(viewModel: StepsViewModel())
     }
 }
-
-// For every 144 Steps youve walked about 1 soccer field.

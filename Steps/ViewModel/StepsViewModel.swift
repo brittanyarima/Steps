@@ -25,6 +25,18 @@ class StepsViewModel: ObservableObject {
         steps.last?.count ?? 0
     }
 
+    var soccerFieldsWalkedString: String {
+        let numOfFields = currentSteps / 144 // For every 144 Steps you've walked about 1 soccer field.
+
+        if numOfFields > 1 {
+            return "You've walked about \(numOfFields) soccer fields today so far. Keep it up!"
+        } else if numOfFields == 0 {
+            return "Keep walking. You've almost walked a full soccer field today so far!"
+        } else {
+            return "You've walked about 1 soccer field today so far. Keep it up!"
+        }
+    }
+
     func calculateSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
         let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
