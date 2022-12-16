@@ -13,7 +13,7 @@ struct StepsDetailView: View {
     var body: some View {
         VStack {
             // fun fact
-
+            WeekStepsView(viewModel: viewModel)
         }
     }
 }

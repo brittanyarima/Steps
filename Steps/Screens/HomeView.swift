@@ -15,7 +15,13 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                
+
+                NavigationLink {
+                    StepsDetailView(viewModel: viewModel)
+                } label: {
+                    Text("Current Steps: \(viewModel.currentSteps)")
+                }
+
             }
             .navigationTitle("🏃 Steps")
             .onAppear {

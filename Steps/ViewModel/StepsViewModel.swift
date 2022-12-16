@@ -21,6 +21,15 @@ class StepsViewModel: ObservableObject {
         }
     }
 
+    var currentSteps: Int {
+        for day in steps {
+            if day.date.formatted(.dateTime.day()) == Date().formatted(.dateTime.day()) {
+                return day.count
+            }
+        }
+        return 0
+    }
+
     func calculateSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
         let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
