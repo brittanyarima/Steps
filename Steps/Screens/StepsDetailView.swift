@@ -11,9 +11,12 @@ struct StepsDetailView: View {
     @ObservedObject var viewModel: StepsViewModel
 
     var body: some View {
-        VStack {
-            // fun fact
+        VStack(spacing: 20) {
+            FactView(viewModel: viewModel)
+            CircleProgressBar(value: viewModel.currentSteps, maxValue: viewModel.goal)
+                .padding()
             WeekStepsView(viewModel: viewModel)
+            Spacer()
         }
     }
 }

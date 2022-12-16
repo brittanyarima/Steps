@@ -28,7 +28,7 @@ struct WeekStepsView: View {
                     .foregroundStyle(.pink.gradient)
                 }
             }
-            .frame(height: 180)
+            .frame(height: 150)
             .padding(.bottom)
             .chartXAxis {
                 AxisMarks(values: viewModel.steps.map { $0.date}) { date in

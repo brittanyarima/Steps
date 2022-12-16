@@ -14,23 +14,22 @@ struct CircleProgressBar: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(.indigo.opacity(0.1), lineWidth: 10)
+                .stroke(.pink.opacity(0.1), lineWidth: 10)
 
             Circle()
                 .trim(from: 0, to: CGFloat(self.value) / CGFloat(self.maxValue))
-                .stroke(.indigo, style: StrokeStyle(lineWidth: 10, lineCap: .round))
+                .stroke(.pink, style: StrokeStyle(lineWidth: 10, lineCap: .round))
                 .rotationEffect(Angle(degrees: -90.0))
 
             VStack {
                 Text("\(value)")
-                    .font(.system(size: 60))
+                    .font(.system(size: 40))
 
                 Text("Steps")
-                    .font(.title3)
                     .foregroundColor(.secondary)
             }
         }
-        .frame(width: 250, height: 250)
+        .frame(width: 200, height: 200)
         .padding()
     }
 }

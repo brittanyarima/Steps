@@ -20,6 +20,7 @@ struct FactView: View {
             Text(viewModel.soccerFieldsWalkedString)
                 .font(.footnote)
                 .fontWeight(.light)
+                .fixedSize(horizontal: false, vertical: true)
 
             Spacer()
         }
