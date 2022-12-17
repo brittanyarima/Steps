@@ -15,9 +15,9 @@ struct MainView: View {
                     Label("Home", systemImage: "house")
                 }
 
-            BadgeView()
+            AwardView()
                 .tabItem {
-                    Label("Badges", systemImage: "trophy")
+                    Label("Awards", systemImage: "trophy")
                 }
 
             SettingsView()

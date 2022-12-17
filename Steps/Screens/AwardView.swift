@@ -7,14 +7,18 @@
 
 import SwiftUI
 
-struct BadgeView: View {
+struct AwardView: View {
     var body: some View {
-        Text("Badges")
+        NavigationStack {
+            ScrollView {
+              
+            }
+        }
     }
 }
 
 struct BadgeView_Previews: PreviewProvider {
     static var previews: some View {
-        BadgeView()
+        AwardView()
     }
 }
