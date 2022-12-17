@@ -22,7 +22,6 @@
 		185DB40C2949514E003BCC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185DB40B2949514E003BCC48 /* Assets.xcassets */; };
 		185DB4102949514E003BCC48 /* StepsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		189BDCEA294D163700E8237F /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCE9294D163700E8237F /* FactView.swift */; };
-		189BDCEE294D372400E8237F /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 189BDCED294D372400E8237F /* Awards.json */; };
 		189BDCF0294D3B8A00E8237F /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCEF294D3B8A00E8237F /* Award.swift */; };
 		189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */; };
 		18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1FB1A294AAB93009B87EF /* Date+Ext.swift */; };
@@ -76,7 +75,6 @@
 		185DB40B2949514E003BCC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185DB40D2949514E003BCC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189BDCE9294D163700E8237F /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
-		189BDCED294D372400E8237F /* Awards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		189BDCEF294D3B8A00E8237F /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardBadgeView.swift; sourceTree = "<group>"; };
 		18A1FB1A294AAB93009B87EF /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
 				184E933529401A98005FE1E0 /* Preview Content */,
 				184FD8B6294BE78D000E4576 /* Model */,
-				189BDCED294D372400E8237F /* Awards.json */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -301,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */,
-				189BDCEE294D372400E8237F /* Awards.json in Resources */,
 				184E933429401A98005FE1E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

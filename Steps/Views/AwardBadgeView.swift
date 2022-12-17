@@ -21,7 +21,7 @@ struct AwardBadgeView: View {
                     Circle()
                         .stroke(style: StrokeStyle(lineWidth: 3))
                 }
-
+            
             // Add spinning effect on badge (like Apple Awards)
         }
     }

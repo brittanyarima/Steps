@@ -10,6 +10,6 @@ import SwiftUI
 struct Award {
     let name: String
     let description: String
-    let isUnlocked: Bool
+    var isUnlocked: Bool
     let image: String
 }
