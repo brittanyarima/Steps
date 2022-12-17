@@ -29,6 +29,6 @@ struct AwardBadgeView: View {
 
 struct AwardBadgeView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardBadgeView(award: Award(name: "First Steps", description: "You got moving today. Way to go!", isUnlocked: false, image: "figure.walk"))
+        AwardBadgeView(award: Award(name: "First Steps", description: "You got moving today. Way to go!", image: "figure.walk"))
     }
 }

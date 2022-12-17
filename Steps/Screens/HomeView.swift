@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import Charts
-
 
 struct HomeView: View {
     @StateObject var viewModel = StepsViewModel()
@@ -15,13 +13,11 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-
                 NavigationLink {
                     StepsDetailView(viewModel: viewModel)
                 } label: {
                     Text("Current Steps: \(viewModel.currentSteps)")
                 }
-
             }
             .navigationTitle("🏃 Steps")
             .onAppear {
@@ -29,7 +25,6 @@ struct HomeView: View {
                     if success {
                         viewModel.calculateSteps { statsCollection in
                             if let statsCollection = statsCollection {
-                                // update UI
                                 viewModel.updateUIFromStats(statsCollection)
                             }
                         }
