@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct EditStepsGoalView: View {
+    @State private var stepsGoal = 10000
     var body: some View {
-        Text("Edit")
+        VStack {
+            Text("Set a New Daily Steps Goal")
+                .font(.title3)
+                .bold()
+
+            Text("\(stepsGoal)")
+                .font(.system(size: 34))
+                .bold()
+                .foregroundColor(.pink)
+
+            Stepper("Steps", value: $stepsGoal)
+        }
     }
 }
 

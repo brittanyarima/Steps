@@ -13,6 +13,8 @@ struct SettingsView: View {
         NavigationStack {
             VStack {
                 StepsGoalCardView(steps: 10000, showingEditView: $showingEditView)
+                    .padding()
+
             }
             .sheet(isPresented: $showingEditView, content: {
                 EditStepsGoalView()

@@ -138,8 +138,8 @@
 				18A1FB1C294AAC1B009B87EF /* Utilities */,
 				185DB3F7294948E1003BCC48 /* Views */,
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
-				184E933529401A98005FE1E0 /* Preview Content */,
 				184FD8B6294BE78D000E4576 /* Model */,
+				184E933529401A98005FE1E0 /* Preview Content */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
