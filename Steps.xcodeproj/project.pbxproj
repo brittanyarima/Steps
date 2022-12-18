@@ -29,6 +29,8 @@
 		18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E13294A923B0058138F /* StepsDetailView.swift */; };
 		18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E15294A934B0058138F /* StepsViewModel.swift */; };
 		18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E18294A9B350058138F /* WeekStepsView.swift */; };
+		18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37431294E91B100D6B253 /* EditStepsGoalView.swift */; };
+		18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37433294E925100D6B253 /* StepsGoalCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		18C81E13294A923B0058138F /* StepsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsDetailView.swift; sourceTree = "<group>"; };
 		18C81E15294A934B0058138F /* StepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewModel.swift; sourceTree = "<group>"; };
 		18C81E18294A9B350058138F /* WeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStepsView.swift; sourceTree = "<group>"; };
+		18E37431294E91B100D6B253 /* EditStepsGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStepsGoalView.swift; sourceTree = "<group>"; };
+		18E37433294E925100D6B253 /* StepsGoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGoalCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 				185DB3F829494947003BCC48 /* AwardView.swift */,
 				185DB3FA2949495B003BCC48 /* SettingsView.swift */,
 				18C81E13294A923B0058138F /* StepsDetailView.swift */,
+				18E37431294E91B100D6B253 /* EditStepsGoalView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				18C81E18294A9B350058138F /* WeekStepsView.swift */,
 				189BDCE9294D163700E8237F /* FactView.swift */,
 				189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */,
+				18E37433294E925100D6B253 /* StepsGoalCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,9 +328,11 @@
 				185DB3F929494947003BCC48 /* AwardView.swift in Sources */,
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
 				189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */,
+				18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
 				189BDCF0294D3B8A00E8237F /* Award.swift in Sources */,
 				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
+				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,
 				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,

@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var showingEditView = false
     var body: some View {
         NavigationStack {
             VStack {
-
+                StepsGoalCardView(steps: 10000, showingEditView: $showingEditView)
             }
+            .sheet(isPresented: $showingEditView, content: {
+                EditStepsGoalView()
+            })
             .navigationTitle("⚙️ Settings")
         }
     }
@@ -23,3 +27,5 @@ struct SettingsView_Previews: PreviewProvider {
         SettingsView()
     }
 }
+
+
