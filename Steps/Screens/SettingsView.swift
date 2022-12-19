@@ -18,6 +18,7 @@ struct SettingsView: View {
             }
             .sheet(isPresented: $showingEditView, content: {
                 EditStepsGoalView()
+                    .presentationDetents([.height(200)])
             })
             .navigationTitle("⚙️ Settings")
         }

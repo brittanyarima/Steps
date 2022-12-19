@@ -15,12 +15,28 @@ struct EditStepsGoalView: View {
                 .font(.title3)
                 .bold()
 
-            Text("\(stepsGoal)")
-                .font(.system(size: 34))
-                .bold()
-                .foregroundColor(.pink)
+            HStack(spacing: 20) {
+                Text("\(stepsGoal)")
+                    .font(.system(size: 34))
+                    .bold()
+                    .foregroundColor(.pink)
 
-            Stepper("Steps", value: $stepsGoal)
+                Stepper("Steps", value: $stepsGoal, in: 100...30000, step: 100)
+                    .labelsHidden()
+            }
+
+            HStack {
+                Button("Cancel") {
+                    // dismiss view
+                }
+                .tint(.pink)
+
+                Button("Save") {
+                    // save to core data
+                }
+                .tint(.mint)
+            }
+            .buttonStyle(.bordered)
         }
     }
 }
