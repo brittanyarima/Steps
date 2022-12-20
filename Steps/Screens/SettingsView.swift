@@ -8,15 +8,31 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var showingEditView = false
+    @StateObject var viewModel = SettingsViewModel()
+
     var body: some View {
         NavigationStack {
-            VStack {
-                StepsGoalCardView(steps: 10000, showingEditView: $showingEditView)
+            VStack(spacing: 30) {
+                StepsGoalCardView(steps: 10000, showingEditView: $viewModel.showingEditView)
                     .padding()
 
+                Form {
+                    Section {
+                        Toggle("Notifications", isOn: $viewModel.notificationsOn)
+
+                        if viewModel.notificationsOn {
+                            Toggle("Goal Reminders", isOn: $viewModel.remindersOn)
+                            Toggle("Achievements Reached", isOn: $viewModel.goalCompletionNotificationOn)
+                        }
+                    } header: {
+                        Label("Notification settings", systemImage: "bell")
+                    }
+                }
+                .scrollContentBackground(.hidden)
             }
-            .sheet(isPresented: $showingEditView, content: {
+            .padding()
+            .padding(.vertical, 20)
+            .sheet(isPresented: $viewModel.showingEditView, content: {
                 EditStepsGoalView()
                     .presentationDetents([.height(200)])
             })
