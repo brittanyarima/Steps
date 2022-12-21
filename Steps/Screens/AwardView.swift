@@ -20,7 +20,11 @@ struct AwardView: View {
                 LazyVGrid(columns: columns) {
 
                     ForEach(AwardData.awards, id: \.name) { award in
-                        AwardBadgeView(award: award, isUnlocked: viewModel.awardIsUnlocked)
+                        NavigationLink {
+                            AwardDetailView(award: award)
+                        } label: {
+                            AwardBadgeView(award: award, viewModel: viewModel)
+                        }
                     }
                 }
             }
