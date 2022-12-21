@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE8652953AB9800BAD40D /* AwardDetailView.swift */; };
+		181AE8682953B83000BAD40D /* AwardLockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE8672953B83000BAD40D /* AwardLockedView.swift */; };
 		184E933029401A97005FE1E0 /* StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E932F29401A97005FE1E0 /* StepsApp.swift */; };
 		184E933229401A97005FE1E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* HomeView.swift */; };
 		184E933429401A98005FE1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184E933329401A98005FE1E0 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		181AE8652953AB9800BAD40D /* AwardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardDetailView.swift; sourceTree = "<group>"; };
+		181AE8672953B83000BAD40D /* AwardLockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardLockedView.swift; sourceTree = "<group>"; };
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184E932F29401A97005FE1E0 /* StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsApp.swift; sourceTree = "<group>"; };
 		184E933129401A97005FE1E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				18C81E13294A923B0058138F /* StepsDetailView.swift */,
 				18E37431294E91B100D6B253 /* EditStepsGoalView.swift */,
 				181AE8652953AB9800BAD40D /* AwardDetailView.swift */,
+				181AE8672953B83000BAD40D /* AwardLockedView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
 				185DB3F929494947003BCC48 /* AwardView.swift in Sources */,
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
+				181AE8682953B83000BAD40D /* AwardLockedView.swift in Sources */,
 				189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */,
 				18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,

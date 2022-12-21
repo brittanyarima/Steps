@@ -33,18 +33,26 @@ struct AwardBadgeView: View {
 
     var body: some View {
         VStack {
-            Image(systemName: award.image)
-                .resizable()
-                .scaledToFit()
-                .padding()
-                .frame(width: 100, height: 100)
-                .overlay {
-                    Circle()
-                        .stroke(style: StrokeStyle(lineWidth: 3))
+            NavigationLink {
+                if isAwardUnlocked { AwardDetailView(award: award) } else {
+                    AwardLockedView()
                 }
-                .foregroundColor(isAwardUnlocked ? .pink : .pink.opacity(0.2))
+            } label: {
+                VStack {
+                Image(systemName: award.image)
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+                    .frame(width: 100, height: 100)
+                    .overlay {
+                        Circle()
+                            .stroke(style: StrokeStyle(lineWidth: 3))
+                    }
+                    .foregroundColor(isAwardUnlocked ? .pink : .pink.opacity(0.2))
+            }
+            .padding()
+            }
         }
-        .padding()
     }
 }
 

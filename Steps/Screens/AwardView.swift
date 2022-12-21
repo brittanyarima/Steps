@@ -18,13 +18,8 @@ struct AwardView: View {
         NavigationStack {
             ScrollView {
                 LazyVGrid(columns: columns) {
-
                     ForEach(AwardData.awards, id: \.name) { award in
-                        NavigationLink {
-                            AwardDetailView(award: award)
-                        } label: {
-                            AwardBadgeView(award: award, viewModel: viewModel)
-                        }
+                        AwardBadgeView(award: award, viewModel: viewModel)
                     }
                 }
             }
