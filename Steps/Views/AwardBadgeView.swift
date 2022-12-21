@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AwardBadgeView: View {
     let award: Award
+    var isUnlocked: Bool
 
     var body: some View {
         VStack {
@@ -16,19 +17,19 @@ struct AwardBadgeView: View {
                 .resizable()
                 .scaledToFit()
                 .padding()
-                .frame(width: 100, height: 100)
+                .frame(width: 80, height: 80)
                 .overlay {
                     Circle()
                         .stroke(style: StrokeStyle(lineWidth: 3))
                 }
-            
-            // Add spinning effect on badge (like Apple Awards)
+                .foregroundColor(isUnlocked ? .pink : .pink.opacity(0.2))
         }
+        .padding()
     }
 }
 
 struct AwardBadgeView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardBadgeView(award: Award(name: "First Steps", description: "You got moving today. Way to go!", image: "figure.walk"))
+        AwardBadgeView(award: AwardData.awards[0], isUnlocked: true)
     }
 }

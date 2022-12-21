@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AwardView: View {
+    @ObservedObject var viewModel = StepsViewModel()
 
     var columns: [GridItem] {
         [GridItem(.adaptive(minimum: 100, maximum: 100))]
@@ -17,7 +18,10 @@ struct AwardView: View {
         NavigationStack {
             ScrollView {
                 LazyVGrid(columns: columns) {
-                   
+
+                    ForEach(AwardData.awards, id: \.name) { award in
+                        AwardBadgeView(award: award, isUnlocked: award.isUnlocked)
+                    }
                 }
             }
             .navigationTitle("🏆 Awards")

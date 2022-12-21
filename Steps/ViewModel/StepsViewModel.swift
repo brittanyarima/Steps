@@ -80,4 +80,9 @@ class StepsViewModel: ObservableObject {
             completion(success)
         }
     }
+
+    var awardIsUnlocked: Bool {
+        
+        return true
+    }
 }
