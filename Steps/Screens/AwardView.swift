@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AwardView: View {
-    @StateObject var viewModel = StepsViewModel()
+    @ObservedObject var viewModel: StepsViewModel
 
     var columns: [GridItem] {
         [GridItem(.adaptive(minimum: 150, maximum: 150))]
@@ -35,6 +35,6 @@ struct AwardView: View {
 
 struct BadgeView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardView()
+        AwardView(viewModel: StepsViewModel())
     }
 }

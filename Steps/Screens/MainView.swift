@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var stepsViewModel = StepsViewModel()
     var body: some View {
         TabView {
-            HomeView()
+            HomeView(viewModel: stepsViewModel)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
 
-            AwardView()
+            AwardView(viewModel: stepsViewModel)
                 .tabItem {
                     Label("Awards", systemImage: "trophy")
                 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var viewModel = StepsViewModel()
+    @ObservedObject var viewModel: StepsViewModel
 
     var body: some View {
         NavigationStack {
@@ -37,6 +37,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(viewModel: StepsViewModel())
     }
 }
