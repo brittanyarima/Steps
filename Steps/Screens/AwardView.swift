@@ -17,13 +17,18 @@ struct AwardView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
+                Text("Can you can unlock all of these awards this week?")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding()
+
                 LazyVGrid(columns: columns) {
                     ForEach(AwardData.awards, id: \.name) { award in
                         AwardBadgeView(award: award, viewModel: viewModel)
                     }
                 }
             }
-            .navigationTitle("🏆 Daily Awards")
+            .navigationTitle("🏆 Weekly Awards")
         }
     }
 }

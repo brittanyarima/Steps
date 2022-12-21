@@ -9,7 +9,24 @@ import SwiftUI
 
 struct AwardLockedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(systemName: "lock.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+                .foregroundColor(.pink)
+
+            Text("Locked")
+                .font(.title2)
+                .bold()
+                .foregroundColor(.pink)
+
+            Text("You haven't unlocked this award yet this week. Keep getting those steps in to unlock it. You can do it!")
+                .foregroundColor(.secondary)
+                .padding()
+                .padding(.horizontal, 55)
+                .multilineTextAlignment(.center)
+        }
     }
 }
 
