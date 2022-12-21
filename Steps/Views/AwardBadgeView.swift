@@ -12,45 +12,37 @@ struct AwardBadgeView: View {
     @ObservedObject var viewModel: StepsViewModel
 
     var isAwardUnlocked: Bool {
-            switch award.name {
-            case "First Steps":
-                return viewModel.steps.contains { $0.count > 100 }
-            case "Gooooaaaaal":
-                return viewModel.steps.contains { $0.count >= viewModel.goal }
-            case "Double Trouble":
-                return viewModel.steps.contains { $0.count >= (viewModel.goal * 2)}
-            case "Threes":
-                return viewModel.steps.contains { $0.count >= (viewModel.goal * 3)}
-            case "Perfect Week":
-                if viewModel.steps.count == 0 { return false }
-                return viewModel.steps.allSatisfy { $0.count > viewModel.goal }
-            case "Don't Messi With You":
-                return viewModel.steps.contains { $0.count >= 14400 } // about 100 soccer fields
-            default:
-                return false
-            }
+        switch award.name {
+        case "First Steps":
+            return viewModel.steps.contains { $0.count > 100 }
+        case "Gooooaaaaal":
+            return viewModel.steps.contains { $0.count >= viewModel.goal }
+        case "Double Trouble":
+            return viewModel.steps.contains { $0.count >= (viewModel.goal * 2)}
+        case "Threes":
+            return viewModel.steps.contains { $0.count >= (viewModel.goal * 3)}
+        case "Perfect Week":
+            if viewModel.steps.count == 0 { return false }
+            return viewModel.steps.allSatisfy { $0.count > viewModel.goal }
+        case "Don't Messi With You":
+            return viewModel.steps.contains { $0.count >= 14400 } // about 100 soccer fields
+        default:
+            return false
+        }
     }
 
     var body: some View {
         VStack {
             NavigationLink {
-                if isAwardUnlocked { AwardDetailView(award: award) } else {
-                    AwardLockedView()
-                }
+                if isAwardUnlocked {
+                    AwardDetailView(award: award, viewModel: viewModel)
+                } else { AwardLockedView() }
             } label: {
                 VStack {
-                Image(systemName: award.image)
-                    .resizable()
-                    .scaledToFit()
-                    .padding()
-                    .frame(width: 100, height: 100)
-                    .overlay {
-                        Circle()
-                            .stroke(style: StrokeStyle(lineWidth: 3))
-                    }
-                    .foregroundColor(isAwardUnlocked ? .pink : .pink.opacity(0.2))
-            }
-            .padding()
+                    BadgeImageView(award: award)
+                        .foregroundColor(isAwardUnlocked ? .pink : .pink.opacity(0.2))
+                }
+                .padding()
             }
         }
     }

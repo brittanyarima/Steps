@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE8652953AB9800BAD40D /* AwardDetailView.swift */; };
 		181AE8682953B83000BAD40D /* AwardLockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE8672953B83000BAD40D /* AwardLockedView.swift */; };
+		181AE86A2953D06100BAD40D /* BadgeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE8692953D06100BAD40D /* BadgeImageView.swift */; };
 		184E933029401A97005FE1E0 /* StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E932F29401A97005FE1E0 /* StepsApp.swift */; };
 		184E933229401A97005FE1E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* HomeView.swift */; };
 		184E933429401A98005FE1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184E933329401A98005FE1E0 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		181AE8652953AB9800BAD40D /* AwardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardDetailView.swift; sourceTree = "<group>"; };
 		181AE8672953B83000BAD40D /* AwardLockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardLockedView.swift; sourceTree = "<group>"; };
+		181AE8692953D06100BAD40D /* BadgeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeImageView.swift; sourceTree = "<group>"; };
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184E932F29401A97005FE1E0 /* StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsApp.swift; sourceTree = "<group>"; };
 		184E933129401A97005FE1E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				189BDCE9294D163700E8237F /* FactView.swift */,
 				189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */,
 				18E37433294E925100D6B253 /* StepsGoalCardView.swift */,
+				181AE8692953D06100BAD40D /* BadgeImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,
 				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,
+				181AE86A2953D06100BAD40D /* BadgeImageView.swift in Sources */,
 				184E933229401A97005FE1E0 /* HomeView.swift in Sources */,
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 				18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */,
