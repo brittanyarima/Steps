@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AwardBadgeView: View {
     let award: Award
-    var isUnlocked: Bool
+    let isUnlocked: Bool
 
     var body: some View {
         VStack {
