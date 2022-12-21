@@ -17,7 +17,7 @@ struct AwardBadgeView: View {
                 .resizable()
                 .scaledToFit()
                 .padding()
-                .frame(width: 80, height: 80)
+                .frame(width: 100, height: 100)
                 .overlay {
                     Circle()
                         .stroke(style: StrokeStyle(lineWidth: 3))

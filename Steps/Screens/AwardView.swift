@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct AwardView: View {
-    @ObservedObject var viewModel = StepsViewModel()
+    @StateObject var viewModel = StepsViewModel()
 
     var columns: [GridItem] {
-        [GridItem(.adaptive(minimum: 100, maximum: 100))]
+        [GridItem(.adaptive(minimum: 150, maximum: 150))]
     }
 
     var body: some View {
@@ -20,11 +20,11 @@ struct AwardView: View {
                 LazyVGrid(columns: columns) {
 
                     ForEach(AwardData.awards, id: \.name) { award in
-                        AwardBadgeView(award: award, isUnlocked: award.isUnlocked)
+                        AwardBadgeView(award: award, isUnlocked: viewModel.awardIsUnlocked)
                     }
                 }
             }
-            .navigationTitle("🏆 Awards")
+            .navigationTitle("🏆 Daily Awards")
         }
     }
 }

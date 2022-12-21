@@ -82,7 +82,25 @@ class StepsViewModel: ObservableObject {
     }
 
     var awardIsUnlocked: Bool {
-        
-        return true
+        for award in AwardData.awards {
+            switch award.name {
+            case "First Steps":
+                return steps.contains { $0.count > 100 }
+            case "Gooooaaaaal":
+                return steps.contains { $0.count >= goal }
+            case "Double Trouble":
+                return steps.contains { $0.count >= (goal * 2)}
+            case "Threes":
+                return steps.contains { $0.count >= (goal * 3)}
+            case "Perfect Week":
+                return steps.allSatisfy { $0.count >= goal }
+            case "Don't Messi With You":
+                return steps.contains { $0.count >= 14400 } // about 100 soccer fields
+
+            default:
+                return true
+            }
+        }
+        return false
     }
 }
