@@ -5,7 +5,7 @@
 //  Created by Brittany Rima on 12/14/22.
 //
 
-import Foundation
+import SwiftUI
 import HealthKit
 
 class StepsViewModel: ObservableObject {
@@ -13,9 +13,15 @@ class StepsViewModel: ObservableObject {
     var query: HKStatisticsCollectionQuery?
 
     @Published var steps: [Step] = []
-    @Published var goal = 8000
+    @Published var goal: Int = 10000 {
+        didSet {
+            UserDefaults.standard.set(goal, forKey: Constants.goalKey)
+        }
+    }
 
     init() {
+        self.goal = UserDefaults.standard.integer(forKey: Constants.goalKey)
+
         if HKHealthStore.isHealthDataAvailable() {
             healthStore = HKHealthStore()
         }

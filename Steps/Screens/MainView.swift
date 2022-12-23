@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var stepsViewModel = StepsViewModel()
+    
     var body: some View {
         TabView {
             HomeView(viewModel: stepsViewModel)
@@ -21,7 +22,7 @@ struct MainView: View {
                     Label("Awards", systemImage: "trophy")
                 }
 
-            SettingsView()
+            SettingsView(stepsViewModel: stepsViewModel)
                 .tabItem {
                     Label("Settings", systemImage: "slider.vertical.3")
                 }

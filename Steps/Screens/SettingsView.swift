@@ -10,12 +10,12 @@ import UserNotifications
 
 struct SettingsView: View {
     @StateObject var viewModel = SettingsViewModel()
-    @AppStorage(Constants.goalKey) var goal = 10000
+    @ObservedObject var stepsViewModel: StepsViewModel
 
     var body: some View {
         NavigationStack {
             VStack(spacing: 30) {
-                StepsGoalCardView(steps: goal, showingEditView: $viewModel.showingEditView)
+                StepsGoalCardView(steps: stepsViewModel.goal, showingEditView: $viewModel.showingEditView)
                     .padding()
 
                 Form {
@@ -30,7 +30,7 @@ struct SettingsView: View {
             .padding()
             .padding(.vertical, 20)
             .sheet(isPresented: $viewModel.showingEditView, content: {
-                EditStepsGoalView(goal: $goal)
+                EditStepsGoalView(goal: $stepsViewModel.goal)
                     .presentationDetents([.height(200)])
             })
             .onChange(of: viewModel.notificationsOn, perform: { _ in
@@ -45,7 +45,7 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView(stepsViewModel: StepsViewModel())
     }
 }
 
