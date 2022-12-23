@@ -9,4 +9,5 @@ import Foundation
 
 struct Constants {
     static let goalKey = "goal"
+    static let notificationKey = "notifications"
 }
