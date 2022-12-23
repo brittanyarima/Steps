@@ -35,6 +35,7 @@
 		18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E18294A9B350058138F /* WeekStepsView.swift */; };
 		18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37431294E91B100D6B253 /* EditStepsGoalView.swift */; };
 		18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37433294E925100D6B253 /* StepsGoalCardView.swift */; };
+		18F1F9E52956362E00156D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		18C81E18294A9B350058138F /* WeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStepsView.swift; sourceTree = "<group>"; };
 		18E37431294E91B100D6B253 /* EditStepsGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStepsGoalView.swift; sourceTree = "<group>"; };
 		18E37433294E925100D6B253 /* StepsGoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGoalCardView.swift; sourceTree = "<group>"; };
+		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				18A1FB1A294AAB93009B87EF /* Date+Ext.swift */,
+				18F1F9E42956362E00156D4C /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				189BDCF0294D3B8A00E8237F /* Award.swift in Sources */,
 				181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */,
 				188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */,
+				18F1F9E52956362E00156D4C /* Constants.swift in Sources */,
 				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
 				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,

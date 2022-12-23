@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditStepsGoalView: View {
-    @State private var stepsGoal = 10000
+    @Binding var goal: Int
 
     var body: some View {
         VStack {
@@ -17,26 +17,19 @@ struct EditStepsGoalView: View {
                 .bold()
 
             HStack(spacing: 20) {
-                Text("\(stepsGoal)")
+                Text("\(goal)")
                     .font(.system(size: 34))
                     .bold()
                     .foregroundColor(.pink)
 
-                Stepper("Steps", value: $stepsGoal, in: 100...30000, step: 100)
+                Stepper("Steps", value: $goal, in: 100...30000, step: 100)
                     .labelsHidden()
             }
 
-            HStack {
-                Button("Cancel") {
-                    // dismiss view
-                }
-                .tint(.pink)
-
-                Button("Save") {
-                    // save to core data
-                }
-                .tint(.mint)
+            Button("Done") {
+                // dismiss view
             }
+            .tint(.mint)
             .buttonStyle(.bordered)
         }
     }
@@ -44,6 +37,6 @@ struct EditStepsGoalView: View {
 
 struct EditStepsGoalView_Previews: PreviewProvider {
     static var previews: some View {
-        EditStepsGoalView()
+        EditStepsGoalView(goal: .constant(10000))
     }
 }

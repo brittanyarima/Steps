@@ -5,7 +5,7 @@
 //  Created by Brittany Rima on 12/20/22.
 //
 
-import Foundation
+import SwiftUI
 import UserNotifications
 
 class SettingsViewModel: ObservableObject {
