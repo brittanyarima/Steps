@@ -31,12 +31,10 @@ struct SettingsView: View {
             .padding(.vertical, 20)
             .sheet(isPresented: $viewModel.showingEditView, content: {
                 EditStepsGoalView(goal: $stepsViewModel.goal)
-                    .presentationDetents([.height(200)])
+                    .presentationDetents([.height(250)])
             })
             .onChange(of: viewModel.notificationsOn, perform: { _ in
-                if viewModel.notificationsOn {
                     viewModel.requestNotificationAuth()
-                }
             })
             .navigationTitle("⚙️ Settings")
         }

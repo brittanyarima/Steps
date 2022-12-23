@@ -9,13 +9,14 @@ import SwiftUI
 
 struct EditStepsGoalView: View {
     @Binding var goal: Int
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Text("Set a New Daily Steps Goal")
                 .font(.title3)
                 .bold()
-
+            Spacer()
             HStack(spacing: 20) {
                 Text("\(goal)")
                     .font(.system(size: 34))
@@ -27,11 +28,14 @@ struct EditStepsGoalView: View {
             }
 
             Button("Done") {
-                // dismiss view
+                dismiss()
             }
             .tint(.mint)
             .buttonStyle(.bordered)
+
+            Spacer()
         }
+        .padding()
     }
 }
 
