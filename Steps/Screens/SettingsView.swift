@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct SettingsView: View {
     @StateObject var viewModel = SettingsViewModel()
@@ -19,11 +20,6 @@ struct SettingsView: View {
                 Form {
                     Section {
                         Toggle("Notifications", isOn: $viewModel.notificationsOn)
-
-                        if viewModel.notificationsOn {
-                            Toggle("Goal Reminders", isOn: $viewModel.remindersOn)
-                            Toggle("Achievements Reached", isOn: $viewModel.goalCompletionNotificationOn)
-                        }
                     } header: {
                         Label("Notification settings", systemImage: "bell")
                     }
@@ -35,6 +31,11 @@ struct SettingsView: View {
             .sheet(isPresented: $viewModel.showingEditView, content: {
                 EditStepsGoalView()
                     .presentationDetents([.height(200)])
+            })
+            .onChange(of: viewModel.notificationsOn, perform: { _ in
+                if viewModel.notificationsOn {
+                    viewModel.requestNotificationAuth()
+                }
             })
             .navigationTitle("⚙️ Settings")
         }

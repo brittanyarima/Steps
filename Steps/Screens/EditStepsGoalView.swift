@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EditStepsGoalView: View {
     @State private var stepsGoal = 10000
+
     var body: some View {
         VStack {
             Text("Set a New Daily Steps Goal")
