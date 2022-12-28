@@ -16,9 +16,21 @@ struct HomeView: View {
                 MountainView(viewModel: viewModel)
                     .edgesIgnoringSafeArea(.all)
 
-              
+                NavigationLink {
+                    StepsDetailView(viewModel: viewModel)
+                } label: {
+                    VStack {
+                        Spacer()
+                        HStack {
+                            CurrentStepsCardView(steps: viewModel.currentSteps)
+                            Spacer()
+                        }
+                        .padding()
+                        Spacer()
+                    }
+                    .padding(.bottom, 100)
+                }
             }
-            .navigationTitle("🏃 Steps")
             .onAppear {
                 viewModel.requestAuthorization { success in
                     if success {

@@ -25,7 +25,7 @@ struct WeekStepsView: View {
                         x: .value("Day", step.date, unit: .weekday),
                         y: .value("Steps", step.count)
                     )
-                    .foregroundStyle(.pink.gradient)
+                    .foregroundStyle(.indigo)
                 }
             }
             .frame(height: 150)

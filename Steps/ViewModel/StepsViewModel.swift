@@ -43,6 +43,22 @@ class StepsViewModel: ObservableObject {
         }
     }
 
+    var checkPointOneReached: Bool {
+        Double(currentSteps) >= (Double(goal) * 0.25)
+    }
+
+    var checkPointTwoReached: Bool {
+        Double(currentSteps) >= (Double(goal) * 0.5)
+    }
+
+    var checkPointThreeReached: Bool {
+        Double(currentSteps) >= (Double(goal) * 0.75)
+    }
+
+    var checkPointFourReached: Bool {
+        currentSteps >= goal
+    }
+
     func calculateSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
         let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
