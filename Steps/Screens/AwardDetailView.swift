@@ -15,7 +15,7 @@ struct AwardDetailView: View {
     var body: some View {
         VStack {
             BadgeImageView(award: award)
-                .foregroundColor(.pink)
+                .foregroundColor(.indigo)
                 .rotation3DEffect(rotationAngle, axis: (x: 0, y: 360, z: 0))
                 .gesture(
                     DragGesture()
@@ -33,7 +33,7 @@ struct AwardDetailView: View {
             Text(award.name)
                 .font(.title2)
                 .bold()
-                .foregroundColor(.pink)
+                .foregroundColor(.indigo)
 
             Text(award.description)
                 .foregroundColor(.secondary)

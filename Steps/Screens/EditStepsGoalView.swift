@@ -21,7 +21,7 @@ struct EditStepsGoalView: View {
                 Text("\(goal)")
                     .font(.system(size: 34))
                     .bold()
-                    .foregroundColor(.pink)
+                    .foregroundColor(.indigo)
 
                 Stepper("Steps", value: $goal, in: 100...30000, step: 100)
                     .labelsHidden()

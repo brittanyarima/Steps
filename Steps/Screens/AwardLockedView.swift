@@ -14,12 +14,12 @@ struct AwardLockedView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100)
-                .foregroundColor(.pink)
+                .foregroundColor(.indigo)
 
             Text("Locked")
                 .font(.title2)
                 .bold()
-                .foregroundColor(.pink)
+                .foregroundColor(.indigo)
 
             Text("You haven't unlocked this award yet this week. Keep getting those steps in to unlock it. You can do it!")
                 .foregroundColor(.secondary)

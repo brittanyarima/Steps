@@ -14,11 +14,11 @@ struct CircleProgressBar: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(.pink.opacity(0.1), lineWidth: 10)
+                .stroke(.indigo.opacity(0.1), lineWidth: 10)
 
             Circle()
                 .trim(from: 0, to: CGFloat(self.value) / CGFloat(self.maxValue))
-                .stroke(.pink, style: StrokeStyle(lineWidth: 10, lineCap: .round))
+                .stroke(.indigo, style: StrokeStyle(lineWidth: 10, lineCap: .round))
                 .rotationEffect(Angle(degrees: -90.0))
 
             VStack {

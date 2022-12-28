@@ -40,7 +40,7 @@ struct AwardBadgeView: View {
             } label: {
                 VStack {
                     BadgeImageView(award: award)
-                        .foregroundColor(isAwardUnlocked ? .pink : .pink.opacity(0.2))
+                        .foregroundColor(isAwardUnlocked ? .pink : .indigo.opacity(0.2))
                 }
                 .padding()
             }

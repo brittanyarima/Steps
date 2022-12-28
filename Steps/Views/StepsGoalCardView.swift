@@ -34,7 +34,7 @@ struct StepsGoalCardView: View {
                 Text("\(steps) steps")
                     .font(.system(size: 32))
                     .bold()
-                    .foregroundColor(.pink)
+                    .foregroundColor(.indigo)
 
                 Spacer()
             }

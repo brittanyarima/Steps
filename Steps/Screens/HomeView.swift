@@ -12,12 +12,9 @@ struct HomeView: View {
 
     var body: some View {
         NavigationStack {
-            VStack {
-                NavigationLink {
-                    StepsDetailView(viewModel: viewModel)
-                } label: {
-                    Text("Current Steps: \(viewModel.currentSteps)")
-                }
+            ZStack {
+                MountainView(viewModel: viewModel)
+                    .edgesIgnoringSafeArea(.all)
             }
             .navigationTitle("🏃 Steps")
             .onAppear {

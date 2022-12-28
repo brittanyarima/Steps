@@ -27,7 +27,7 @@ struct MainView: View {
                     Label("Settings", systemImage: "slider.vertical.3")
                 }
         }
-        .tint(.mint)
+        .tint(.indigo)
     }
 }
 

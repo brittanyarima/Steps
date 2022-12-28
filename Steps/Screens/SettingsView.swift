@@ -37,6 +37,7 @@ struct SettingsView: View {
                     viewModel.requestNotificationAuth()
             })
             .navigationTitle("⚙️ Settings")
+            .tint(.indigo)
         }
     }
 }
