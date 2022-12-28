@@ -15,6 +15,8 @@ struct HomeView: View {
             ZStack {
                 MountainView(viewModel: viewModel)
                     .edgesIgnoringSafeArea(.all)
+
+              
             }
             .navigationTitle("🏃 Steps")
             .onAppear {

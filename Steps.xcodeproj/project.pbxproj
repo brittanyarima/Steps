@@ -16,6 +16,7 @@
 		184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184E933629401A98005FE1E0 /* Preview Assets.xcassets */; };
 		184FD8B5294BE788000E4576 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184FD8B4294BE788000E4576 /* Step.swift */; };
 		185B74CD295CDDD9000AD18A /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B74CC295CDDD9000AD18A /* CircleView.swift */; };
+		185B74CF295CEA02000AD18A /* CurrentStepsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */; };
 		185DB3F5294948D2003BCC48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3F4294948D2003BCC48 /* MainView.swift */; };
 		185DB3F929494947003BCC48 /* AwardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3F829494947003BCC48 /* AwardView.swift */; };
 		185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB3FA2949495B003BCC48 /* SettingsView.swift */; };
@@ -77,6 +78,7 @@
 		184E9342294025D7005FE1E0 /* Steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steps.entitlements; sourceTree = "<group>"; };
 		184FD8B4294BE788000E4576 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		185B74CC295CDDD9000AD18A /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStepsCardView.swift; sourceTree = "<group>"; };
 		185DB3F4294948D2003BCC48 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		185DB3F829494947003BCC48 /* AwardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardView.swift; sourceTree = "<group>"; };
 		185DB3FA2949495B003BCC48 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				181AE8692953D06100BAD40D /* BadgeImageView.swift */,
 				1876B8212956774600346975 /* MountainView.swift */,
 				185B74CC295CDDD9000AD18A /* CircleView.swift */,
+				185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
 				185DB3F929494947003BCC48 /* AwardView.swift in Sources */,
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
+				185B74CF295CEA02000AD18A /* CurrentStepsCardView.swift in Sources */,
 				181AE8682953B83000BAD40D /* AwardLockedView.swift in Sources */,
 				189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */,
 				18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */,
