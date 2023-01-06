@@ -12,6 +12,8 @@ class StepsViewModel: ObservableObject {
     var healthStore: HKHealthStore?
     var query: HKStatisticsCollectionQuery?
 
+    @AppStorage("stepCount", store: UserDefaults(suiteName: "group.com.BrittanyRima.Steps")) var stepCount: Int = 0
+
     @Published var steps: [Step] = []
     @Published var goal: Int = 10000 {
         didSet {
@@ -90,6 +92,7 @@ class StepsViewModel: ObservableObject {
             
             DispatchQueue.main.async {
                 self.steps.append(step)
+                self.stepCount = self.steps.last?.count ?? 0
             }
         }
     }
