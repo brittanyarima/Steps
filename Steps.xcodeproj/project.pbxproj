@@ -93,6 +93,7 @@
 		185DB4092949514D003BCC48 /* StepsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidget.swift; sourceTree = "<group>"; };
 		185DB40B2949514E003BCC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185DB40D2949514E003BCC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185DE12D2968D59100AD81F2 /* StepsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepsWidgetExtension.entitlements; sourceTree = "<group>"; };
 		1876B8212956774600346975 /* MountainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainView.swift; sourceTree = "<group>"; };
 		188042D329527BD700E14D9D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		189BDCE9294D163700E8237F /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		184E932329401A97005FE1E0 = {
 			isa = PBXGroup;
 			children = (
+				185DE12D2968D59100AD81F2 /* StepsWidgetExtension.entitlements */,
 				184E932E29401A97005FE1E0 /* Steps */,
 				185DB4062949514D003BCC48 /* StepsWidget */,
 				185DB4012949514D003BCC48 /* Frameworks */,
@@ -587,6 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AGU49S8C2X;
@@ -614,6 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AGU49S8C2X;
