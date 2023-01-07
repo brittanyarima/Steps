@@ -18,6 +18,7 @@ struct StepsDetailView: View {
             WeekStepsView(viewModel: viewModel)
             Spacer()
         }
+        .padding(.top, 30)
     }
 }
 
