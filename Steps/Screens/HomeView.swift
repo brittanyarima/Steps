@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel: StepsViewModel
+    @EnvironmentObject var userViewModel: UserViewModel
 
     var body: some View {
         NavigationStack {
@@ -17,7 +18,11 @@ struct HomeView: View {
                     .edgesIgnoringSafeArea(.all)
 
                 NavigationLink {
-                    StepsDetailView(viewModel: viewModel)
+                    if !userViewModel.isSubscriptionActive {
+                        PaywallView()
+                    } else {
+                        StepsDetailView(viewModel: viewModel)
+                    }
                 } label: {
                     VStack {
                         Spacer()

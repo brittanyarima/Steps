@@ -11,6 +11,7 @@ import RevenueCat
 struct PaywallView: View {
 //    @Binding var isPaywallPresented: Bool
     @State var currentOffering: Offering?
+    @EnvironmentObject var userViewModel: UserViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -23,35 +24,45 @@ struct PaywallView: View {
                 .font(.system(size: 40))
                 .foregroundColor(.indigo)
 
-            Text("Unlock weekly steps details, keep track of your goals, and win awards")
+                VStack {
+                    Text("Unlock weekly steps details, keep track of your goals, and win awards")
 
-            Spacer()
+                    Spacer()
 
-            VStack(spacing: 40) {
-                Label("Graphs that show your weekly progress", systemImage: "chart.bar.xaxis")
-                Label("Create and track your steps goals", systemImage: "checklist")
-                Label("Weekly awards to keep you motivated", systemImage: "trophy")
-            }
-            Spacer()
-
-            if currentOffering != nil {
-
-                ForEach(currentOffering!.availablePackages) { pkg in
-                    Button {
-                        // BUY
-                    } label: {
-                        Text("\(pkg.storeProduct.subscriptionPeriod!.periodTitle) \(pkg.storeProduct.localizedPriceString)")
+                    VStack(spacing: 40) {
+                        Label("Graphs that show your weekly progress", systemImage: "chart.bar.xaxis")
+                        Label("Create and track your steps goals", systemImage: "checklist")
+                        Label("Weekly awards to keep you motivated", systemImage: "trophy")
                     }
-                    .buttonStyle(.bordered)
-                    .tint(.indigo)
+                    Spacer()
+
+                    if currentOffering != nil {
+
+                        ForEach(currentOffering!.availablePackages) { pkg in
+                            Button {
+                                // BUY
+                                Purchases.shared.purchase(package: pkg) { (transaction, customerInfo, error, userCancelled) in
+
+                                    if customerInfo!.entitlements.all["pro"]?.isActive == true {
+                                    // Unlock that great "pro" content
+                                        userViewModel.isSubscriptionActive = true
+//                                        isPaywallPresented = false  // dismisses view
+                                  }
+                                }
+                            } label: {
+                                Text("\(pkg.storeProduct.subscriptionPeriod!.periodTitle) \(pkg.storeProduct.localizedPriceString)")
+                            }
+                            .buttonStyle(.bordered)
+                            .tint(.indigo)
+                        }
+                    }
+
+                    Spacer()
+
+                    Text("More steps and greater motivation")
                 }
-            }
 
 
-
-            Spacer()
-
-            Text("More steps and greater motivation")
         }
         .onAppear {
             Purchases.shared.getOfferings { offerings, error in

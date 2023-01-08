@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TaskView: View {
     @Environment(\.managedObjectContext) var context
+    @EnvironmentObject var userViewModel: UserViewModel
     @State private var isShowingSheet = false
     @State private var selectedTab = "Incomplete"
 
@@ -25,38 +26,42 @@ struct TaskView: View {
 
     var body: some View {
         NavigationStack {
-            VStack {
-                TaskPickerView(selectedTab: $selectedTab)
+            if !userViewModel.isSubscriptionActive {
+                PaywallView()
+            } else {
+                VStack {
+                    TaskPickerView(selectedTab: $selectedTab)
 
-                if selectedTab == "Incomplete" && incompleteTasks.isEmpty {
-                    Text("🥳 Time to add some more goals!")
-                        .fontWeight(.semibold)
-                        .foregroundColor(.secondary)
-                }
-
-                List {
-                    if selectedTab == "Incomplete" {
-                        ForEach(incompleteTasks) { task in
-                            TaskListRowView(task: task)
-                        }
-                        .onDelete(perform: removeIncompleteTask)
-                    } else {
-                        ForEach(completeTasks) { task in
-                            TaskListRowView(task: task)
-                        }
-                        .onDelete(perform: removeCompleteTask)
+                    if selectedTab == "Incomplete" && incompleteTasks.isEmpty {
+                        Text("🥳 Time to add some more goals!")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.secondary)
                     }
-                }
-                .scrollContentBackground(.hidden)
-                .listRowSeparator(.hidden)
-                .toolbar { EditButton() }
 
-                AddGoalButton(isShowingSheet: $isShowingSheet)
-            }
-            .navigationTitle("✅ My Goals")
-            .sheet(isPresented: $isShowingSheet) {
-                AddTaskView()
-                    .presentationDetents([.height(300)])
+                    List {
+                        if selectedTab == "Incomplete" {
+                            ForEach(incompleteTasks) { task in
+                                TaskListRowView(task: task)
+                            }
+                            .onDelete(perform: removeIncompleteTask)
+                        } else {
+                            ForEach(completeTasks) { task in
+                                TaskListRowView(task: task)
+                            }
+                            .onDelete(perform: removeCompleteTask)
+                        }
+                    }
+                    .scrollContentBackground(.hidden)
+                    .listRowSeparator(.hidden)
+                    .toolbar { EditButton() }
+
+                    AddGoalButton(isShowingSheet: $isShowingSheet)
+                }
+                .navigationTitle("✅ My Goals")
+                .sheet(isPresented: $isShowingSheet) {
+                    AddTaskView()
+                        .presentationDetents([.height(300)])
+                }
             }
         }
     }

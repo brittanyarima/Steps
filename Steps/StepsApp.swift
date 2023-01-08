@@ -12,11 +12,13 @@ import RevenueCat
 struct StepsApp: App {
     @Environment(\.scenePhase) var scenePhase
     let persistenceController = PersistenceController.shared
+    @StateObject var userViewModel = UserViewModel()
 
     var body: some Scene {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(userViewModel)
         }
         .onChange(of: scenePhase) { _ in
             persistenceController.save()
