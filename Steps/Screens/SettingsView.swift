@@ -24,6 +24,12 @@ struct SettingsView: View {
                     } header: {
                         Label("Notification settings", systemImage: "bell")
                     }
+
+                    NavigationLink {
+                        PaywallView()
+                    } label: {
+                        Text("Signup for StepTracker+")
+                    }
                 }
                 .scrollContentBackground(.hidden)
             }

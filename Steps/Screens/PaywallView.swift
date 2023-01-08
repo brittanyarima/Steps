@@ -9,7 +9,7 @@ import SwiftUI
 import RevenueCat
 
 struct PaywallView: View {
-    @Binding var isPaywallPresented: Bool
+//    @Binding var isPaywallPresented: Bool
     @State var currentOffering: Offering?
 
     var body: some View {
@@ -40,7 +40,7 @@ struct PaywallView: View {
                     Button {
                         // BUY
                     } label: {
-                        Text("\(pkg.storeProduct.subscriptionPeriod.un)")
+                        Text("\(pkg.storeProduct.subscriptionPeriod!.periodTitle) \(pkg.storeProduct.localizedPriceString)")
                     }
                     .buttonStyle(.bordered)
                     .tint(.indigo)
@@ -65,6 +65,6 @@ struct PaywallView: View {
 
 struct PaywallView_Previews: PreviewProvider {
     static var previews: some View {
-        PaywallView(isPaywallPresented: .constant(true))
+        PaywallView()
     }
 }
