@@ -15,14 +15,12 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let controller = PersistenceController(inMemory: true)
 
-        // Create 10 example programming languages.
         for _ in 0..<10 {
             let task = Task(context: controller.container.viewContext)
             task.name = "Run a marathon"
             task.date = Date()
             task.isComplete = Bool.random()
         }
-
         return controller
     }()
 
@@ -39,4 +37,16 @@ struct PersistenceController {
               }
           }
       }
+
+    func save() {
+        let context = container.viewContext
+
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                print("❗️Error saving to core data. \(error.localizedDescription)")
+            }
+        }
+    }
   }
