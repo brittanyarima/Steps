@@ -10,7 +10,8 @@
 		181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE8652953AB9800BAD40D /* AwardDetailView.swift */; };
 		181AE8682953B83000BAD40D /* AwardLockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE8672953B83000BAD40D /* AwardLockedView.swift */; };
 		181AE86A2953D06100BAD40D /* BadgeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE8692953D06100BAD40D /* BadgeImageView.swift */; };
-		1847865229691BC000300CF2 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 1847865129691BC000300CF2 /* RevenueCat */; };
+		1838FC11296A565900EAA116 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 1838FC10296A565900EAA116 /* RevenueCat */; };
+		1838FC13296A569300EAA116 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1838FC12296A569300EAA116 /* StoreKit.framework */; };
 		1847865429691E2000300CF2 /* SECRETS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847865329691E2000300CF2 /* SECRETS.swift */; };
 		184E933029401A97005FE1E0 /* StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E932F29401A97005FE1E0 /* StepsApp.swift */; };
 		184E933229401A97005FE1E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* HomeView.swift */; };
@@ -75,6 +76,7 @@
 		181AE8652953AB9800BAD40D /* AwardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardDetailView.swift; sourceTree = "<group>"; };
 		181AE8672953B83000BAD40D /* AwardLockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardLockedView.swift; sourceTree = "<group>"; };
 		181AE8692953D06100BAD40D /* BadgeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeImageView.swift; sourceTree = "<group>"; };
+		1838FC12296A569300EAA116 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1847865329691E2000300CF2 /* SECRETS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECRETS.swift; sourceTree = "<group>"; };
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184E932F29401A97005FE1E0 /* StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsApp.swift; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1847865229691BC000300CF2 /* RevenueCat in Frameworks */,
+				1838FC11296A565900EAA116 /* RevenueCat in Frameworks */,
+				1838FC13296A569300EAA116 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +224,7 @@
 		185DB4012949514D003BCC48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1838FC12296A569300EAA116 /* StoreKit.framework */,
 				185DB4022949514D003BCC48 /* WidgetKit.framework */,
 				185DB4042949514D003BCC48 /* SwiftUI.framework */,
 			);
@@ -276,7 +280,7 @@
 			);
 			name = Steps;
 			packageProductDependencies = (
-				1847865129691BC000300CF2 /* RevenueCat */,
+				1838FC10296A565900EAA116 /* RevenueCat */,
 			);
 			productName = Steps;
 			productReference = 184E932C29401A97005FE1E0 /* Steps.app */;
@@ -327,7 +331,7 @@
 			);
 			mainGroup = 184E932329401A97005FE1E0;
 			packageReferences = (
-				1847865029691BC000300CF2 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				1838FC0F296A565900EAA116 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = 184E932D29401A97005FE1E0 /* Products */;
 			projectDirPath = "";
@@ -685,9 +689,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1847865029691BC000300CF2 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+		1838FC0F296A565900EAA116 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RevenueCat/purchases-ios";
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.0.0;
@@ -696,9 +700,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1847865129691BC000300CF2 /* RevenueCat */ = {
+		1838FC10296A565900EAA116 /* RevenueCat */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1847865029691BC000300CF2 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			package = 1838FC0F296A565900EAA116 /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = RevenueCat;
 		};
 /* End XCSwiftPackageProductDependency section */

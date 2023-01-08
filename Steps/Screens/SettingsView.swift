@@ -34,7 +34,7 @@ struct SettingsView: View {
                     .presentationDetents([.height(250)])
             })
             .onChange(of: viewModel.notificationsOn, perform: { _ in
-                    viewModel.requestNotificationAuth()
+                viewModel.requestNotificationAuth()
             })
             .navigationTitle("⚙️ Settings")
             .tint(.indigo)

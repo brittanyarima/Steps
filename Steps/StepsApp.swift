@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RevenueCat
 
 @main
 struct StepsApp: App {
