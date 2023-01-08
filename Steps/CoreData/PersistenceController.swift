@@ -17,6 +17,7 @@ struct PersistenceController {
 
         for _ in 0..<10 {
             let task = Task(context: controller.container.viewContext)
+            task.id = UUID()
             task.name = "Run a marathon"
             task.date = Date()
             task.isComplete = Bool.random()

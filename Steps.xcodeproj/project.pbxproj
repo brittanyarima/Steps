@@ -17,6 +17,8 @@
 		1838FC19296A785E00EAA116 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC18296A785E00EAA116 /* TaskView.swift */; };
 		1838FC1C296A7A5A00EAA116 /* Steps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC1A296A7A5A00EAA116 /* Steps.xcdatamodeld */; };
 		1838FC1F296A7B6000EAA116 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC1E296A7B6000EAA116 /* PersistenceController.swift */; };
+		1838FC21296A7E8A00EAA116 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC20296A7E8A00EAA116 /* AddTaskView.swift */; };
+		1838FC23296A846200EAA116 /* TaskListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC22296A846200EAA116 /* TaskListRowView.swift */; };
 		1847865429691E2000300CF2 /* SECRETS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847865329691E2000300CF2 /* SECRETS.swift */; };
 		184E933029401A97005FE1E0 /* StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E932F29401A97005FE1E0 /* StepsApp.swift */; };
 		184E933229401A97005FE1E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* HomeView.swift */; };
@@ -87,6 +89,8 @@
 		1838FC18296A785E00EAA116 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		1838FC1B296A7A5A00EAA116 /* Steps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Steps.xcdatamodel; sourceTree = "<group>"; };
 		1838FC1E296A7B6000EAA116 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		1838FC20296A7E8A00EAA116 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		1838FC22296A846200EAA116 /* TaskListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListRowView.swift; sourceTree = "<group>"; };
 		1847865329691E2000300CF2 /* SECRETS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECRETS.swift; sourceTree = "<group>"; };
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184E932F29401A97005FE1E0 /* StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsApp.swift; sourceTree = "<group>"; };
@@ -153,6 +157,15 @@
 				1838FC1E296A7B6000EAA116 /* PersistenceController.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1838FC24296A85D700EAA116 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18A1FB1A294AAB93009B87EF /* Date+Ext.swift */,
+				1838FC16296A5DE000EAA116 /* Subscription+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		184E932329401A97005FE1E0 = {
@@ -239,6 +252,8 @@
 				1876B8212956774600346975 /* MountainView.swift */,
 				185B74CC295CDDD9000AD18A /* CircleView.swift */,
 				185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */,
+				1838FC20296A7E8A00EAA116 /* AddTaskView.swift */,
+				1838FC22296A846200EAA116 /* TaskListRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,10 +282,9 @@
 		18A1FB1C294AAC1B009B87EF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				18A1FB1A294AAB93009B87EF /* Date+Ext.swift */,
+				1838FC24296A85D700EAA116 /* Extensions */,
 				18F1F9E42956362E00156D4C /* Constants.swift */,
 				1847865329691E2000300CF2 /* SECRETS.swift */,
-				1838FC16296A5DE000EAA116 /* Subscription+Ext.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -409,6 +423,7 @@
 				1838FC15296A57A500EAA116 /* PaywallView.swift in Sources */,
 				1838FC19296A785E00EAA116 /* TaskView.swift in Sources */,
 				18F1F9E52956362E00156D4C /* Constants.swift in Sources */,
+				1838FC23296A846200EAA116 /* TaskListRowView.swift in Sources */,
 				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
 				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,
@@ -421,6 +436,7 @@
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 				1847865429691E2000300CF2 /* SECRETS.swift in Sources */,
 				18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */,
+				1838FC21296A7E8A00EAA116 /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
