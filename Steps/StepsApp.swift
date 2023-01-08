@@ -15,4 +15,9 @@ struct StepsApp: App {
             MainView()
         }
     }
+
+    init() {
+        Purchases.logLevel = .debug
+        Purchases.configure(withAPIKey: apiKey)
+    }
 }
