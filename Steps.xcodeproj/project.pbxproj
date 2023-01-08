@@ -14,6 +14,9 @@
 		1838FC13296A569300EAA116 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1838FC12296A569300EAA116 /* StoreKit.framework */; };
 		1838FC15296A57A500EAA116 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC14296A57A500EAA116 /* PaywallView.swift */; };
 		1838FC17296A5DE000EAA116 /* Subscription+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC16296A5DE000EAA116 /* Subscription+Ext.swift */; };
+		1838FC19296A785E00EAA116 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC18296A785E00EAA116 /* TaskView.swift */; };
+		1838FC1C296A7A5A00EAA116 /* Steps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC1A296A7A5A00EAA116 /* Steps.xcdatamodeld */; };
+		1838FC1F296A7B6000EAA116 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC1E296A7B6000EAA116 /* PersistenceController.swift */; };
 		1847865429691E2000300CF2 /* SECRETS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847865329691E2000300CF2 /* SECRETS.swift */; };
 		184E933029401A97005FE1E0 /* StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E932F29401A97005FE1E0 /* StepsApp.swift */; };
 		184E933229401A97005FE1E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* HomeView.swift */; };
@@ -81,6 +84,9 @@
 		1838FC12296A569300EAA116 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1838FC14296A57A500EAA116 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		1838FC16296A5DE000EAA116 /* Subscription+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscription+Ext.swift"; sourceTree = "<group>"; };
+		1838FC18296A785E00EAA116 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		1838FC1B296A7A5A00EAA116 /* Steps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Steps.xcdatamodel; sourceTree = "<group>"; };
+		1838FC1E296A7B6000EAA116 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		1847865329691E2000300CF2 /* SECRETS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECRETS.swift; sourceTree = "<group>"; };
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184E932F29401A97005FE1E0 /* StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsApp.swift; sourceTree = "<group>"; };
@@ -140,6 +146,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1838FC1D296A7B2C00EAA116 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1838FC1A296A7A5A00EAA116 /* Steps.xcdatamodeld */,
+				1838FC1E296A7B6000EAA116 /* PersistenceController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		184E932329401A97005FE1E0 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +180,7 @@
 			children = (
 				184E932F29401A97005FE1E0 /* StepsApp.swift */,
 				184E9342294025D7005FE1E0 /* Steps.entitlements */,
+				1838FC1D296A7B2C00EAA116 /* CoreData */,
 				184E934129401D8E005FE1E0 /* Info.plist */,
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
 				18C81E17294A95820058138F /* ViewModel */,
@@ -206,6 +222,7 @@
 				181AE8652953AB9800BAD40D /* AwardDetailView.swift */,
 				181AE8672953B83000BAD40D /* AwardLockedView.swift */,
 				1838FC14296A57A500EAA116 /* PaywallView.swift */,
+				1838FC18296A785E00EAA116 /* TaskView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -383,18 +400,21 @@
 				189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */,
 				18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */,
 				1838FC17296A5DE000EAA116 /* Subscription+Ext.swift in Sources */,
+				1838FC1F296A7B6000EAA116 /* PersistenceController.swift in Sources */,
 				185B74CD295CDDD9000AD18A /* CircleView.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
 				189BDCF0294D3B8A00E8237F /* Award.swift in Sources */,
 				181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */,
 				188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */,
 				1838FC15296A57A500EAA116 /* PaywallView.swift in Sources */,
+				1838FC19296A785E00EAA116 /* TaskView.swift in Sources */,
 				18F1F9E52956362E00156D4C /* Constants.swift in Sources */,
 				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
 				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,
 				1876B8222956774600346975 /* MountainView.swift in Sources */,
 				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
+				1838FC1C296A7A5A00EAA116 /* Steps.xcdatamodeld in Sources */,
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,
 				181AE86A2953D06100BAD40D /* BadgeImageView.swift in Sources */,
 				184E933229401A97005FE1E0 /* HomeView.swift in Sources */,
@@ -714,6 +734,19 @@
 			productName = RevenueCat;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		1838FC1A296A7A5A00EAA116 /* Steps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1838FC1B296A7A5A00EAA116 /* Steps.xcdatamodel */,
+			);
+			currentVersion = 1838FC1B296A7A5A00EAA116 /* Steps.xcdatamodel */;
+			path = Steps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 184E932429401A97005FE1E0 /* Project object */;
 }

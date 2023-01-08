@@ -17,6 +17,11 @@ struct MainView: View {
                     Label("Home", systemImage: "house")
                 }
 
+            TaskView()
+                .tabItem {
+                    Label("Goals", systemImage: "checklist")
+                }
+
             AwardView(viewModel: stepsViewModel)
                 .tabItem {
                     Label("Awards", systemImage: "trophy")
