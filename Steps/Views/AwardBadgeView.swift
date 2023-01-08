@@ -10,6 +10,9 @@ import SwiftUI
 struct AwardBadgeView: View {
     let award: Award
     @ObservedObject var viewModel: StepsViewModel
+    @FetchRequest(
+        entity: Task.entity(),
+        sortDescriptors: []) var tasks: FetchedResults<Task>
 
     var isAwardUnlocked: Bool {
         switch award.name {
@@ -26,6 +29,20 @@ struct AwardBadgeView: View {
             return viewModel.steps.allSatisfy { $0.count > viewModel.goal }
         case "Don't Messi With You":
             return viewModel.steps.contains { $0.count >= 14400 } // about 100 soccer fields
+        case "Motivated":
+            return tasks.count > 1
+        case "First Goal!":
+            return tasks.count > 1 && tasks.last?.isComplete == true
+        case "Dreamer":
+            return tasks.count > 4
+        case "Go Getter":
+            var completed = 0
+            for task in tasks {
+                if task.isComplete {
+                    completed += 1
+                }
+            }
+            return completed > 4
         default:
             return false
         }
