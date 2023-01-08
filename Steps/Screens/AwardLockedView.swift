@@ -21,7 +21,7 @@ struct AwardLockedView: View {
                 .bold()
                 .foregroundColor(.indigo)
 
-            Text("You haven't unlocked this award yet this week. Keep getting those steps in to unlock it. You can do it!")
+            Text("You haven't unlocked this award yet this week. Keep getting those steps in and completing goals to unlock it. You can do it!")
                 .foregroundColor(.secondary)
                 .padding()
                 .padding(.horizontal, 55)
