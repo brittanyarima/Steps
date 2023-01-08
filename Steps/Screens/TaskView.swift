@@ -28,6 +28,12 @@ struct TaskView: View {
             VStack {
                 TaskPickerView(selectedTab: $selectedTab)
 
+                if selectedTab == "Incomplete" && incompleteTasks.isEmpty {
+                    Text("🥳 Time to add some more goals!")
+                        .fontWeight(.semibold)
+                        .foregroundColor(.secondary)
+                }
+
                 List {
                     if selectedTab == "Incomplete" {
                         ForEach(incompleteTasks) { task in
@@ -43,15 +49,9 @@ struct TaskView: View {
                 }
                 .scrollContentBackground(.hidden)
                 .listRowSeparator(.hidden)
+                .toolbar { EditButton() }
 
-                Button {
-                    isShowingSheet.toggle()
-                } label: {
-                    Label("Add Goal", systemImage: "plus")
-                        .fontWeight(.semibold)
-                }
-                .buttonStyle(.bordered)
-                .tint(.indigo)
+                AddGoalButton(isShowingSheet: $isShowingSheet)
             }
             .navigationTitle("✅ My Goals")
             .sheet(isPresented: $isShowingSheet) {
@@ -106,5 +106,21 @@ fileprivate struct TaskPickerView: View {
         }
         .pickerStyle(.segmented)
         .padding()
+    }
+}
+
+fileprivate struct AddGoalButton: View {
+    @Binding var isShowingSheet: Bool
+
+    var body: some View {
+        Button {
+            isShowingSheet.toggle()
+        } label: {
+            Label("Add Goal", systemImage: "plus")
+                .fontWeight(.semibold)
+        }
+        .buttonStyle(.bordered)
+        .tint(.indigo)
+        .padding(.bottom, 30)
     }
 }

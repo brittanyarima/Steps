@@ -22,11 +22,12 @@ struct TaskListRowView: View {
                     }
                 }
         }
-        .font(.title2)
+        .font(.title3)
         .padding()
         .background(.indigo.opacity(0.2))
         .foregroundColor(.indigo)
-        .fontWeight(.semibold)
+        .fontWeight(.medium)
         .cornerRadius(12)
+        .multilineTextAlignment(.leading)
     }
 }
