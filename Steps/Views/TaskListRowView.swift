@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct TaskListRowView: View {
-    @State private var isCompleted: Bool = false
-    let task: Task
+    @ObservedObject var task: Task
 
     var body: some View {
         HStack {
             Text(task.name ?? "Unknown Name")
             Spacer()
-            Image(systemName: isCompleted ? "checkmark.circle" : "circle")
+            Image(systemName: task.isComplete ? "checkmark.circle" : "circle")
                 .onTapGesture {
-                    isCompleted.toggle()
+                    task.isComplete.toggle()
+                    if task.hasChanges {
+                        PersistenceController.shared.save()
+                    }
                 }
         }
         .font(.title2)
@@ -26,13 +28,5 @@ struct TaskListRowView: View {
         .foregroundColor(.indigo)
         .fontWeight(.semibold)
         .cornerRadius(12)
-        .padding()
-        .alert(isPresented: $isCompleted) {
-            Alert(title: Text("Complete Task?"),
-                  primaryButton: .default(Text("Complete")) {
-                task.isComplete = true
-                PersistenceController.shared.save()
-            } , secondaryButton: .cancel())
-        }
     }
 }

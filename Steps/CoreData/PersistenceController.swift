@@ -25,19 +25,19 @@ struct PersistenceController {
         return controller
     }()
 
-      init(inMemory: Bool = false) {
-          container = NSPersistentContainer(name: "Steps")
+    init(inMemory: Bool = false) {
+        container = NSPersistentContainer(name: "Steps")
 
-          if inMemory {
-              container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
-          }
+        if inMemory {
+            container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+        }
 
-          container.loadPersistentStores { description, error in
-              if let error = error {
-                  fatalError("Error: \(error.localizedDescription)")
-              }
-          }
-      }
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                fatalError("Error: \(error.localizedDescription)")
+            }
+        }
+    }
 
     func save() {
         let context = container.viewContext
@@ -50,4 +50,4 @@ struct PersistenceController {
             }
         }
     }
-  }
+}
