@@ -27,7 +27,8 @@ struct SettingsView: View {
                         Label("Notification settings", systemImage: "bell")
                     }
 
-                   SubscriptionSettingsView(subscriptionType: userViewModel.isSubscriptionActive ? "Pro" : "Free")
+                    SubscriptionSettingsView(userIsSubscribed: userViewModel.isSubscriptionActive,
+                                             subscriptionType: userViewModel.isSubscriptionActive ? "Pro" : "Free")
 
                     Button {
                         // Restore Purchases
@@ -40,8 +41,6 @@ struct SettingsView: View {
                         Text("Restore Purchases")
 
                     }
-
-
                 }
                 .scrollContentBackground(.hidden)
             }
@@ -68,7 +67,9 @@ struct SettingsView_Previews: PreviewProvider {
 }
 
 fileprivate struct SubscriptionSettingsView: View {
+    var userIsSubscribed: Bool
     let subscriptionType: String
+
     var body: some View {
         Section {
             HStack {
@@ -77,16 +78,19 @@ fileprivate struct SubscriptionSettingsView: View {
                 Text(subscriptionType)
             }
 
-
-
-            NavigationLink {
-                PaywallView()
-            } label: {
-                Text("Signup for StepTracker+")
+            if !userIsSubscribed {
+                NavigationLink {
+                    PaywallView()
+                } label: {
+                    Text("Signup for StepTracker+")
+                }
+            } else {
+                Link(destination: URL(string: Constants.subcriptionSettingsURL)!) {
+                    Text("Manage Subscription")
+                }
             }
         } header: {
             Label("Subscription Settings", systemImage: "star.circle.fill")
         }
     }
 }
-

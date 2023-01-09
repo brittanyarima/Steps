@@ -10,4 +10,5 @@ import Foundation
 struct Constants {
     static let goalKey = "goal"
     static let notificationKey = "notifications"
+    static let subcriptionSettingsURL = "itms://apps.apple.com/account/subscriptions"
 }

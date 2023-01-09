@@ -13,7 +13,6 @@ struct TaskView: View {
     @State private var isShowingSheet = false
     @State private var selectedTab = "Incomplete"
 
-
     @FetchRequest(
         entity: Task.entity(),
         sortDescriptors: [NSSortDescriptor(keyPath: \Task.date, ascending: false)],

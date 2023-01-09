@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TaskListRowView: View {
     @ObservedObject var task: Task
+    @State private var completeGoal = false
 
     var body: some View {
         HStack {
@@ -16,10 +17,16 @@ struct TaskListRowView: View {
             Spacer()
             Image(systemName: task.isComplete ? "checkmark.circle" : "circle")
                 .onTapGesture {
-                    task.isComplete.toggle()
-                    if task.hasChanges {
-                        PersistenceController.shared.save()
+                    completeGoal.toggle()
+                }
+                .alert("Complete", isPresented: $completeGoal) {
+                    Button("Complete Goal") {
+                        task.isComplete.toggle()
+                        if task.hasChanges {
+                            PersistenceController.shared.save()
+                        }
                     }
+                    Button("Cancel", role: .cancel) { }
                 }
         }
         .font(.title3)
