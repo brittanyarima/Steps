@@ -22,7 +22,6 @@ struct CurrentStepsCardView: View {
                     Text("Current Steps")
                     Spacer()
                 }
-                .foregroundColor(.secondary)
 
                 HStack {
                     Text("\(steps) steps")

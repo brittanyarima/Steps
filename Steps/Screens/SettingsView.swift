@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import RevenueCat
 import UserNotifications
 
 struct SettingsView: View {
     @StateObject var viewModel = SettingsViewModel()
     @ObservedObject var stepsViewModel: StepsViewModel
+    @EnvironmentObject var userViewModel: UserViewModel
 
     var body: some View {
         NavigationStack {
@@ -25,11 +27,21 @@ struct SettingsView: View {
                         Label("Notification settings", systemImage: "bell")
                     }
 
-                    NavigationLink {
-                        PaywallView()
+                   SubscriptionSettingsView(subscriptionType: userViewModel.isSubscriptionActive ? "Pro" : "Free")
+
+                    Button {
+                        // Restore Purchases
+                        Purchases.shared.restorePurchases { customerInfo, error in
+                            //... check customerInfo to see if entitlement is now active
+
+                            userViewModel.isSubscriptionActive = customerInfo?.entitlements.all["pro"]?.isActive == true
+                        }
                     } label: {
-                        Text("Signup for StepTracker+")
+                        Text("Restore Purchases")
+
                     }
+
+
                 }
                 .scrollContentBackground(.hidden)
             }
@@ -51,7 +63,30 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView(stepsViewModel: StepsViewModel())
+            .environmentObject(UserViewModel())
     }
 }
 
+fileprivate struct SubscriptionSettingsView: View {
+    let subscriptionType: String
+    var body: some View {
+        Section {
+            HStack {
+                Text("Subscription Status:")
+                    .bold()
+                Text(subscriptionType)
+            }
+
+
+
+            NavigationLink {
+                PaywallView()
+            } label: {
+                Text("Signup for StepTracker+")
+            }
+        } header: {
+            Label("Subscription Settings", systemImage: "star.circle.fill")
+        }
+    }
+}
 

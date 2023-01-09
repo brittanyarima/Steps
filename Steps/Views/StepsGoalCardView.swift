@@ -29,7 +29,7 @@ struct StepsGoalCardView: View {
                         Image(systemName: "pencil.circle")
                     }
                 }
-                .foregroundColor(.secondary)
+                .foregroundColor(.indigo)
 
                 Text("\(steps) steps")
                     .font(.system(size: 32))
