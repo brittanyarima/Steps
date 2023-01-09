@@ -25,7 +25,10 @@ struct PaywallLabelView: View {
                     .bold()
 
                 Text(detailText)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
+        .padding(.vertical)
     }
 }

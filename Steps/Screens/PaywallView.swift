@@ -34,12 +34,7 @@ struct PaywallView: View {
                     .frame(width: 100)
                     .foregroundColor(.indigo)
 
-                PaywallLabelView(image: "chart.bar.xaxis",
-                                 title: "Charts & Graphs",
-                                 detailText: "Graphs that visualize your weekly steps progress.")
-                PaywallLabelView(image: "checklist", title: "Custom Goals", detailText: "Set and keep track of your own personal steps and activity goals.")
-
-                PaywallLabelView(image: "trophy.fill", title: "Unlock Awards", detailText: "Stay motivated by unlocking awards for working towards your steps goal.")
+                FeaturesView()
 
                 Spacer()
 
@@ -49,11 +44,8 @@ struct PaywallView: View {
                         Button {
                             // BUY
                             Purchases.shared.purchase(package: pkg) { (transaction, customerInfo, error, userCancelled) in
-
                                 if customerInfo!.entitlements.all["pro"]?.isActive == true {
-                                    // Unlock that great "pro" content
                                     userViewModel.isSubscriptionActive = true
-                                    //                                        isPaywallPresented = false  // dismisses view
                                 }
                             }
                         } label: {
@@ -66,9 +58,12 @@ struct PaywallView: View {
 
                 Spacer()
 
-                Text("More steps and greater motivation")
+                Text("More steps, greater motivation")
+                    .font(.callout)
+                    .italic()
             }
         }
+        .padding()
         .onAppear {
             Purchases.shared.getOfferings { offerings, error in
                 if let offer = offerings?.current, error == nil {
@@ -82,5 +77,24 @@ struct PaywallView: View {
 struct PaywallView_Previews: PreviewProvider {
     static var previews: some View {
         PaywallView()
+    }
+}
+
+fileprivate struct FeaturesView: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            PaywallLabelView(image: "chart.bar.xaxis",
+                             title: "Charts & Graphs",
+                             detailText: "Graphs that visualize your weekly steps progress.")
+
+            PaywallLabelView(image: "checklist",
+                             title: "Custom Goals",
+                             detailText: "Set and keep track of your own personal steps and activity goals.")
+
+            PaywallLabelView(image: "trophy.fill",
+                             title: "Unlock Awards",
+                             detailText: "Stay motivated by unlocking awards for working towards your steps goal.")
+        }
+        .padding()
     }
 }

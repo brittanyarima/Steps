@@ -27,19 +27,18 @@ struct SettingsView: View {
                         Label("Notification settings", systemImage: "bell")
                     }
 
-                    SubscriptionSettingsView(userIsSubscribed: userViewModel.isSubscriptionActive,
-                                             subscriptionType: userViewModel.isSubscriptionActive ? "Pro" : "Free")
+                    SubscriptionSettingsView(
+                        userIsSubscribed: userViewModel.isSubscriptionActive,
+                        subscriptionType: userViewModel.isSubscriptionActive ? "Pro" : "Free")
 
                     Button {
                         // Restore Purchases
                         Purchases.shared.restorePurchases { customerInfo, error in
                             //... check customerInfo to see if entitlement is now active
-
                             userViewModel.isSubscriptionActive = customerInfo?.entitlements.all["pro"]?.isActive == true
                         }
                     } label: {
                         Text("Restore Purchases")
-
                     }
                 }
                 .scrollContentBackground(.hidden)

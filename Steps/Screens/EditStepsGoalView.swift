@@ -23,13 +23,11 @@ struct EditStepsGoalView: View {
                     .bold()
                     .foregroundColor(.indigo)
 
-                Stepper("Steps", value: $goal, in: 100...30000, step: 100)
+                Stepper("Steps", value: $goal, in: 1000...30000, step: 1000)
                     .labelsHidden()
             }
 
-            Button("Done") {
-                dismiss()
-            }
+            Button("Done") { dismiss() }
             .tint(.mint)
             .buttonStyle(.bordered)
 
