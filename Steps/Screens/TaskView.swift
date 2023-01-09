@@ -12,6 +12,7 @@ struct TaskView: View {
     @EnvironmentObject var userViewModel: UserViewModel
     @State private var isShowingSheet = false
     @State private var selectedTab = "Incomplete"
+    @State private var isShowingPaywall = true
 
     @FetchRequest(
         entity: Task.entity(),
@@ -97,6 +98,8 @@ struct TaskView_Previews: PreviewProvider {
         TaskView()
     }
 }
+
+//MARK: - SUPPORTING VIEWS
 
 fileprivate struct TaskPickerView: View {
     @Binding var selectedTab: String

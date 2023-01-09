@@ -54,6 +54,7 @@
 		18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37433294E925100D6B253 /* StepsGoalCardView.swift */; };
 		18F1F9E52956362E00156D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
 		18F3F8CB296B82E1000598B1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F8CA296B82E1000598B1 /* UserViewModel.swift */; };
+		18F3F8CD296BA29A000598B1 /* PaywallLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F8CC296BA29A000598B1 /* PaywallLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		18E37433294E925100D6B253 /* StepsGoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGoalCardView.swift; sourceTree = "<group>"; };
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F3F8CA296B82E1000598B1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		18F3F8CC296BA29A000598B1 /* PaywallLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,9 +197,9 @@
 			children = (
 				184E932F29401A97005FE1E0 /* StepsApp.swift */,
 				184E9342294025D7005FE1E0 /* Steps.entitlements */,
-				1838FC1D296A7B2C00EAA116 /* CoreData */,
-				184E934129401D8E005FE1E0 /* Info.plist */,
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
+				184E934129401D8E005FE1E0 /* Info.plist */,
+				1838FC1D296A7B2C00EAA116 /* CoreData */,
 				18C81E17294A95820058138F /* ViewModel */,
 				185DB3F6294948DA003BCC48 /* Screens */,
 				18A1FB1C294AAC1B009B87EF /* Utilities */,
@@ -256,6 +258,7 @@
 				185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */,
 				1838FC20296A7E8A00EAA116 /* AddTaskView.swift */,
 				1838FC22296A846200EAA116 /* TaskListRowView.swift */,
+				18F3F8CC296BA29A000598B1 /* PaywallLabelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				1876B8222956774600346975 /* MountainView.swift in Sources */,
 				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
 				1838FC1C296A7A5A00EAA116 /* Steps.xcdatamodeld in Sources */,
+				18F3F8CD296BA29A000598B1 /* PaywallLabelView.swift in Sources */,
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,
 				181AE86A2953D06100BAD40D /* BadgeImageView.swift in Sources */,
 				184E933229401A97005FE1E0 /* HomeView.swift in Sources */,

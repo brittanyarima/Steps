@@ -16,17 +16,17 @@ struct MainView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-
+            
             TaskView()
                 .tabItem {
                     Label("Goals", systemImage: "checklist")
                 }
-
+            
             AwardView(viewModel: stepsViewModel)
                 .tabItem {
                     Label("Awards", systemImage: "trophy")
                 }
-
+            
             SettingsView(stepsViewModel: stepsViewModel)
                 .tabItem {
                     Label("Settings", systemImage: "slider.vertical.3")
