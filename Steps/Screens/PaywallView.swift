@@ -13,57 +13,63 @@ struct PaywallView: View {
     @EnvironmentObject var userViewModel: UserViewModel
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Text("StepTracker")
-                .bold()
-                .font(.largeTitle)
-            +
-            Text("+")
-                .bold()
-                .font(.system(size: 40))
-                .foregroundColor(.indigo)
-
-            Text("Unlock more features with StepTracker+")
-
-            Spacer()
-
-            VStack {
-                Image(systemName: "figure.walk.motion")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100)
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 20) {
+                Text("StepTracker")
+                    .bold()
+                    .font(.largeTitle)
+                +
+                Text("+")
+                    .bold()
+                    .font(.system(size: 40))
                     .foregroundColor(.indigo)
 
-                FeaturesView()
+                Text("Unlock more features with StepTracker+")
 
                 Spacer()
 
-                if currentOffering != nil {
+                VStack {
+                    Image(systemName: "figure.walk.motion")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100)
+                        .foregroundColor(.indigo)
 
-                    ForEach(currentOffering!.availablePackages) { pkg in
-                        Button {
-                            // BUY
-                            Purchases.shared.purchase(package: pkg) { (transaction, customerInfo, error, userCancelled) in
-                                if customerInfo!.entitlements.all["pro"]?.isActive == true {
-                                    userViewModel.isSubscriptionActive = true
+                    FeaturesView()
+
+                    Spacer()
+
+                    if currentOffering != nil {
+                        HStack {
+                            ForEach(currentOffering!.availablePackages) { pkg in
+                                Button {
+                                    // BUY
+                                    Purchases.shared.purchase(package: pkg) { (transaction, customerInfo, error, userCancelled) in
+                                        if customerInfo!.entitlements.all["pro"]?.isActive == true {
+                                            userViewModel.isSubscriptionActive = true
+                                        }
+                                    }
+                                } label: {
+                                    Text("\(pkg.storeProduct.subscriptionPeriod!.periodTitle) \(pkg.storeProduct.localizedPriceString)")
+                                        .fontWeight(.semibold)
+                                        .padding()
                                 }
+                                .buttonStyle(.bordered)
+                                .tint(.indigo)
                             }
-                        } label: {
-                            Text("\(pkg.storeProduct.subscriptionPeriod!.periodTitle) \(pkg.storeProduct.localizedPriceString)")
                         }
-                        .buttonStyle(.bordered)
-                        .tint(.indigo)
+                        .padding(.bottom)
                     }
+
+                    Spacer()
+
+                    Text("More steps, greater motivation")
+                        .font(.callout)
+                        .italic()
                 }
-
-                Spacer()
-
-                Text("More steps, greater motivation")
-                    .font(.callout)
-                    .italic()
             }
+            .padding()
         }
-        .padding()
         .onAppear {
             Purchases.shared.getOfferings { offerings, error in
                 if let offer = offerings?.current, error == nil {
