@@ -40,6 +40,9 @@ struct SettingsView: View {
                     } label: {
                         Text("Restore Purchases")
                     }
+
+                    Link("Terms of Use", destination: URL(string: Constants.termsURL)!)
+                    Link("Privacy Policy", destination: URL(string: Constants.privacyURL)!)
                 }
                 .scrollContentBackground(.hidden)
             }
