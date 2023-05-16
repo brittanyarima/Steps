@@ -29,7 +29,7 @@ struct WeekStepsView: View {
                 }
             }
             .frame(height: 150)
-            .padding(.bottom)
+            .padding()
             .chartXAxis {
                 AxisMarks(values: viewModel.steps.map { $0.date}) { date in
                     AxisValueLabel(format: .dateTime.weekday(.abbreviated))

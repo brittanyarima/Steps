@@ -27,3 +27,4 @@ struct StepsDetailView_Previews: PreviewProvider {
         StepsDetailView(viewModel: StepsViewModel())
     }
 }
+
