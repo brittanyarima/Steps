@@ -9,20 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel: StepsViewModel
-    @EnvironmentObject var userViewModel: UserViewModel
 
     var body: some View {
         NavigationStack {
             ZStack {
                 MountainView(viewModel: viewModel)
                     .edgesIgnoringSafeArea(.all)
-
+                
                 NavigationLink {
-                    if !userViewModel.isSubscriptionActive {
-                        PaywallView()
-                    } else {
-                        StepsDetailView(viewModel: viewModel)
-                    }
+                    StepsDetailView(viewModel: viewModel)
                 } label: {
                     VStack {
                         Spacer()
@@ -37,13 +32,9 @@ struct HomeView: View {
                 }
             }
             .onAppear {
-                viewModel.requestAuthorization { success in
-                    if success {
-                        viewModel.calculateSteps { statsCollection in
-                            if let statsCollection = statsCollection {
-                                viewModel.updateUIFromStats(statsCollection)
-                            }
-                        }
+                viewModel.calculateSteps { statsCollection in
+                    if let statsCollection = statsCollection {
+                        viewModel.updateUIFromStats(statsCollection)
                     }
                 }
             }

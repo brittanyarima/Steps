@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TaskView: View {
     @Environment(\.managedObjectContext) var context
-    @EnvironmentObject var userViewModel: UserViewModel
     @State private var isShowingSheet = false
     @State private var selectedTab = "Incomplete"
     @State private var isShowingPaywall = true
@@ -26,42 +25,38 @@ struct TaskView: View {
 
     var body: some View {
         NavigationStack {
-            if !userViewModel.isSubscriptionActive {
-                PaywallView()
-            } else {
-                VStack {
-                    TaskPickerView(selectedTab: $selectedTab)
+            VStack {
+                TaskPickerView(selectedTab: $selectedTab)
 
-                    if selectedTab == "Incomplete" && incompleteTasks.isEmpty {
-                        Text("🥳 Time to add some more goals!")
-                            .fontWeight(.semibold)
-                            .foregroundColor(.secondary)
-                    }
+                if selectedTab == "Incomplete" && incompleteTasks.isEmpty {
+                    Text("🥳 Time to add some more goals!")
+                        .fontWeight(.semibold)
+                        .foregroundColor(.secondary)
+                }
 
-                    List {
-                        if selectedTab == "Incomplete" {
-                            ForEach(incompleteTasks) { task in
-                                TaskListRowView(task: task)
-                            }
-                            .onDelete(perform: removeIncompleteTask)
-                        } else {
-                            ForEach(completeTasks) { task in
-                                TaskListRowView(task: task)
-                            }
-                            .onDelete(perform: removeCompleteTask)
+                List {
+                    if selectedTab == "Incomplete" {
+                        ForEach(incompleteTasks) { task in
+                            TaskListRowView(task: task)
                         }
+                        .onDelete(perform: removeIncompleteTask)
+                    } else {
+                        ForEach(completeTasks) { task in
+                            TaskListRowView(task: task)
+                        }
+                        .onDelete(perform: removeCompleteTask)
                     }
-                    .scrollContentBackground(.hidden)
-                    .listRowSeparator(.hidden)
-                    .toolbar { EditButton() }
+                }
+                .scrollContentBackground(.hidden)
+                .listRowSeparator(.hidden)
+                .toolbar { EditButton() }
 
-                    AddGoalButton(isShowingSheet: $isShowingSheet)
-                }
-                .navigationTitle("✅ My Goals")
-                .sheet(isPresented: $isShowingSheet) {
-                    AddTaskView()
-                        .presentationDetents([.height(300)])
-                }
+                AddGoalButton(isShowingSheet: $isShowingSheet)
+            }
+            .navigationTitle("✅ My Goals")
+            .sheet(isPresented: $isShowingSheet) {
+                AddTaskView()
+                    .presentationDetents([.height(300)])
             }
         }
     }
@@ -96,7 +91,6 @@ struct TaskView: View {
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
         TaskView()
-            .environmentObject(UserViewModel())
     }
 }
 
