@@ -34,5 +34,13 @@ This app is open source and ready for you to contribute! Built fully with SwiftU
 - 🗂️ MVVM
 - 💾 App Storage
 
+
+# Contributors  
+<a href="https://github.com/brittanyarima/Steps/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=brittanyarima/Steps" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
 # License 
 This project is licensed under [MIT License](https://github.com/brittanyarima/Steps/blob/main/LICENSE).
