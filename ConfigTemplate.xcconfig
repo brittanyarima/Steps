@@ -1,0 +1,12 @@
+//
+//  ConfigTemplate.xcconfig
+//  Steps
+//
+//  Created by Brittany Rima on 10/2/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BUNDLE_ID = YOUR_BUNDLE_ID_PLACEHOLDER
+TEAM_ID = YOUR_TEAM_ID_PLACEHOLDER
