@@ -53,6 +53,9 @@
 		18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
 		18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
+		5E0BDF912ACDAFED00F7038E /* StepsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */; };
+		5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */; };
+		5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,9 @@
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfig.xcconfig; sourceTree = "<group>"; };
 		18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfigTemplate.xcconfig; sourceTree = "<group>"; };
+		5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCountView.swift; sourceTree = "<group>"; };
+		5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
+		5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 				181AE8652953AB9800BAD40D /* AwardDetailView.swift */,
 				181AE8672953B83000BAD40D /* AwardLockedView.swift */,
 				1838FC18296A785E00EAA116 /* TaskView.swift */,
+				5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -252,6 +259,8 @@
 				185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */,
 				1838FC20296A7E8A00EAA116 /* AddTaskView.swift */,
 				1838FC22296A846200EAA116 /* TaskListRowView.swift */,
+				5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */,
+				5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -416,6 +425,8 @@
 				185B74CD295CDDD9000AD18A /* CircleView.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
 				189BDCF0294D3B8A00E8237F /* Award.swift in Sources */,
+				5E0BDF912ACDAFED00F7038E /* StepsCountView.swift in Sources */,
+				5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */,
 				181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */,
 				188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */,
 				1838FC19296A785E00EAA116 /* TaskView.swift in Sources */,
@@ -433,6 +444,7 @@
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 				18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */,
 				1838FC21296A7E8A00EAA116 /* AddTaskView.swift in Sources */,
+				5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
