@@ -21,4 +21,10 @@ extension [Step] {
         .init(count: 4_124, date: Date(timeIntervalSinceNow: -3600)),
         .init(count: 6_789, date: Date()),
     ]
+    
+    static let mock1Element: Self = Array(Self.mock[0...0])
+    static let mock2Element: Self = Array(Self.mock[0...1])
+    static let mock3Element: Self = Array(Self.mock[0...2])
+    static let mock4Element: Self = Array(Self.mock[0...3])
+    static let mock5Element: Self = Array(Self.mock[0...4])
 }

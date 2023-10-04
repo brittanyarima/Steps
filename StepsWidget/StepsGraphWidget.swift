@@ -24,21 +24,22 @@ struct StepsGraphProvider: TimelineProvider {
     }
     
     func placeholder(in context: Context) -> StepsGraphEntry {
-        StepsGraphEntry(stepsRecords: [Step(count: 364, date: Date())], goal: goal)
+        // TODO: get the steps count
+        StepsGraphEntry(stepsRecords: [Step(count: 4_364, date: Date())], goal: goal)
         
     }
     
     func getSnapshot(in context: Context, completion: @escaping (StepsGraphEntry) -> ()) {
         // TODO: get the steps count
         
-        let entry = StepsGraphEntry(stepsRecords: [Step(count: 364, date: Date())], goal: goal)
+        let entry = StepsGraphEntry(stepsRecords: [Step(count: 5_364, date: Date())], goal: goal)
         completion(entry)
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<StepsGraphEntry>) -> ()) {
         // TODO: get the steps count
         
-        let entry = StepsGraphEntry(stepsRecords: [Step(count: 364, date: Date())], goal: goal)
+        let entry = StepsGraphEntry(stepsRecords: [Step(count: 6_364, date: Date())], goal: goal)
         let currentDate = Date()
         let futureDate = Calendar.current.date(byAdding: .minute, value: 15, to: currentDate)!
         let timeline = Timeline(entries: [entry], policy: .after(futureDate))
@@ -112,6 +113,7 @@ struct StepsGraphWidgetEntryView: View {
                     .foregroundStyle(.indigo.gradient)
                     .padding([.top, .trailing, .bottom])
                 Text("\(entry.stepsCount) / \(entry.goal)")
+                    .contentTransition(.numericText())
                     .font(.caption)
             }
             
@@ -141,6 +143,7 @@ struct StepsGraphWidgetEntryView: View {
     @ViewBuilder var systemLargeWidgetView: some View {
         VStack {
             Text("🏃 \(entry.stepsCount) / \(entry.goal.formatted(.number.notation(.compactName))) steps")
+                .contentTransition(.numericText())
             
             Chart(entry.stepsRecords) { record in
                 Plot {
@@ -237,3 +240,26 @@ struct StepsGraphWidgetAccessoryRectangular_Previews: PreviewProvider {
 }
 
 
+// Workaround: To use `#Preview`, first set deploy target to 17.0 or later
+// Useful for testing animation transitions
+// Be patient: Mock data currently takes a long time to load
+
+//#Preview("Medium", as: .systemMedium) {
+//    StepsGraphWidget()
+//} timeline: {
+//    StepsGraphEntry(stepsRecords: .mock1Element, goal: 10_000)
+//    StepsGraphEntry(stepsRecords: .mock2Element, goal: 10_000)
+//    StepsGraphEntry(stepsRecords: .mock3Element, goal: 10_000)
+//    StepsGraphEntry(stepsRecords: .mock4Element, goal: 10_000)
+//    StepsGraphEntry(stepsRecords: .mock5Element, goal: 10_000)
+//}
+//
+//#Preview("Large", as: .systemLarge) {
+//    StepsGraphWidget()
+//} timeline: {
+//    StepsGraphEntry(stepsRecords: .mock1Element, goal: 10_000)
+//    StepsGraphEntry(stepsRecords: .mock2Element, goal: 10_000)
+//    StepsGraphEntry(stepsRecords: .mock3Element, goal: 10_000)
+//    StepsGraphEntry(stepsRecords: .mock4Element, goal: 10_000)
+//    StepsGraphEntry(stepsRecords: .mock5Element, goal: 10_000)
+//}

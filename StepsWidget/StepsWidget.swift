@@ -68,6 +68,7 @@ struct StepsWidgetEntryView : View {
                 .font(.title2)
                 .bold()
                 .foregroundColor(.indigo)
+                .contentTransition(.numericText())
         }
         
     }
@@ -132,3 +133,15 @@ struct StepsWidgetSmall_Previews: PreviewProvider {
       .previewContext(WidgetPreviewContext(family: .systemSmall))
   }
 }
+
+
+// Workaround: To use `#Preview`, first set deploy target to 17.0 or later
+// Useful for testing animation transitions
+//#Preview("Small", as: .systemSmall) {
+//    StepsWidget()
+//} timeline: {
+//    StepEntry(steps: 1200, goal: 10_000)
+//    StepEntry(steps: 5633, goal: 10_000)
+//    StepEntry(steps: 6622, goal: 10_000)
+//    StepEntry(steps: 7297, goal: 10_000)
+//}
