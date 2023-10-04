@@ -38,7 +38,7 @@ struct StepEntry: TimelineEntry {
     let goal: Int
     
     var progress: Double {
-        return Double(steps / goal)
+        return Double(steps) / Double(goal)
     }
 }
 
