@@ -16,9 +16,9 @@ This app is open source and ready for you to contribute! Built fully with SwiftU
 cp StepsConfigTemplate.xcconfig StepsConfig.xcconfig
 ```
 
-* In the StepsConfig.xcconfig file, fill in your `DEVELOPMENT_TEAM`.
-   * Example: `DEVELOPMENT_TEAM = IdNumber`
-   * You can find this by logging into the Apple Developer Portal
+* In the StepsConfig.xcconfig file, fill in your `DEVELOPMENT_TEAM` & `BUNDLE_ID`
+   * Example: `DEVELOPMENT_TEAM = IdNumber` & `BUNDLE_ID = com.name.steps`
+   * You can find your Team ID by logging into the Apple Developer Portal
    * This is only needed when running on a real device for iOS, this works with both free or paid Apple Developer accounts.
 * Build the project
 
@@ -29,8 +29,6 @@ Checkout any issue labeled `hacktoberfest` to start contributing.
 * Submit PR to merge with `dev` branch
 * If you've never contributed to open-source before there are a ton of great tutorials out there to help get you started
 * Issues labeled `good-first-issue` are great for beginners.
-
-
 
 
 <p align="center">
