@@ -8,5 +8,5 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-BUNDLE_ID = com.BrittanyRima.Steps
+BUNDLE_ID = BundleIDHere
 TEAM_ID = 2KMN827G7Y

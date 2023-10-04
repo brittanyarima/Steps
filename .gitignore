@@ -5,3 +5,4 @@ StepsConfig.xcconfig
 Config.xcconfig
 Steps.xcodeproj/project.pbxproj
 *.xcuserstate
+Steps/StepsConfig.xcconfig
