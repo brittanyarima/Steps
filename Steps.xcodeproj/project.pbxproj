@@ -49,13 +49,15 @@
 		18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37431294E91B100D6B253 /* EditStepsGoalView.swift */; };
 		18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37433294E925100D6B253 /* StepsGoalCardView.swift */; };
 		18F1F9E52956362E00156D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
-		18F27C0A2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
-		18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
 		18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
+
+		800E1FFB2ACD1A7D000C5CE4 /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */; };
+
 		5E0BDF912ACDAFED00F7038E /* StepsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */; };
 		5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */; };
 		5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,9 +130,12 @@
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfig.xcconfig; sourceTree = "<group>"; };
 		18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfigTemplate.xcconfig; sourceTree = "<group>"; };
+
+		800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGraphWidget.swift; sourceTree = "<group>"; };
 		5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCountView.swift; sourceTree = "<group>"; };
 		5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
 		5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +285,7 @@
 			children = (
 				185DB4072949514D003BCC48 /* StepsWidgetBundle.swift */,
 				185DB4092949514D003BCC48 /* StepsWidget.swift */,
+				800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */,
 				185DB40B2949514E003BCC48 /* Assets.xcassets */,
 				185DB40D2949514E003BCC48 /* Info.plist */,
 			);
@@ -392,7 +398,6 @@
 				18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */,
 				184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */,
 				184E933429401A98005FE1E0 /* Assets.xcassets in Resources */,
-				18F27C0A2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +405,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */,
 				185DB40C2949514E003BCC48 /* Assets.xcassets in Resources */,
 				18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */,
 			);
@@ -452,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800E1FFB2ACD1A7D000C5CE4 /* StepsGraphWidget.swift in Sources */,
 				185F75DC295E19EA00F48560 /* StepsViewModel.swift in Sources */,
 				185DB4082949514D003BCC48 /* StepsWidgetBundle.swift in Sources */,
 				185F75DE295E1A5100F48560 /* Step.swift in Sources */,
@@ -599,7 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
-				DEVELOPMENT_TEAM = SJ64B32FPH;
+				DEVELOPMENT_TEAM = 2KMN827G7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Steps/Info.plist;
@@ -617,7 +622,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.Rima.Steps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -639,7 +644,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
-				DEVELOPMENT_TEAM = SJ64B32FPH;
+				DEVELOPMENT_TEAM = 2KMN827G7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Steps/Info.plist;
@@ -657,7 +662,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.Rima.Steps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -677,7 +682,7 @@
 				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AGU49S8C2X;
+				DEVELOPMENT_TEAM = 2KMN827G7Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StepsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StepsWidget;
@@ -688,7 +693,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.StepsWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.Rima.Steps.StepsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -706,7 +711,7 @@
 				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AGU49S8C2X;
+				DEVELOPMENT_TEAM = 2KMN827G7Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StepsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StepsWidget;
@@ -717,7 +722,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.StepsWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.Rima.Steps.StepsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
