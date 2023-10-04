@@ -27,23 +27,13 @@ struct TaskListRowView: View {
                         value: task.isComplete
                     )
                     .onTapGesture {
-                        withAnimation {
-                            task.isComplete.toggle()
-                            if task.hasChanges {
-                                PersistenceController.shared.save()
-                            }
-                        }
+                        toggleTask()
                     }
             } else {
                 Image(systemName: "circle")
                     .foregroundColor(.indigo)
                     .onTapGesture {
-                        withAnimation {
-                            task.isComplete.toggle()
-                            if task.hasChanges {
-                                PersistenceController.shared.save()
-                            }
-                        }
+                        toggleTask()
                     }
             }
         }
