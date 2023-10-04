@@ -25,7 +25,8 @@ cp StepsConfigTemplate.xcconfig StepsConfig.xcconfig
 * Checkout a new branch (from the `dev` branch) to work on an issue
 Checkout any issue labeled `hacktoberfest` to start contributing.
 
-* Start contributing! 
+* Start contributing!
+* Submit PR to merge with `dev` branch
 * If you've never contributed to open-source before there are a ton of great tutorials out there to help get you started
 * Issues labeled `good-first-issue` are great for beginners.
 
