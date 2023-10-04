@@ -128,7 +128,13 @@ struct StepsGraphWidgetEntryView: View {
                 .foregroundStyle(.indigo.gradient)
                 
             }
-            .chartYAxis(.visible)
+            .chartYAxis {
+                AxisMarks { value in
+                    AxisValueLabel(String(
+                        "\(value.as(Double.self)?.formatted(.number.notation(.compactName)) ?? "")"
+                    ))
+                }
+            }
         }
     }
     
@@ -146,6 +152,13 @@ struct StepsGraphWidgetEntryView: View {
                 }
                 .interpolationMethod(.cardinal(tension: 0.5))
                 .foregroundStyle(.indigo.gradient)
+            }
+            .chartYAxis {
+                AxisMarks { value in
+                    AxisValueLabel(String(
+                        "\(value.as(Double.self)?.formatted(.number.notation(.compactName)) ?? "")"
+                    ))
+                }
             }
         }
     }
