@@ -1,3 +1,7 @@
 SECRETS.swift
 StepsConfig.xcconfig
 *.xcuserstate
+*.pbxproj
+Config.xcconfig
+Steps.xcodeproj/project.pbxproj
+*.xcuserstate
