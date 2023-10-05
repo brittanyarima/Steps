@@ -10,7 +10,7 @@ import SwiftUI
 struct TaskView: View {
     @Environment(\.managedObjectContext) var context
     @State private var isShowingSheet = false
-    @State private var selectedTab = "Incomplete"
+    @State private var selectedTab = Constants.incomplete
     @State private var isShowingPaywall = true
 
     @FetchRequest(
@@ -28,14 +28,14 @@ struct TaskView: View {
             VStack {
                 TaskPickerView(selectedTab: $selectedTab)
 
-                if selectedTab == "Incomplete" && incompleteTasks.isEmpty {
-                    Text("🥳 Time to add some more goals!")
+                if selectedTab == Constants.incomplete && incompleteTasks.isEmpty {
+                    Text("🥳 \(Constants.addSomeMoreGoals)")
                         .fontWeight(.semibold)
                         .foregroundColor(.secondary)
                 }
 
                 List {
-                    if selectedTab == "Incomplete" {
+                    if selectedTab == Constants.incomplete {
                         ForEach(incompleteTasks) { task in
                             TaskListRowView(task: task)
                         }
@@ -53,7 +53,7 @@ struct TaskView: View {
 
                 AddGoalButton(isShowingSheet: $isShowingSheet)
             }
-            .navigationTitle("✅ My Goals")
+            .navigationTitle("✅ \(Constants.myGoals)")
             .sheet(isPresented: $isShowingSheet) {
                 AddTaskView()
                     .presentationDetents([.height(300)])
@@ -70,7 +70,7 @@ struct TaskView: View {
         do {
             try context.save()
         } catch {
-            print("❗️ Error saving delete task to core data")
+            print(Constants.coreDataError)
         }
     }
 
@@ -83,7 +83,7 @@ struct TaskView: View {
         do {
             try context.save()
         } catch {
-            print("❗️ Error saving delete task to core data")
+            print(Constants.coreDataError)
         }
     }
 }
@@ -98,10 +98,10 @@ struct TaskView_Previews: PreviewProvider {
 
 fileprivate struct TaskPickerView: View {
     @Binding var selectedTab: String
-    let tabOptions = ["Incomplete", "Complete"]
+    let tabOptions = [Constants.incomplete, Constants.complete]
 
     var body: some View {
-        Picker("Goals", selection: $selectedTab) {
+        Picker(Constants.goalsTitle, selection: $selectedTab) {
             ForEach(tabOptions, id: \.self) { tab in
                 Text(tab)
             }
@@ -118,7 +118,7 @@ fileprivate struct AddGoalButton: View {
         Button {
             isShowingSheet.toggle()
         } label: {
-            Label("Add Goal", systemImage: "plus")
+            Label(Constants.addGoal, systemImage: "plus")
                 .fontWeight(.semibold)
         }
         .buttonStyle(.bordered)

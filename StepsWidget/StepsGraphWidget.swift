@@ -206,14 +206,14 @@ struct StepsGraphWidgetEntryView: View {
 }
 
 struct StepsGraphWidget: Widget {
-    let kind: String = "StepsGraphWidget"
-    
+    let kind: String = Constants.stepsGraphWidget
+
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: StepsGraphProvider()) { entry in
             StepsGraphWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Steps Graph")
-        .description("View your steps progress throughout the day.")
+        .configurationDisplayName(Constants.stepsGraphWidgetName)
+        .description(Constants.stepsGraphWidgetDescription)
         .supportedFamilies([.systemMedium, .systemLarge, .accessoryRectangular])
     }
 }

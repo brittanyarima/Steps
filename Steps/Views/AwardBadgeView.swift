@@ -16,26 +16,26 @@ struct AwardBadgeView: View {
 
     var isAwardUnlocked: Bool {
         switch award.name {
-        case "First Steps":
+        case Constants.firstStepsName:
             return viewModel.steps.contains { $0.count > 100 }
-        case "Gooooaaaaal":
+        case Constants.goalName:
             return viewModel.steps.contains { $0.count >= viewModel.goal }
-        case "Double Trouble":
+        case Constants.doubleTroubleName:
             return viewModel.steps.contains { $0.count >= (viewModel.goal * 2)}
-        case "Threes":
+        case Constants.threesName:
             return viewModel.steps.contains { $0.count >= (viewModel.goal * 3)}
-        case "Perfect Week":
+        case Constants.perfectWeekName:
             if viewModel.steps.count == 0 { return false }
             return viewModel.steps.allSatisfy { $0.count > viewModel.goal }
-        case "Don't Messi With You":
+        case Constants.messiName:
             return viewModel.steps.contains { $0.count >= 14400 } // about 100 soccer fields
-        case "Motivated":
+        case Constants.motivatedName:
             return tasks.count > 1
-        case "First Goal!":
+        case Constants.firstGoalName:
             return tasks.count > 1 && tasks.last?.isComplete == true
-        case "Dreamer":
+        case Constants.dreamerGoalName:
             return tasks.count > 4
-        case "Go Getter":
+        case Constants.goGetterName:
             var completed = 0
             for task in tasks {
                 if task.isComplete {
