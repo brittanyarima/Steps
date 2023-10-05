@@ -120,6 +120,8 @@
 		18C81E13294A923B0058138F /* StepsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsDetailView.swift; sourceTree = "<group>"; };
 		18C81E15294A934B0058138F /* StepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewModel.swift; sourceTree = "<group>"; };
 		18C81E18294A9B350058138F /* WeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStepsView.swift; sourceTree = "<group>"; };
+		18D438B62ACF4D6C0027541D /* StepsWidgetConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsWidgetConfig.xcconfig; sourceTree = "<group>"; };
+		18D438B72ACF4DD30027541D /* StepsWidgetConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsWidgetConfigTemplate.xcconfig; sourceTree = "<group>"; };
 		18E37431294E91B100D6B253 /* EditStepsGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStepsGoalView.swift; sourceTree = "<group>"; };
 		18E37433294E925100D6B253 /* StepsGoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGoalCardView.swift; sourceTree = "<group>"; };
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -190,6 +192,8 @@
 			children = (
 				18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */,
 				18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */,
+				18D438B72ACF4DD30027541D /* StepsWidgetConfigTemplate.xcconfig */,
+				18D438B62ACF4D6C0027541D /* StepsWidgetConfig.xcconfig */,
 				184E932F29401A97005FE1E0 /* StepsApp.swift */,
 				184E9342294025D7005FE1E0 /* Steps.entitlements */,
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
@@ -587,7 +591,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
-				DEVELOPMENT_TEAM = SJ64B32FPH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Steps/Info.plist;
@@ -605,7 +608,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -627,7 +629,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
-				DEVELOPMENT_TEAM = SJ64B32FPH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Steps/Info.plist;
@@ -645,7 +646,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -658,14 +658,13 @@
 		};
 		185DB4122949514E003BCC48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */;
+			baseConfigurationReference = 18D438B62ACF4D6C0027541D /* StepsWidgetConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AGU49S8C2X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StepsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StepsWidget;
@@ -676,7 +675,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.StepsWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -687,14 +686,13 @@
 		};
 		185DB4132949514E003BCC48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */;
+			baseConfigurationReference = 18D438B62ACF4D6C0027541D /* StepsWidgetConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AGU49S8C2X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StepsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StepsWidget;
@@ -705,7 +703,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.StepsWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -1,0 +1,12 @@
+//
+//  StepsWidgetConfig.xcconfig
+//  Steps
+//
+//  Created by Brittany Rima on 10/5/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+DEVELOPMENT_TEAM = AGU49S8C2X
+PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.widget // + .widget
