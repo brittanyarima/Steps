@@ -107,15 +107,15 @@ extension View {
 
 
 struct StepsWidget: Widget {
-    let kind: String = "StepsWidget"
+    let kind: String = Constants.stepsWidget
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: StepsProvider()) { entry in
             StepsWidgetEntryView(entry: entry)
             
         }
-        .configurationDisplayName("Current Steps")
-        .description("View your current steps count and progress.")
+        .configurationDisplayName(Constants.stepsWidgetName)
+        .description(Constants.stepsWidgetDescription)
         .supportedFamilies([.accessoryRectangular, .systemSmall])
     }
 }

@@ -13,7 +13,7 @@ struct EditStepsGoalView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("Set a New Daily Steps Goal")
+            Text(Constants.newDailyStepsGoal)
                 .font(.title3)
                 .bold()
             Spacer()
@@ -23,11 +23,11 @@ struct EditStepsGoalView: View {
                     .bold()
                     .foregroundColor(.indigo)
 
-                Stepper("Steps", value: $goal, in: 1000...30000, step: 1000)
+                Stepper(Constants.steps, value: $goal, in: 1000...30000, step: 1000)
                     .labelsHidden()
             }
 
-            Button("Done") { dismiss() }
+            Button(Constants.done) { dismiss() }
             .tint(.mint)
             .buttonStyle(.bordered)
 

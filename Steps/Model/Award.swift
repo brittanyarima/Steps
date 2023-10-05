@@ -15,15 +15,15 @@ struct Award {
 
 struct AwardData {
     static let awards = [
-        Award(name: "First Steps", description: "You took more than 100 steps this week, you're on your way to your goal. Keep it up!", image: "figure.walk"),
-        Award(name: "Gooooaaaaal", description: "You reached your step goal at least once this week!", image: "soccerball"),
-        Award(name: "Double Trouble", description: "You doubled your steps goal this week! You are incredible!", image: "figure.walk.motion"),
-        Award(name: "Threes", description: "You tripled your steps goal this week! Wow!", image: "figure.dance"),
-        Award(name: "Perfect Week", description: "You reached your steps goal every day the past 7 days. You are incredible!", image: "medal"),
-        Award(name: "Don't Messi With You", description: "You walked 100 soccer fields in a single day this week! ", image: "sportscourt"),
-        Award(name: "Motivated", description: "You created your first goal!", image: "checklist.unchecked"),
-        Award(name: "First Goal!", description: "You completed your first goal!", image: "checkmark.seal"),
-        Award(name: "Dreamer", description: "You created 5 goals!", image: "list.bullet.rectangle"),
-        Award(name: "Go Getter", description: "You completed 5 goals!", image: "text.badge.checkmark.rtl")
+        Award(name: Constants.firstStepsName, description: Constants.firstStepsDescription, image: "figure.walk"),
+        Award(name: Constants.goalName, description: Constants.goalDescription, image: "soccerball"),
+        Award(name: Constants.doubleTroubleName, description: Constants.doubleTroubleDescription, image: "figure.walk.motion"),
+        Award(name: Constants.threesName, description: Constants.threesDescription, image: "figure.dance"),
+        Award(name: Constants.perfectWeekName, description: Constants.perfectWeekDescription, image: "medal"),
+        Award(name: Constants.messiName, description: Constants.soccerFieldDescription, image: "sportscourt"),
+        Award(name: Constants.motivatedName, description: Constants.motivatedDescription, image: "checklist.unchecked"),
+        Award(name: Constants.firstGoalName, description: Constants.firstGoalDescription, image: "checkmark.seal"),
+        Award(name: Constants.dreamerGoalName, description: Constants.dreamerGoalDescription, image: "list.bullet.rectangle"),
+        Award(name: Constants.goGetterName, description: Constants.goGetterDescription, image: "text.badge.checkmark.rtl")
     ]
 }

@@ -16,12 +16,12 @@ struct AwardLockedView: View {
                 .frame(width: 100, height: 100)
                 .foregroundColor(.indigo)
 
-            Text("Locked")
+            Text(Constants.locked)
                 .font(.title2)
                 .bold()
                 .foregroundColor(.indigo)
 
-            Text("You haven't unlocked this award yet this week. Keep getting those steps in and completing goals to unlock it. You can do it!")
+            Text(Constants.haveNotUnlockedAwardDesc)
                 .foregroundColor(.secondary)
                 .padding()
                 .padding(.horizontal, 55)
