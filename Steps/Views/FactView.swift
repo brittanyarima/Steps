@@ -12,7 +12,7 @@ struct FactView: View {
 
     var body: some View {
         HStack {
-            Image(systemName: "soccerball")
+            Image(systemName: Constants.soccerball)
                 .font(.title)
                 .padding(.horizontal, 2)
                 .foregroundColor(.secondary)

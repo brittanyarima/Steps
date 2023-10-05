@@ -13,7 +13,7 @@ struct TaskListRowView: View {
 
     var body: some View {
         HStack {
-            Text(task.name ?? "Unknown Name")
+            Text(task.name ?? Constants.unknownName)
             Spacer()
             if task.isComplete {
                 Image(systemName: "checkmark.circle.fill")
