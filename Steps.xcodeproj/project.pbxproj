@@ -57,6 +57,9 @@
 		5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */; };
 		5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */; };
 		800E1FFB2ACD1A7D000C5CE4 /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */; };
+		892079CB2ACF4EEB001E050B /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CA2ACF4EEB001E050B /* ContributorsView.swift */; };
+		892079CD2ACF4F05001E050B /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */; };
+		892079CF2ACF4F21001E050B /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CE2ACF4F21001E050B /* Contributor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +138,9 @@
 		5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
 		5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
 		800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGraphWidget.swift; sourceTree = "<group>"; };
+		892079CA2ACF4EEB001E050B /* ContributorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
+		892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
+		892079CE2ACF4F21001E050B /* Contributor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,7 @@
 		184FD8B6294BE78D000E4576 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				892079CE2ACF4F21001E050B /* Contributor.swift */,
 				184FD8B4294BE788000E4576 /* Step.swift */,
 				189BDCEF294D3B8A00E8237F /* Award.swift */,
 			);
@@ -254,6 +261,7 @@
 		185DB3F7294948E1003BCC48 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				892079CA2ACF4EEB001E050B /* ContributorsView.swift */,
 				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
 				18C81E18294A9B350058138F /* WeekStepsView.swift */,
 				189BDCE9294D163700E8237F /* FactView.swift */,
@@ -305,6 +313,7 @@
 		18C81E17294A95820058138F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */,
 				18C81E15294A934B0058138F /* StepsViewModel.swift */,
 				188042D329527BD700E14D9D /* SettingsViewModel.swift */,
 			);
@@ -435,6 +444,8 @@
 				5E0BDF912ACDAFED00F7038E /* StepsCountView.swift in Sources */,
 				5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */,
 				181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */,
+				892079CB2ACF4EEB001E050B /* ContributorsView.swift in Sources */,
+				892079CF2ACF4F21001E050B /* Contributor.swift in Sources */,
 				188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */,
 				1838FC19296A785E00EAA116 /* TaskView.swift in Sources */,
 				18F1F9E52956362E00156D4C /* Constants.swift in Sources */,
@@ -443,6 +454,7 @@
 				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,
 				1876B8222956774600346975 /* MountainView.swift in Sources */,
+				892079CD2ACF4F05001E050B /* ContributorsViewModel.swift in Sources */,
 				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
 				1838FC1C296A7A5A00EAA116 /* Steps.xcdatamodeld in Sources */,
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,

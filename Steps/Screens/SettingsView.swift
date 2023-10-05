@@ -43,7 +43,9 @@ struct SettingsView: View {
                     .presentationDetents([.height(250)])
             })
             .sheet(isPresented: $viewModel.showContributors, content: {
-                ContributorsView()
+                NavigationStack {
+                    ContributorsView()
+                }
             })
             .onChange(of: viewModel.notificationsOn, perform: { _ in
                 viewModel.requestNotificationAuth()
