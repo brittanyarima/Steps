@@ -59,6 +59,9 @@
 		5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */; };
 		5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */; };
 		800E1FFB2ACD1A7D000C5CE4 /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */; };
+		802300A52ACF6F880051C404 /* StepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802300A42ACF6F880051C404 /* StepsTests.swift */; };
+		802300AC2ACF6FA70051C404 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 802300AB2ACF6FA70051C404 /* Dependencies */; };
+		802300AE2ACF6FA70051C404 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 802300AD2ACF6FA70051C404 /* DependenciesAdditions */; };
 		892079CB2ACF4EEB001E050B /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CA2ACF4EEB001E050B /* ContributorsView.swift */; };
 		892079CD2ACF4F05001E050B /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */; };
 		892079CF2ACF4F21001E050B /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CE2ACF4F21001E050B /* Contributor.swift */; };
@@ -71,6 +74,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 185DB3FF2949514D003BCC48;
 			remoteInfo = StepsWidgetExtension;
+		};
+		802300A62ACF6F880051C404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184E932429401A97005FE1E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184E932B29401A97005FE1E0;
+			remoteInfo = Steps;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -139,6 +149,8 @@
 		5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
 		5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
 		800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGraphWidget.swift; sourceTree = "<group>"; };
+		802300A22ACF6F870051C404 /* StepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		802300A42ACF6F880051C404 /* StepsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsTests.swift; sourceTree = "<group>"; };
 		892079CA2ACF4EEB001E050B /* ContributorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
 		892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
 		892079CE2ACF4F21001E050B /* Contributor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
@@ -159,6 +171,15 @@
 			files = (
 				185DB4052949514D003BCC48 /* SwiftUI.framework in Frameworks */,
 				185DB4032949514D003BCC48 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8023009F2ACF6F870051C404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802300AC2ACF6FA70051C404 /* Dependencies in Frameworks */,
+				802300AE2ACF6FA70051C404 /* DependenciesAdditions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +209,7 @@
 				185DE12D2968D59100AD81F2 /* StepsWidgetExtension.entitlements */,
 				184E932E29401A97005FE1E0 /* Steps */,
 				185DB4062949514D003BCC48 /* StepsWidget */,
+				802300A32ACF6F880051C404 /* StepsTests */,
 				185DB4012949514D003BCC48 /* Frameworks */,
 				184E932D29401A97005FE1E0 /* Products */,
 			);
@@ -198,6 +220,7 @@
 			children = (
 				184E932C29401A97005FE1E0 /* Steps.app */,
 				185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */,
+				802300A22ACF6F870051C404 /* StepsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,6 +343,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		802300A32ACF6F880051C404 /* StepsTests */ = {
+			isa = PBXGroup;
+			children = (
+				802300A42ACF6F880051C404 /* StepsTests.swift */,
+			);
+			path = StepsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,6 +392,28 @@
 			productReference = 185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		802300A12ACF6F870051C404 /* StepsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 802300A82ACF6F880051C404 /* Build configuration list for PBXNativeTarget "StepsTests" */;
+			buildPhases = (
+				8023009E2ACF6F870051C404 /* Sources */,
+				8023009F2ACF6F870051C404 /* Frameworks */,
+				802300A02ACF6F870051C404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				802300A72ACF6F880051C404 /* PBXTargetDependency */,
+			);
+			name = StepsTests;
+			packageProductDependencies = (
+				802300AB2ACF6FA70051C404 /* Dependencies */,
+				802300AD2ACF6FA70051C404 /* DependenciesAdditions */,
+			);
+			productName = StepsTests;
+			productReference = 802300A22ACF6F870051C404 /* StepsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -368,7 +421,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					184E932B29401A97005FE1E0 = {
@@ -376,6 +429,10 @@
 					};
 					185DB3FF2949514D003BCC48 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					802300A12ACF6F870051C404 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 184E932B29401A97005FE1E0;
 					};
 				};
 			};
@@ -398,6 +455,7 @@
 			targets = (
 				184E932B29401A97005FE1E0 /* Steps */,
 				185DB3FF2949514D003BCC48 /* StepsWidgetExtension */,
+				802300A12ACF6F870051C404 /* StepsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -423,6 +481,13 @@
 				18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */,
 				18D438B32ACF3F740027541D /* StepsConfig.xcconfig in Resources */,
 				18D438BF2ACF4F420027541D /* StepsWidgetConfigTemplate.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		802300A02ACF6F870051C404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +550,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8023009E2ACF6F870051C404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802300A52ACF6F880051C404 /* StepsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -492,6 +565,11 @@
 			isa = PBXTargetDependency;
 			target = 185DB3FF2949514D003BCC48 /* StepsWidgetExtension */;
 			targetProxy = 185DB40E2949514E003BCC48 /* PBXContainerItemProxy */;
+		};
+		802300A72ACF6F880051C404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184E932B29401A97005FE1E0 /* Steps */;
+			targetProxy = 802300A62ACF6F880051C404 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,9 +698,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Steps/Steps.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KMN827G7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Steps/Info.plist;
@@ -641,6 +721,7 @@
 				);
 				MARKETING_VERSION = 1.0.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -658,9 +739,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Steps/Steps.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KMN827G7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Steps/Info.plist;
@@ -679,6 +762,7 @@
 				);
 				MARKETING_VERSION = 1.0.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -690,6 +774,7 @@
 		};
 		185DB4122949514E003BCC48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D438B52ACF4C850027541D /* StepsWidgetConfigTemplate.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -716,6 +801,7 @@
 		};
 		185DB4132949514E003BCC48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D438B52ACF4C850027541D /* StepsWidgetConfigTemplate.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -737,6 +823,53 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		802300A92ACF6F880051C404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KMN827G7Y;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.StepsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Steps";
+			};
+			name = Debug;
+		};
+		802300AA2ACF6F880051C404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KMN827G7Y;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.StepsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Steps";
 			};
 			name = Release;
 		};
@@ -770,6 +903,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		802300A82ACF6F880051C404 /* Build configuration list for PBXNativeTarget "StepsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				802300A92ACF6F880051C404 /* Debug */,
+				802300AA2ACF6F880051C404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -790,6 +932,19 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		802300AB2ACF6FA70051C404 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8023009C2ACF6ECF0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		802300AD2ACF6FA70051C404 /* DependenciesAdditions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8023009D2ACF6EFC0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies-additions" */;
+			productName = DependenciesAdditions;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1838FC1A296A7A5A00EAA116 /* Steps.xcdatamodeld */ = {
