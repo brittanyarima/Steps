@@ -11,10 +11,14 @@ struct Constants {
     // MARK: URLs
     static let termsURL = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
     static let privacyURL = "https://sites.google.com/view/steptrackerapp/home"
+    
+    // MARK: Identifiers
+    static let appGroupID = "group.com.BrittanyRima.Steps"
 
     // MARK: Messages
     static let goalKey = "goal"
     static let notificationKey = "notifications"
+    static let stepCountKey = "stepCount"
     static let steps = "Steps"
     static let weeklySteps = "Weekly Steps"
     static let goal = "Goal"

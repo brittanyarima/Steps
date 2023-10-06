@@ -7,26 +7,32 @@
 
 import SwiftUI
 import UserNotifications
+import DependenciesAdditions
 
 class SettingsViewModel: ObservableObject {
     @Published var showingEditView = false
     @Published var showContributors: Bool = false
     
     @AppStorage(Constants.notificationKey) var notificationsOn = false
+    @Dependency(\.userNotificationCenter) var userNotificationCenter
+    @Dependency(\.logger) var logger
 
-    func requestNotificationAuth() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
-            if success {
-                if self.notificationsOn {
-                    self.scheduleDailyNotification()
-                } else {
-                    UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-                }
+    func requestNotificationAuth() async {
+        do {
+            let isAuthorized = try await userNotificationCenter.requestAuthorization(
+                options: [.alert, .badge, .sound, .provisional]
+            )
+            if isAuthorized {
+                await self.scheduleDailyNotification()
+            } else {
+                self.userNotificationCenter.removeAllPendingNotificationRequests()
             }
+        } catch {
+            logger.error("Error requesting authorization from UserNotificationCenter: \(error)")
         }
     }
 
-    func scheduleDailyNotification() {
+    func scheduleDailyNotification() async {
         let content = UNMutableNotificationContent()
         content.title = Constants.goodMorningTitle
         content.body = Constants.reachStepGoalDescription
@@ -37,10 +43,11 @@ class SettingsViewModel: ObservableObject {
 
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         let request = UNNotificationRequest(identifier: "daily-notification", content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request) { error in
-            if let error = error {
-                print("Error scheduling notifications: \(error.localizedDescription)")
-            }
+        
+        do {
+            try await self.userNotificationCenter.add(request)
+        } catch {
+            logger.error("Error scheduling notifications: \(error.localizedDescription)")
         }
     }
 }

@@ -32,7 +32,6 @@
 		185DB40A2949514D003BCC48 /* StepsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DB4092949514D003BCC48 /* StepsWidget.swift */; };
 		185DB40C2949514E003BCC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185DB40B2949514E003BCC48 /* Assets.xcassets */; };
 		185DB4102949514E003BCC48 /* StepsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		185F75DC295E19EA00F48560 /* StepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E15294A934B0058138F /* StepsViewModel.swift */; };
 		185F75DD295E1A4200F48560 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1FB1A294AAB93009B87EF /* Date+Ext.swift */; };
 		185F75DE295E1A5100F48560 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184FD8B4294BE788000E4576 /* Step.swift */; };
 		185F75DF295E1A5400F48560 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
@@ -62,6 +61,10 @@
 		802300A52ACF6F880051C404 /* StepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802300A42ACF6F880051C404 /* StepsTests.swift */; };
 		802300AC2ACF6FA70051C404 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 802300AB2ACF6FA70051C404 /* Dependencies */; };
 		802300AE2ACF6FA70051C404 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 802300AD2ACF6FA70051C404 /* DependenciesAdditions */; };
+		80535E6A2ACF93B3000DD465 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E692ACF93B3000DD465 /* Dependencies */; };
+		80535E6C2ACF93B3000DD465 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E6B2ACF93B3000DD465 /* DependenciesAdditions */; };
+		80F756942ACF92C900FBB260 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80F756932ACF92C900FBB260 /* Dependencies */; };
+		80F756962ACF92C900FBB260 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 80F756952ACF92C900FBB260 /* DependenciesAdditions */; };
 		892079CB2ACF4EEB001E050B /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CA2ACF4EEB001E050B /* ContributorsView.swift */; };
 		892079CD2ACF4F05001E050B /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */; };
 		892079CF2ACF4F21001E050B /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CE2ACF4F21001E050B /* Contributor.swift */; };
@@ -161,7 +164,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F756962ACF92C900FBB260 /* DependenciesAdditions in Frameworks */,
 				1838FC13296A569300EAA116 /* StoreKit.framework in Frameworks */,
+				80F756942ACF92C900FBB260 /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,8 +174,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80535E6A2ACF93B3000DD465 /* Dependencies in Frameworks */,
 				185DB4052949514D003BCC48 /* SwiftUI.framework in Frameworks */,
 				185DB4032949514D003BCC48 /* WidgetKit.framework in Frameworks */,
+				80535E6C2ACF93B3000DD465 /* DependenciesAdditions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +377,8 @@
 			);
 			name = Steps;
 			packageProductDependencies = (
+				80F756932ACF92C900FBB260 /* Dependencies */,
+				80F756952ACF92C900FBB260 /* DependenciesAdditions */,
 			);
 			productName = Steps;
 			productReference = 184E932C29401A97005FE1E0 /* Steps.app */;
@@ -388,6 +397,10 @@
 			dependencies = (
 			);
 			name = StepsWidgetExtension;
+			packageProductDependencies = (
+				80535E692ACF93B3000DD465 /* Dependencies */,
+				80535E6B2ACF93B3000DD465 /* DependenciesAdditions */,
+			);
 			productName = StepsWidgetExtension;
 			productReference = 185DB4002949514D003BCC48 /* StepsWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -541,7 +554,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				800E1FFB2ACD1A7D000C5CE4 /* StepsGraphWidget.swift in Sources */,
-				185F75DC295E19EA00F48560 /* StepsViewModel.swift in Sources */,
 				185DB4082949514D003BCC48 /* StepsWidgetBundle.swift in Sources */,
 				185F75DE295E1A5100F48560 /* Step.swift in Sources */,
 				185DB40A2949514D003BCC48 /* StepsWidget.swift in Sources */,
@@ -837,7 +849,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.StepsTests;
@@ -846,7 +858,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Steps";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)Steps";
 			};
 			name = Debug;
 		};
@@ -861,7 +873,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.StepsTests;
@@ -869,7 +881,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Steps";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)Steps";
 			};
 			name = Release;
 		};
@@ -940,6 +952,26 @@
 			productName = Dependencies;
 		};
 		802300AD2ACF6FA70051C404 /* DependenciesAdditions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8023009D2ACF6EFC0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies-additions" */;
+			productName = DependenciesAdditions;
+		};
+		80535E692ACF93B3000DD465 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8023009C2ACF6ECF0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		80535E6B2ACF93B3000DD465 /* DependenciesAdditions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8023009D2ACF6EFC0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies-additions" */;
+			productName = DependenciesAdditions;
+		};
+		80F756932ACF92C900FBB260 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8023009C2ACF6ECF0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		80F756952ACF92C900FBB260 /* DependenciesAdditions */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8023009D2ACF6EFC0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies-additions" */;
 			productName = DependenciesAdditions;
