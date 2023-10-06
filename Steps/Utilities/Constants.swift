@@ -93,3 +93,7 @@ struct Constants {
     static let stepsTab = "Steps"
     static let settingsTab = "Settings"
 }
+
+extension UserDefaults {
+    static let appGroup: UserDefaults? = UserDefaults(suiteName: Constants.appGroupID)
+}
