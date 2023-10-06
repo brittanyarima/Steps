@@ -45,22 +45,14 @@
 		18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E13294A923B0058138F /* StepsDetailView.swift */; };
 		18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E15294A934B0058138F /* StepsViewModel.swift */; };
 		18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E18294A9B350058138F /* WeekStepsView.swift */; };
-		18D438B22ACF3F740027541D /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18D438B12ACF3CDA0027541D /* StepsConfig.xcconfig */; };
-		18D438B32ACF3F740027541D /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18D438B12ACF3CDA0027541D /* StepsConfig.xcconfig */; };
-		18D438BE2ACF4F410027541D /* StepsWidgetConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18D438B52ACF4C850027541D /* StepsWidgetConfigTemplate.xcconfig */; };
-		18D438BF2ACF4F420027541D /* StepsWidgetConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18D438B52ACF4C850027541D /* StepsWidgetConfigTemplate.xcconfig */; };
 		18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37431294E91B100D6B253 /* EditStepsGoalView.swift */; };
 		18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37433294E925100D6B253 /* StepsGoalCardView.swift */; };
 		18F1F9E52956362E00156D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
-		18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
-		18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
 		5E0BDF912ACDAFED00F7038E /* StepsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */; };
 		5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */; };
 		5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */; };
 		800E1FFB2ACD1A7D000C5CE4 /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */; };
 		802300A52ACF6F880051C404 /* StepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802300A42ACF6F880051C404 /* StepsTests.swift */; };
-		802300AC2ACF6FA70051C404 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 802300AB2ACF6FA70051C404 /* Dependencies */; };
-		802300AE2ACF6FA70051C404 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 802300AD2ACF6FA70051C404 /* DependenciesAdditions */; };
 		80535E6A2ACF93B3000DD465 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E692ACF93B3000DD465 /* Dependencies */; };
 		80535E6C2ACF93B3000DD465 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E6B2ACF93B3000DD465 /* DependenciesAdditions */; };
 		80F756942ACF92C900FBB260 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80F756932ACF92C900FBB260 /* Dependencies */; };
@@ -185,8 +177,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802300AC2ACF6FA70051C404 /* Dependencies in Frameworks */,
-				802300AE2ACF6FA70051C404 /* DependenciesAdditions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +410,6 @@
 			);
 			name = StepsTests;
 			packageProductDependencies = (
-				802300AB2ACF6FA70051C404 /* Dependencies */,
-				802300AD2ACF6FA70051C404 /* DependenciesAdditions */,
 			);
 			productName = StepsTests;
 			productReference = 802300A22ACF6F870051C404 /* StepsTests.xctest */;
@@ -435,7 +423,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					184E932B29401A97005FE1E0 = {
 						CreatedOnToolsVersion = 14.1;
@@ -478,9 +466,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D438BE2ACF4F410027541D /* StepsWidgetConfigTemplate.xcconfig in Resources */,
-				18D438B22ACF3F740027541D /* StepsConfig.xcconfig in Resources */,
-				18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */,
 				184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */,
 				184E933429401A98005FE1E0 /* Assets.xcassets in Resources */,
 			);
@@ -491,9 +476,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				185DB40C2949514E003BCC48 /* Assets.xcassets in Resources */,
-				18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */,
-				18D438B32ACF3F740027541D /* StepsConfig.xcconfig in Resources */,
-				18D438BF2ACF4F420027541D /* StepsWidgetConfigTemplate.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,16 +928,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		802300AB2ACF6FA70051C404 /* Dependencies */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8023009C2ACF6ECF0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
-			productName = Dependencies;
-		};
-		802300AD2ACF6FA70051C404 /* DependenciesAdditions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8023009D2ACF6EFC0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies-additions" */;
-			productName = DependenciesAdditions;
-		};
 		80535E692ACF93B3000DD465 /* Dependencies */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8023009C2ACF6ECF0051C404 /* XCRemoteSwiftPackageReference "swift-dependencies" */;

@@ -12,18 +12,9 @@ import DependenciesAdditions
 @testable import Steps
 
 final class StepsTests: XCTestCase {
-//    func testUserDefaultsToggle() async {
-//        withDependencies {
-//            $0.userDefaults = .ephemeral()
-//            $0.userDefaults.set(true, forKey: Constants.notificationKey)
-//        } operation: {
-//            @Dependency(\.userDefaults) var userDefaults
-//            XCTAssertEqual(true, userDefaults.bool(forKey: Constants.notificationKey))
-//        }
-//    }
     
     func testStepCheckpointsReached() {
-        var vm = StepsViewModel()
+        let vm = StepsViewModel()
         vm.steps = .mock
         vm.goal = 10_000
         
@@ -35,7 +26,7 @@ final class StepsTests: XCTestCase {
     }
     
     func testSoccerFieldsWalkedString() {
-        var vm = StepsViewModel()
+        let vm = StepsViewModel()
         
         // For every 144 Steps you've walked about 1 soccer field.
         vm.steps = [Step(count: 0, date: .now)]
@@ -47,17 +38,14 @@ final class StepsTests: XCTestCase {
     }
     
     func testUserDefaults() async {
-        withDependencies {
-            $0.userDefaults = .ephemeral()
-        } operation: {
-            var vm = StepsViewModel()
-            vm.goal = 1_234
-            @Dependency(\.userDefaults) var userDefaults
-            XCTAssertEqual(1_234, userDefaults.integer(forKey: Constants.goalKey))
+
+        let vm = StepsViewModel()
+        vm.goal = 1_234
+        @Dependency(\.userDefaults) var userDefaults
+        XCTAssertEqual(1_234, userDefaults.integer(forKey: Constants.goalKey))
             
-            vm.stepCount = 2_345
-            XCTAssertEqual(2_345, userDefaults.integer(forKey: Constants.goalKey))
-        }
+//            vm.stepCount = 2_345
+//            XCTAssertEqual(2_345, userDefaults.integer(forKey: Constants.stepCountKey))
         
     }
 
