@@ -1,5 +1,5 @@
 //
-//  AddTaskViewModel.swift
+//  AddGoalViewModel.swift
 //  Steps
 //
 //  Created by Daniel Lyons on 10/6/23.
@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 import CoreData
 
-final class AddTaskViewModel: ObservableObject {
+final class AddGoalViewModel: ObservableObject {
     let context: NSManagedObjectContext
     @Published var name = ""
     @Published var isComplete = false
@@ -28,12 +28,12 @@ final class AddTaskViewModel: ObservableObject {
         self.date = date
     }
     
-    func addTask() {
-        let newTask = Task(context: self.context)
-        newTask.name = self.name
-        newTask.isComplete = self.isComplete
-        newTask.date = self.date
-        newTask.id = UUID()
+    func addGoal() {
+        let newGoal = Goal(context: self.context)
+        newGoal.name = self.name
+        newGoal.isComplete = self.isComplete
+        newGoal.date = self.date
+        newGoal.id = UUID()
         
         do {
             try context.save()

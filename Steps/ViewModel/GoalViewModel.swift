@@ -1,5 +1,5 @@
 //
-//  TaskViewModel.swift
+//  GoalViewModel.swift
 //  Steps
 //
 //  Created by Daniel Lyons on 10/6/23.
@@ -8,7 +8,7 @@
 import Combine
 import CoreData
 
-final class TaskViewModel: ObservableObject {
+final class GoalViewModel: ObservableObject {
     let context: NSManagedObjectContext
     @Published var selectedTab = Constants.incomplete
     @Published var isShowingSheet = false
