@@ -42,7 +42,7 @@ class SettingsViewModel: ObservableObject {
         dateComponents.minute = 0
 
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        let request = UNNotificationRequest(identifier: "daily-notification", content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: Constants.notificationsIdentifier, content: content, trigger: trigger)
         
         do {
             try await self.userNotificationCenter.add(request)

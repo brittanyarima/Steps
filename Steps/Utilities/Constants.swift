@@ -59,6 +59,9 @@ struct Constants {
     static let weeklyAwards = "Weekly Awards"
     static let notifications = "Notifications"
     static let notificationSettings = "Notification settings"
+    
+    /// The string to be passed into UNNotificationRequest
+    static let notificationsIdentifier = "daily-notification"
     static let termsOfUse = "Terms of Use"
     static let privacyPolicy = "Privacy Policy"
     static let settingsTitle = "Settings"

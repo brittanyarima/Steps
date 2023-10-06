@@ -56,6 +56,8 @@
 		804270D62AD063B100D48422 /* _AppStorageDependency in Frameworks */ = {isa = PBXBuildFile; productRef = 804270D52AD063B100D48422 /* _AppStorageDependency */; };
 		804270D82AD06A7700D48422 /* ContributorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270D72AD06A7700D48422 /* ContributorsTests.swift */; };
 		804270DB2AD06F3200D48422 /* ContributorsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DA2AD06F3200D48422 /* ContributorsClient.swift */; };
+		804270DD2AD0757E00D48422 /* AddTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */; };
+		804270DF2AD0788F00D48422 /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DE2AD0788F00D48422 /* SettingsViewTests.swift */; };
 		80535E6A2ACF93B3000DD465 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E692ACF93B3000DD465 /* Dependencies */; };
 		80535E6C2ACF93B3000DD465 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E6B2ACF93B3000DD465 /* DependenciesAdditions */; };
 		80F756942ACF92C900FBB260 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80F756932ACF92C900FBB260 /* Dependencies */; };
@@ -151,6 +153,8 @@
 		802300A42ACF6F880051C404 /* StepsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsTests.swift; sourceTree = "<group>"; };
 		804270D72AD06A7700D48422 /* ContributorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsTests.swift; sourceTree = "<group>"; };
 		804270DA2AD06F3200D48422 /* ContributorsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsClient.swift; sourceTree = "<group>"; };
+		804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewTests.swift; sourceTree = "<group>"; };
+		804270DE2AD0788F00D48422 /* SettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
 		892079CA2ACF4EEB001E050B /* ContributorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
 		892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
 		892079CE2ACF4F21001E050B /* Contributor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
@@ -352,6 +356,8 @@
 			children = (
 				802300A42ACF6F880051C404 /* StepsTests.swift */,
 				804270D72AD06A7700D48422 /* ContributorsTests.swift */,
+				804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */,
+				804270DE2AD0788F00D48422 /* SettingsViewTests.swift */,
 			);
 			path = StepsTests;
 			sourceTree = "<group>";
@@ -566,6 +572,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804270DD2AD0757E00D48422 /* AddTaskViewTests.swift in Sources */,
+				804270DF2AD0788F00D48422 /* SettingsViewTests.swift in Sources */,
 				802300A52ACF6F880051C404 /* StepsTests.swift in Sources */,
 				804270D82AD06A7700D48422 /* ContributorsTests.swift in Sources */,
 			);
