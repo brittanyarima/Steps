@@ -30,6 +30,7 @@ final class StepsTests: XCTestCase {
         XCTAssertEqual(vm.soccerFieldsWalkedString, String(format: Constants.walkedCustomSoccerFieldToday, 2))
     }
     
+    // TODO: Test @AppStorage 
     func testUserDefaults() async {
 
         let vm = StepsViewModel()
