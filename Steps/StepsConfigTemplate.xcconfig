@@ -9,4 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 DEVELOPMENT_TEAM = 2KMN827G7Y
-PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.Rima.Steps.Steps
+PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.Rima.Steps

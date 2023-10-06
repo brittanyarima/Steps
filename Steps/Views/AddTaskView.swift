@@ -10,7 +10,11 @@ import SwiftUI
 struct AddTaskView: View {
     @Environment(\.managedObjectContext) var context
     @Environment(\.dismiss) var dismiss
-    @State private var taskName: String = ""
+    @ObservedObject var vm: AddTaskViewModel
+    
+    init(viewModel: AddTaskViewModel = .init()) {
+        self.vm = viewModel
+    }
 
     var body: some View {
         VStack() {
@@ -34,7 +38,7 @@ struct AddTaskView: View {
 
             Spacer()
 
-            TextField(Constants.newGoalField, text: $taskName)
+            TextField(Constants.newGoalField, text: $vm.name)
                 .padding(.horizontal)
                 .frame(height: 55)
                 .background(Color(.tertiarySystemFill))
@@ -42,7 +46,7 @@ struct AddTaskView: View {
                 .foregroundColor(.indigo)
 
             Button {
-                addTask()
+                vm.addTask()
                 dismiss()
             } label: {
                 Text(Constants.save)
@@ -54,21 +58,6 @@ struct AddTaskView: View {
 
         }
         .padding(14)
-    }
-
-    func addTask() {
-        let newTask = Task(context: context)
-        newTask.id = UUID()
-        newTask.isComplete = false
-        newTask.name = taskName
-        newTask.date = Date()
-
-        do {
-            try context.save()
-        } catch {
-            // show error
-            print(error)
-        }
     }
 }
 
