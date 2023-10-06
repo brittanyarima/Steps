@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Dependencies
 
 struct AddTaskView: View {
     @Environment(\.managedObjectContext) var context
@@ -58,10 +59,12 @@ struct AddTaskView: View {
 
     func addTask() {
         let newTask = Task(context: context)
-        newTask.id = UUID()
+        @Dependency(\.uuid) var uuid
+        newTask.id = uuid()
         newTask.isComplete = false
         newTask.name = taskName
-        newTask.date = Date()
+        @Dependency(\.date) var date
+        newTask.date = date()
 
         do {
             try context.save()

@@ -1,16 +1,9 @@
-//
-//  StepsTests.swift
-//  StepsTests
-//
-//  Created by Daniel Lyons on 10/5/23.
-//
-
-
 import XCTest
 import Dependencies
 import DependenciesAdditions
 @testable import Steps
 
+@MainActor
 final class StepsTests: XCTestCase {
     
     func testStepCheckpointsReached() {
@@ -44,8 +37,11 @@ final class StepsTests: XCTestCase {
         @Dependency(\.userDefaults) var userDefaults
         XCTAssertEqual(1_234, userDefaults.integer(forKey: Constants.goalKey))
             
-//            vm.stepCount = 2_345
-//            XCTAssertEqual(2_345, userDefaults.integer(forKey: Constants.stepCountKey))
+        
+// Not sure yet how to inject UserDefaults dependency into @AppStorage.
+// Even though both @Dependency(\.userDefaults) and @AppStorage write to UserDefaults, @AppStorage is unaware of @Dependency
+//        vm.stepCount = 2_345
+//        XCTAssertEqual(2_345, userDefaults.integer(forKey: Constants.stepCountKey))
         
     }
 

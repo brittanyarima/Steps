@@ -8,11 +8,23 @@
 import SwiftUI
 import HealthKit
 import DependenciesAdditions
+import Dependencies
+import _AppStorageDependency
+
+
 
 class StepsViewModel: ObservableObject {
     var healthStore: HKHealthStore?
     var query: HKStatisticsCollectionQuery?
     @AppStorage(Constants.stepCountKey, store: UserDefaults(suiteName: Constants.appGroupID)) var stepCount: Int = 0
+    
+    // 👇🏼 Still experimental
+//    @Dependency.AppStorage(
+//        Constants.stepCountKey,
+//        store: .init(suitename: Constants.appGroupID)
+//    ) var stepCount: Int = 0
+    
+    
     
     @Dependency(\.userDefaults) var userDefaults
 
