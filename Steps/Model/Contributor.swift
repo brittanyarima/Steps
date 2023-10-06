@@ -43,3 +43,32 @@ struct Contributor: Codable, Hashable, Identifiable {
         case contributions
     }
 }
+
+extension Contributor {
+    // TODO: Improve Contributor mock
+    static let mock: Self = .init(
+        login: "login",
+        id: 1,
+        nodeID: "nodeID",
+        avatarURL: "avatarURL",
+        gravatarID: "gravatarID",
+        url: "url",
+        htmlURL: "htmlURL",
+        followersURL: "followersURL",
+        followingURL: "followingURL",
+        gistsURL: "gistsURL",
+        starredURL: "starredURL",
+        subscriptionsURL: "subscriptionsURL",
+        organizationsURL: "organizationsURL",
+        reposURL: "reposURL",
+        eventsURL: "eventsURL",
+        receivedEventsURL: "receivedEventsURL",
+        type: "type",
+        siteAdmin: false,
+        contributions: 1
+    )
+}
+
+extension [Contributor] {
+    static let mock: Self = [.mock]
+}
