@@ -8,5 +8,5 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.Widget
 DEVELOPMENT_TEAM = AGU49S8C2X
+PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.widget // + .widget
