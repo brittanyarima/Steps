@@ -16,18 +16,10 @@ This app is open source and ready for you to contribute! Built fully with SwiftU
 cp StepsConfigTemplate.xcconfig StepsConfig.xcconfig
 ```
 
-* In the StepsConfig.xcconfig file, fill in your `DEVELOPMENT_TEAM` & `PRODUCT_BUNDLE_IDENTIFIER`
-   * Example: `DEVELOPMENT_TEAM = IdNumber` & `PRODUCT_BUNDLE_IDENTIFIER = com.name.steps`
+* In the StepsConfig.xcconfig file, fill in your `DEVELOPMENT_TEAM` & `BUNDLE_ID`
+   * Example: `DEVELOPMENT_TEAM = IdNumber` & `BUNDLE_ID = com.name.steps`
    * You can find your Team ID by logging into the Apple Developer Portal
    * This is only needed when running on a real device for iOS, this works with both free or paid Apple Developer accounts.
- 
- * You will need to do this AGAIN to set up the Widget extension 
-   
-```sh
-cp StepsWidgetConfigTemplate.xcconfig StepsWidgetConfig.xcconfig
-```
-* ❗️Make sure you at .widget to this `PRODUCT_BUNDLE_IDENTIFIER` ie. com.name.steps.widget
-* 
 * Build the project
 
 * Checkout a new branch (from the `dev` branch) to work on an issue
