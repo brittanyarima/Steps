@@ -15,27 +15,27 @@ struct AwardBadgeView: View {
         sortDescriptors: []) var tasks: FetchedResults<Task>
 
     var isAwardUnlocked: Bool {
-        switch award.name {
-        case Constants.firstStepsName:
+        switch award {
+        case .firstStep:
             return viewModel.steps.contains { $0.count > 100 }
-        case Constants.goalName:
+        case .goal:
             return viewModel.steps.contains { $0.count >= viewModel.goal }
-        case Constants.doubleTroubleName:
+        case .doubleTrouble:
             return viewModel.steps.contains { $0.count >= (viewModel.goal * 2)}
-        case Constants.threesName:
+        case .threes:
             return viewModel.steps.contains { $0.count >= (viewModel.goal * 3)}
-        case Constants.perfectWeekName:
+        case .perfectweek:
             if viewModel.steps.count == 0 { return false }
             return viewModel.steps.allSatisfy { $0.count > viewModel.goal }
-        case Constants.messiName:
+        case .messi:
             return viewModel.steps.contains { $0.count >= 14400 } // about 100 soccer fields
-        case Constants.motivatedName:
+        case .motivated:
             return tasks.count > 1
-        case Constants.firstGoalName:
+        case .firstGoal:
             return tasks.count > 1 && tasks.last?.isComplete == true
-        case Constants.dreamerGoalName:
+        case .dreamerGoal:
             return tasks.count > 4
-        case Constants.goGetterName:
+        case .goGetter:
             var completed = 0
             for task in tasks {
                 if task.isComplete {
@@ -67,6 +67,6 @@ struct AwardBadgeView: View {
 
 struct AwardBadgeView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardBadgeView(award: AwardData.awards[4], viewModel: StepsViewModel())
+        AwardBadgeView(award: .perfectweek, viewModel: StepsViewModel())
     }
 }

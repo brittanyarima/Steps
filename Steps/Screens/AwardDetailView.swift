@@ -46,6 +46,6 @@ struct AwardDetailView: View {
 
 struct AwardDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardDetailView(award: AwardData.awards[1], viewModel: StepsViewModel())
+        AwardDetailView(award: .goal, viewModel: StepsViewModel())
     }
 }
