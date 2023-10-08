@@ -2,6 +2,7 @@ SECRETS.swift
 StepsConfig.xcconfig
 StepsWidgetConfig.xcconfig
 *.xcuserstate
+.DS_Store
 
 *.pbxproj
 Config.xcconfig
@@ -101,3 +102,4 @@ fastlane/test_output
 iOSInjectionProject/
 
 Steps/StepsWidgetConfig.xcconfig
+.DS_Store
