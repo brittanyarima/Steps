@@ -52,6 +52,10 @@
 		18D438BB2ACF4F170027541D /* StepsWidgetConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18D438B62ACF4D6C0027541D /* StepsWidgetConfig.xcconfig */; };
 		18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37431294E91B100D6B253 /* EditStepsGoalView.swift */; };
 		18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37433294E925100D6B253 /* StepsGoalCardView.swift */; };
+		18E3D9572AD4C03400E33E0F /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3D9562AD4C03400E33E0F /* StepsGraphWidget.swift */; };
+		18E3D9592AD4C04D00E33E0F /* StepsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3D9582AD4C04D00E33E0F /* StepsCountView.swift */; };
+		18E3D95C2AD4C06D00E33E0F /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */; };
+		18E3D95D2AD4C06D00E33E0F /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */; };
 		18F1F9E52956362E00156D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
 		18F27C0A2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
@@ -128,6 +132,10 @@
 		18D438B72ACF4DD30027541D /* StepsWidgetConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsWidgetConfigTemplate.xcconfig; sourceTree = "<group>"; };
 		18E37431294E91B100D6B253 /* EditStepsGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStepsGoalView.swift; sourceTree = "<group>"; };
 		18E37433294E925100D6B253 /* StepsGoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGoalCardView.swift; sourceTree = "<group>"; };
+		18E3D9562AD4C03400E33E0F /* StepsGraphWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsGraphWidget.swift; sourceTree = "<group>"; };
+		18E3D9582AD4C04D00E33E0F /* StepsCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsCountView.swift; sourceTree = "<group>"; };
+		18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
+		18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfig.xcconfig; sourceTree = "<group>"; };
 		18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfigTemplate.xcconfig; sourceTree = "<group>"; };
@@ -233,6 +241,7 @@
 		185DB3F6294948DA003BCC48 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				18E3D9582AD4C04D00E33E0F /* StepsCountView.swift */,
 				185DB3F4294948D2003BCC48 /* MainView.swift */,
 				184E933129401A97005FE1E0 /* HomeView.swift */,
 				185DB3F829494947003BCC48 /* AwardView.swift */,
@@ -249,6 +258,8 @@
 		185DB3F7294948E1003BCC48 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */,
+				18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */,
 				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
 				18C81E18294A9B350058138F /* WeekStepsView.swift */,
 				189BDCE9294D163700E8237F /* FactView.swift */,
@@ -277,6 +288,7 @@
 		185DB4062949514D003BCC48 /* StepsWidget */ = {
 			isa = PBXGroup;
 			children = (
+				18E3D9562AD4C03400E33E0F /* StepsGraphWidget.swift */,
 				185DB4072949514D003BCC48 /* StepsWidgetBundle.swift */,
 				185DB4092949514D003BCC48 /* StepsWidget.swift */,
 				185DB40B2949514E003BCC48 /* Assets.xcassets */,
@@ -418,6 +430,7 @@
 			files = (
 				184FD8B5294BE788000E4576 /* Step.swift in Sources */,
 				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
+				18E3D95C2AD4C06D00E33E0F /* MonthStepsView.swift in Sources */,
 				185DB3F929494947003BCC48 /* AwardView.swift in Sources */,
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
 				185B74CF295CEA02000AD18A /* CurrentStepsCardView.swift in Sources */,
@@ -428,9 +441,11 @@
 				185B74CD295CDDD9000AD18A /* CircleView.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
 				189BDCF0294D3B8A00E8237F /* Award.swift in Sources */,
+				18E3D9592AD4C04D00E33E0F /* StepsCountView.swift in Sources */,
 				181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */,
 				188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */,
 				1838FC19296A785E00EAA116 /* TaskView.swift in Sources */,
+				18E3D95D2AD4C06D00E33E0F /* NewWeekStepsView.swift in Sources */,
 				18F1F9E52956362E00156D4C /* Constants.swift in Sources */,
 				1838FC23296A846200EAA116 /* TaskListRowView.swift in Sources */,
 				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
@@ -452,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E3D9572AD4C03400E33E0F /* StepsGraphWidget.swift in Sources */,
 				185F75DC295E19EA00F48560 /* StepsViewModel.swift in Sources */,
 				185DB4082949514D003BCC48 /* StepsWidgetBundle.swift in Sources */,
 				185F75DE295E1A5100F48560 /* Step.swift in Sources */,
