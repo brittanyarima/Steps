@@ -32,9 +32,13 @@ struct HomeView: View {
                 }
             }
             .onAppear {
-                viewModel.calculateSteps { statsCollection in
-                    if let statsCollection = statsCollection {
-                        viewModel.updateUIFromStats(statsCollection)
+                viewModel.requestAuthorization { isSuccess in
+                    if isSuccess == true {
+                        viewModel.calculateSteps { statsCollection in
+                            if let statsCollection = statsCollection {
+                                viewModel.updateUIFromStats(statsCollection)
+                            }
+                        }
                     }
                 }
             }
