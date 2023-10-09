@@ -57,6 +57,10 @@
 		18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
 		18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
+		D653A70E2AD46FD300DE54E4 /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A70C2AD46FC400DE54E4 /* StepsGraphWidget.swift */; };
+		D653A7102AD470B900DE54E4 /* StepsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A70F2AD470B900DE54E4 /* StepsCountView.swift */; };
+		D653A7122AD470E400DE54E4 /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A7112AD470E400DE54E4 /* NewWeekStepsView.swift */; };
+		D653A7142AD470FB00DE54E4 /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A7132AD470FB00DE54E4 /* MonthStepsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +135,10 @@
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfig.xcconfig; sourceTree = "<group>"; };
 		18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfigTemplate.xcconfig; sourceTree = "<group>"; };
+		D653A70C2AD46FC400DE54E4 /* StepsGraphWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepsGraphWidget.swift; path = ../../../Downloads/StepsGraphWidget.swift; sourceTree = "<group>"; };
+		D653A70F2AD470B900DE54E4 /* StepsCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepsCountView.swift; path = ../../../../Downloads/StepsCountView.swift; sourceTree = "<group>"; };
+		D653A7112AD470E400DE54E4 /* NewWeekStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewWeekStepsView.swift; path = ../../../../Downloads/NewWeekStepsView.swift; sourceTree = "<group>"; };
+		D653A7132AD470FB00DE54E4 /* MonthStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonthStepsView.swift; path = ../../../../Downloads/MonthStepsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +246,7 @@
 				185DB3F829494947003BCC48 /* AwardView.swift */,
 				185DB3FA2949495B003BCC48 /* SettingsView.swift */,
 				18C81E13294A923B0058138F /* StepsDetailView.swift */,
+				D653A70F2AD470B900DE54E4 /* StepsCountView.swift */,
 				18E37431294E91B100D6B253 /* EditStepsGoalView.swift */,
 				181AE8652953AB9800BAD40D /* AwardDetailView.swift */,
 				181AE8672953B83000BAD40D /* AwardLockedView.swift */,
@@ -256,6 +265,8 @@
 				18E37433294E925100D6B253 /* StepsGoalCardView.swift */,
 				181AE8692953D06100BAD40D /* BadgeImageView.swift */,
 				1876B8212956774600346975 /* MountainView.swift */,
+				D653A7112AD470E400DE54E4 /* NewWeekStepsView.swift */,
+				D653A7132AD470FB00DE54E4 /* MonthStepsView.swift */,
 				185B74CC295CDDD9000AD18A /* CircleView.swift */,
 				185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */,
 				1838FC20296A7E8A00EAA116 /* AddTaskView.swift */,
@@ -277,6 +288,7 @@
 		185DB4062949514D003BCC48 /* StepsWidget */ = {
 			isa = PBXGroup;
 			children = (
+				D653A70C2AD46FC400DE54E4 /* StepsGraphWidget.swift */,
 				185DB4072949514D003BCC48 /* StepsWidgetBundle.swift */,
 				185DB4092949514D003BCC48 /* StepsWidget.swift */,
 				185DB40B2949514E003BCC48 /* Assets.xcassets */,
@@ -428,6 +440,8 @@
 				185B74CD295CDDD9000AD18A /* CircleView.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
 				189BDCF0294D3B8A00E8237F /* Award.swift in Sources */,
+				D653A7102AD470B900DE54E4 /* StepsCountView.swift in Sources */,
+				D653A7122AD470E400DE54E4 /* NewWeekStepsView.swift in Sources */,
 				181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */,
 				188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */,
 				1838FC19296A785E00EAA116 /* TaskView.swift in Sources */,
@@ -445,6 +459,7 @@
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 				18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */,
 				1838FC21296A7E8A00EAA116 /* AddTaskView.swift in Sources */,
+				D653A7142AD470FB00DE54E4 /* MonthStepsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D653A70E2AD46FD300DE54E4 /* StepsGraphWidget.swift in Sources */,
 				185F75DC295E19EA00F48560 /* StepsViewModel.swift in Sources */,
 				185DB4082949514D003BCC48 /* StepsWidgetBundle.swift in Sources */,
 				185F75DE295E1A5100F48560 /* Step.swift in Sources */,
