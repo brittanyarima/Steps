@@ -57,6 +57,18 @@
 		18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
 		18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
+
+		5E0BDF912ACDAFED00F7038E /* StepsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */; };
+		5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */; };
+		5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */; };
+		800E1FFB2ACD1A7D000C5CE4 /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */; };
+		803417DF2AD0BAA4000C70B4 /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803417DE2AD0BAA4000C70B4 /* AddTaskViewModel.swift */; };
+		80372CDE2AD0C7F200B25DB9 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80372CDD2AD0C7F200B25DB9 /* TaskViewModel.swift */; };
+		807C4FC32AD228FB0087CD56 /* StepsWidgetConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 807C4FC22AD228FB0087CD56 /* StepsWidgetConfig.xcconfig */; };
+		892079CB2ACF4EEB001E050B /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CA2ACF4EEB001E050B /* ContributorsView.swift */; };
+		892079CD2ACF4F05001E050B /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */; };
+		892079CF2ACF4F21001E050B /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CE2ACF4F21001E050B /* Contributor.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +143,19 @@
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfig.xcconfig; sourceTree = "<group>"; };
 		18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfigTemplate.xcconfig; sourceTree = "<group>"; };
+
+		5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCountView.swift; sourceTree = "<group>"; };
+		5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
+		5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
+		800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGraphWidget.swift; sourceTree = "<group>"; };
+		803417DE2AD0BAA4000C70B4 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
+		80372CDD2AD0C7F200B25DB9 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		807C4FC12AD228F10087CD56 /* StepsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfig.xcconfig; sourceTree = "<group>"; };
+		807C4FC22AD228FB0087CD56 /* StepsWidgetConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StepsWidgetConfig.xcconfig; sourceTree = "<group>"; };
+		892079CA2ACF4EEB001E050B /* ContributorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
+		892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
+		892079CE2ACF4F21001E050B /* Contributor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,10 +219,8 @@
 		184E932E29401A97005FE1E0 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
-				18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */,
 				18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */,
 				18D438B72ACF4DD30027541D /* StepsWidgetConfigTemplate.xcconfig */,
-				18D438B62ACF4D6C0027541D /* StepsWidgetConfig.xcconfig */,
 				184E932F29401A97005FE1E0 /* StepsApp.swift */,
 				184E9342294025D7005FE1E0 /* Steps.entitlements */,
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
@@ -390,7 +413,6 @@
 			files = (
 				18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */,
 				184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */,
-				18D438BA2ACF4F160027541D /* StepsWidgetConfig.xcconfig in Resources */,
 				184E933429401A98005FE1E0 /* Assets.xcassets in Resources */,
 				18F27C0A2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */,
 				18D438B82ACF4F0D0027541D /* StepsWidgetConfigTemplate.xcconfig in Resources */,
@@ -474,7 +496,7 @@
 /* Begin XCBuildConfiguration section */
 		184E933829401A98005FE1E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */;
+
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -535,7 +557,7 @@
 		};
 		184E933929401A98005FE1E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */;
+
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -590,7 +612,7 @@
 		};
 		184E933B29401A98005FE1E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */;
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -628,7 +650,7 @@
 		};
 		184E933C29401A98005FE1E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */;
+
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -666,7 +688,7 @@
 		};
 		185DB4122949514E003BCC48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18D438B62ACF4D6C0027541D /* StepsWidgetConfig.xcconfig */;
+
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -694,7 +716,7 @@
 		};
 		185DB4132949514E003BCC48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18D438B62ACF4D6C0027541D /* StepsWidgetConfig.xcconfig */;
+
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
