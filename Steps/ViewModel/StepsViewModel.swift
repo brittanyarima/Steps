@@ -7,6 +7,8 @@
 
 import SwiftUI
 import HealthKit
+import PhotosUI
+import CoreTransferable
 
 class StepsViewModel: ObservableObject {
     var healthStore: HKHealthStore?
@@ -26,6 +28,8 @@ class StepsViewModel: ObservableObject {
         if HKHealthStore.isHealthDataAvailable() {
             healthStore = HKHealthStore()
         }
+        
+        self.backgroundImage = loadImage(key: Constants.backgroundImageKey)
     }
 
     var currentSteps: Int {
@@ -102,6 +106,83 @@ class StepsViewModel: ObservableObject {
 
         healthStore.requestAuthorization(toShare: [], read: [stepType]) { success, error in
             completion(success)
+        }
+    }
+    
+    // MARK: - Background Image
+        
+    @Published var showBackgroundImageAlert = false
+    
+    enum BackgroundImageState {
+        case empty
+        case loading(Progress)
+        case success(UIImage)
+        case failure(Error)
+    }
+    
+    @Published var backgroundImage: UIImage? = nil
+    
+    @Published private(set) var backgroundImageState: BackgroundImageState = .empty {
+        didSet {
+            switch backgroundImageState {
+            case .success(let image):
+                backgroundImage = image
+                saveImage(image: image, key: Constants.backgroundImageKey)
+            case .loading:
+                return
+            case .empty:
+                backgroundImage = nil
+                deleteImage(key: Constants.backgroundImageKey)
+            case .failure:
+                self.showBackgroundImageAlert = true
+            }
+        }
+    }
+    
+    @Published var backgroundImageSelection: PhotosPickerItem? = nil {
+        didSet {
+            if let backgroundImageSelection {
+                let progress = loadTransferable(from: backgroundImageSelection)
+                backgroundImageState = .loading(progress)
+            } else {
+                backgroundImageState = .empty
+            }
+        }
+    }
+    
+    enum TransferError: Error {
+        case importFailed
+    }
+    
+    struct BackgroundImage: Transferable {
+        let image: UIImage
+        
+        static var transferRepresentation: some TransferRepresentation {
+            DataRepresentation(importedContentType: .image) { data in
+                guard let uiImage = UIImage(data: data) else {
+                    throw TransferError.importFailed
+                }
+                return BackgroundImage(image: uiImage)
+            }
+        }
+    }
+    
+    private func loadTransferable(from backgroundImageSelection: PhotosPickerItem) -> Progress {
+        return backgroundImageSelection.loadTransferable(type: BackgroundImage.self) { result in
+            DispatchQueue.main.async {
+                guard backgroundImageSelection == self.backgroundImageSelection else {
+                    print("Failed to get the selected item.")
+                    return
+                }
+                switch result {
+                case .success(let backgroundImage?):
+                    self.backgroundImageState = .success(backgroundImage.image)
+                case .success(nil):
+                    self.backgroundImageState = .empty
+                case .failure(let error):
+                    self.backgroundImageState = .failure(error)
+                }
+            }
         }
     }
 }
