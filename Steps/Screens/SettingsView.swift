@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UserNotifications
+import PhotosUI
 
 struct SettingsView: View {
     @StateObject var viewModel = SettingsViewModel()
@@ -23,6 +24,24 @@ struct SettingsView: View {
                         Toggle(Constants.notifications, isOn: $viewModel.notificationsOn)
                     } header: {
                         Label(Constants.notificationSettings, systemImage: "bell")
+                    }
+                    
+                    Section {
+                        if stepsViewModel.backgroundImage != nil {
+                            Button("Reset background image") {
+                                stepsViewModel.backgroundImageSelection = nil
+                            }
+                            .buttonStyle(.borderless)
+                        } else {
+                            PhotosPicker(selection: $stepsViewModel.backgroundImageSelection,
+                                         matching: .images,
+                                         photoLibrary: .shared()) {
+                                Text("Set background image")
+                            }
+                            .buttonStyle(.borderless)
+                        }
+                    } header: {
+                        Label("Home Screen", systemImage: "iphone.gen3")
                     }
 
                     Link(Constants.termsOfUse, destination: URL(string: Constants.termsURL)!)
@@ -41,6 +60,10 @@ struct SettingsView: View {
             })
             .navigationTitle("⚙️ \(Constants.settingsTitle)")
             .tint(.indigo)
+        }
+        .alert(isPresented: $stepsViewModel.showBackgroundImageAlert) {
+            Alert(title: Text("Failed to set background image."),
+                              message: Text("Please choose another image."))
         }
     }
 }

@@ -13,9 +13,7 @@ struct MountainView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                Image("background")
-                    .resizable()
-                    .frame(width: geo.size.width, height: geo.size.height)
+                BackgroundView(stepsModel: viewModel)
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(.all)
                     .opacity(0.5)

@@ -15,6 +15,7 @@ struct Constants {
     // MARK: Messages
     static let goalKey = "goal"
     static let notificationKey = "notifications"
+    static let backgroundImageKey = "backgroundImage"
     static let steps = "Steps"
     static let weeklySteps = "Weekly Steps"
     static let goal = "Goal"
