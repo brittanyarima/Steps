@@ -58,7 +58,7 @@ Checkout any issue labeled `hacktoberfest` to start contributing.
   
 # Contributors  
 <a href="https://github.com/brittanyarima/Steps/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=brittanyarima/Steps" />
+  <img src="https://contrib.rocks/image?repo=brittanyarima/Steps"/>
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
