@@ -80,6 +80,40 @@ class StepsViewModel: ObservableObject {
             healthStore.execute(query)
         }
     }
+    
+    func calculateLastWeeksSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
+        
+        // Find the start date (Monday) of the current week
+        guard let startOfWeek = calendar.date(from: calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: today)) else {
+            print("Failed to calculate the start date of the week.")
+            return
+        }
+        
+        // Find the end date (Sunday) of the current week
+        guard let endOfWeek = calendar.date(byAdding: .day, value: 6, to: startOfWeek) else {
+            print("Failed to calculate the end date of the week.")
+            return
+        }
+        
+        let week = DateComponents(day: 1)
+        let predicate = HKQuery.predicateForSamples(withStart: startOfWeek, end: endOfWeek, options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: stepType,
+                                            quantitySamplePredicate: predicate,
+                                            options: .cumulativeSum,
+                                            anchorDate: startOfWeek,
+                                            intervalComponents: week)
+        query!.initialResultsHandler = { query, statsCollection, error in
+            completion(statsCollection)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
 
     func updateUIFromStats(_ statsCollection: HKStatisticsCollection) {
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
