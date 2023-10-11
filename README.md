@@ -20,8 +20,6 @@ cp StepsConfigTemplate.xcconfig StepsConfig.xcconfig
    * Example: `DEVELOPMENT_TEAM = IdNumber` & `BUNDLE_ID = com.name.steps`
    * You can find your Team ID by logging into the Apple Developer Portal
    * This is only needed when running on a real device for iOS, this works with both free or paid Apple Developer accounts.
-
-
 * Build the project
 
 * Checkout a new branch (from the `dev` branch) to work on an issue
