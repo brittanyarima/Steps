@@ -85,26 +85,16 @@ class StepsViewModel: ObservableObject {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: Date())
         let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
-        
-        // Find the start date (Monday) of the current week
-        guard let startOfWeek = calendar.date(from: calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: today)) else {
-            print("Failed to calculate the start date of the week.")
-            return
-        }
-        
-        // Find the end date (Sunday) of the current week
-        guard let endOfWeek = calendar.date(byAdding: .day, value: 6, to: startOfWeek) else {
-            print("Failed to calculate the end date of the week.")
-            return
-        }
-        
+        let startDate = Calendar.current.date(byAdding: .weekOfYear, value: 6, to: Date())
+        let anchorDate = Date.sundayAt12AM()
         let week = DateComponents(day: 1)
-        let predicate = HKQuery.predicateForSamples(withStart: startOfWeek, end: endOfWeek, options: .strictStartDate)
+        
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
         
         query = HKStatisticsCollectionQuery(quantityType: stepType,
                                             quantitySamplePredicate: predicate,
                                             options: .cumulativeSum,
-                                            anchorDate: startOfWeek,
+                                            anchorDate: anchorDate,
                                             intervalComponents: week)
         query!.initialResultsHandler = { query, statsCollection, error in
             completion(statsCollection)
