@@ -20,13 +20,24 @@ struct SettingsView: View {
 
                 Form {
                     Section {
-                        Toggle("Notifications", isOn: $viewModel.notificationsOn)
+                        Toggle(isOn: $viewModel.notificationsOn) {
+                            Text("Notifications", comment: "Link to toggle notifications")
+                        }
                     } header: {
-                        Label("Notification settings", systemImage: "bell")
+                        Label {
+                            Text("Notification settings", comment: "Notification settings section title")
+                        } icon: {
+                            Image(systemName: "bell")
+                        }
                     }
-
-                    Link("Terms of Use", destination: URL(string: Constants.termsURL)!)
-                    Link("Privacy Policy", destination: URL(string: Constants.privacyURL)!)
+                    
+                    Link(destination: URL(string: Constants.termsURL)!) {
+                        Text("Terms of Use", comment: "Link to terms of use")
+                    }
+                    
+                    Link(destination: URL(string: Constants.privacyURL)!) {
+                        Text("Privacy Policy", comment: "Link to privacy policy")
+                    }
                 }
                 .scrollContentBackground(.hidden)
             }
@@ -39,7 +50,7 @@ struct SettingsView: View {
             .onChange(of: viewModel.notificationsOn, perform: { _ in
                 viewModel.requestNotificationAuth()
             })
-            .navigationTitle("⚙️ Settings")
+            .navigationTitle(Text("⚙️ Settings", comment: "Settings navigation title"))
             .tint(.indigo)
         }
     }

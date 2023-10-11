@@ -15,12 +15,12 @@ struct AddTaskView: View {
     var body: some View {
         VStack() {
             VStack(spacing: 7) {
-                Text("🖋️ Add New Goal")
+                Text("🖋️ Add New Goal", comment: "Title for add new goal")
                     .font(.title)
                     .bold()
                     .padding(.bottom)
 
-                Text("💡 Goal ideas")
+                Text("💡 Goal ideas", comment: "Title for goal ideas")
                     .bold()
                     .foregroundColor(.secondary)
                     .font(.caption)
@@ -34,18 +34,20 @@ struct AddTaskView: View {
 
             Spacer()
 
-            TextField("New goal...", text: $taskName)
-                .padding(.horizontal)
-                .frame(height: 55)
-                .background(Color(.tertiarySystemFill))
-                .cornerRadius(10)
-                .foregroundColor(.indigo)
+            TextField(text: $taskName) {
+                Text("New goal...", comment: "Title for new goal")
+            }
+            .padding(.horizontal)
+            .frame(height: 55)
+            .background(Color(.tertiarySystemFill))
+            .cornerRadius(10)
+            .foregroundColor(.indigo)
 
             Button {
                 addTask()
                 dismiss()
             } label: {
-                Text("Save")
+                Text("Save", comment: "Title for save button")
                     .fontWeight(.semibold)
             }
             .buttonStyle(.bordered)

@@ -57,6 +57,7 @@
 		18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
 		18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
+		58F027282AD6585E00399FEF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 58F027272AD6585E00399FEF /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfig.xcconfig; sourceTree = "<group>"; };
 		18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfigTemplate.xcconfig; sourceTree = "<group>"; };
+		58F027272AD6585E00399FEF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 		18A1FB1C294AAC1B009B87EF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				58F027292AD65A6800399FEF /* Localization */,
 				1838FC24296A85D700EAA116 /* Extensions */,
 				18F1F9E42956362E00156D4C /* Constants.swift */,
 			);
@@ -301,6 +304,14 @@
 				188042D329527BD700E14D9D /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		58F027292AD65A6800399FEF /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				58F027272AD6585E00399FEF /* Localizable.xcstrings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +404,7 @@
 				18D438BA2ACF4F160027541D /* StepsWidgetConfig.xcconfig in Resources */,
 				184E933429401A98005FE1E0 /* Assets.xcassets in Resources */,
 				18F27C0A2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */,
+				58F027282AD6585E00399FEF /* Localizable.xcstrings in Resources */,
 				18D438B82ACF4F0D0027541D /* StepsWidgetConfigTemplate.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

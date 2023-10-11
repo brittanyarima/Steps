@@ -1,0 +1,102 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld" : {
+
+    },
+    "%lld steps" : {
+      "comment" : "Title for number of steps\nNumber of steps"
+    },
+    "⚙️ Settings" : {
+      "comment" : "Settings navigation title"
+    },
+    "✅ My Goals" : {
+      "comment" : "My goals navigation title"
+    },
+    "🏆 Weekly Awards" : {
+      "comment" : "Awards navigation title"
+    },
+    "💡 Goal ideas" : {
+      "comment" : "Title for goal ideas"
+    },
+    "🖋️ Add New Goal" : {
+      "comment" : "Title for add new goal"
+    },
+    "🥳 Time to add some more goals!" : {
+      "comment" : "Prompt to add more goals"
+    },
+    "Add Goal" : {
+      "comment" : "Button title to add a goal."
+    },
+    "Awards" : {
+      "comment" : "Awards tab title"
+    },
+    "Can you can unlock all of these awards this week?" : {
+      "comment" : "Asks a user if they can unlock awards"
+    },
+    "Current Steps" : {
+      "comment" : "Title for current stels"
+    },
+    "Daily Goal" : {
+      "comment" : "Title for daily goal"
+    },
+    "Daily Steps Goal" : {
+      "comment" : "Title for daily steps goal"
+    },
+    "Day" : {
+
+    },
+    "Done" : {
+      "comment" : "Button title to edit steps goal"
+    },
+    "Goal" : {
+
+    },
+    "Goals" : {
+      "comment" : "Title for goals picker\nGoals tab title"
+    },
+    "Home" : {
+      "comment" : "Home tab title"
+    },
+    "Locked" : {
+      "comment" : "Label title for locked"
+    },
+    "New goal..." : {
+      "comment" : "Title for new goal"
+    },
+    "Notification settings" : {
+      "comment" : "Notification settings section title"
+    },
+    "Notifications" : {
+      "comment" : "Link to toggle notifications"
+    },
+    "Privacy Policy" : {
+      "comment" : "Link to privacy policy"
+    },
+    "Save" : {
+      "comment" : "Title for save button"
+    },
+    "Set a New Daily Steps Goal" : {
+      "comment" : "Title for set a new daily steps goal"
+    },
+    "Settings" : {
+      "comment" : "Settings tab title"
+    },
+    "Steps" : {
+      "comment" : "Label for steps stepper\nTitle for steps"
+    },
+    "Terms of Use" : {
+      "comment" : "Link to terms of use"
+    },
+    "Walk a 5K, Walk with a friend, Increase steps goal" : {
+
+    },
+    "Weekly Steps" : {
+      "comment" : "Title for weekly stels"
+    },
+    "You haven't unlocked this award yet this week. Keep getting those steps in and completing goals to unlock it. You can do it!" : {
+      "comment" : "Description to guide user on how to unlock an award."
+    }
+  },
+  "version" : "1.0"
+}

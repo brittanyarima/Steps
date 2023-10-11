@@ -19,12 +19,12 @@ struct CurrentStepsCardView: View {
 
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Text("Current Steps")
+                    Text("Current Steps", comment: "Title for current stels")
                     Spacer()
                 }
 
                 HStack {
-                    Text("\(steps) steps")
+                    Text("\(steps) steps", comment: "Number of steps")
                         .font(.system(size: 32))
                         .bold()
 

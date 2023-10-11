@@ -20,7 +20,7 @@ struct StepsGoalCardView: View {
 
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Text("Daily Steps Goal")
+                    Text("Daily Steps Goal", comment: "Title for daily steps goal")
                     Spacer()
 
                     Button {
@@ -31,7 +31,7 @@ struct StepsGoalCardView: View {
                 }
                 .foregroundColor(.indigo)
 
-                Text("\(steps) steps")
+                Text("\(steps) steps", comment: "Title for number of steps")
                     .font(.system(size: 32))
                     .bold()
                     .foregroundColor(.indigo)

@@ -13,7 +13,7 @@ struct WeekStepsView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Weekly Steps")
+            Text("Weekly Steps", comment: "Title for weekly stels")
 
             Chart {
                 RuleMark(y: .value("Goal", viewModel.goal))
@@ -42,7 +42,7 @@ struct WeekStepsView: View {
                     .rotationEffect(Angle(degrees: 45))
                     .foregroundColor(.mint)
 
-                Text("Daily Goal")
+                Text("Daily Goal", comment: "Title for daily goal")
                     .foregroundColor(.secondary)
             }
             .font(.caption2)
