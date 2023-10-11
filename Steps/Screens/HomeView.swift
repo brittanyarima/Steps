@@ -37,6 +37,11 @@ struct HomeView: View {
                         viewModel.updateUIFromStats(statsCollection)
                     }
                 }
+                viewModel.calculateLastWeeksSteps { statsCollection in
+                    if let statsCollection = statsCollection {
+                        viewModel.updateUIFromStats(statsCollection)
+                    }
+                }
             }
         }
     }
