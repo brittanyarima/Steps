@@ -17,7 +17,7 @@ struct AwardView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                Text("Can you can unlock all of these awards this week?")
+                Text("Can you can unlock all of these awards this week?", comment: "Asks a user if they can unlock awards")
                     .font(.caption)
                     .foregroundColor(.secondary)
                     .padding()
@@ -28,7 +28,7 @@ struct AwardView: View {
                     }
                 }
             }
-            .navigationTitle("🏆 Weekly Awards")
+            .navigationTitle(Text("🏆 Weekly Awards", comment: "Awards navigation title"))
         }
     }
 }

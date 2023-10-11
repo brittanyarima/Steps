@@ -29,7 +29,7 @@ struct TaskView: View {
                 TaskPickerView(selectedTab: $selectedTab)
 
                 if selectedTab == "Incomplete" && incompleteTasks.isEmpty {
-                    Text("🥳 Time to add some more goals!")
+                    Text("🥳 Time to add some more goals!", comment: "Prompt to add more goals")
                         .fontWeight(.semibold)
                         .foregroundColor(.secondary)
                 }
@@ -53,7 +53,7 @@ struct TaskView: View {
 
                 AddGoalButton(isShowingSheet: $isShowingSheet)
             }
-            .navigationTitle("✅ My Goals")
+            .navigationTitle(Text("✅ My Goals", comment: "My goals navigation title"))
             .sheet(isPresented: $isShowingSheet) {
                 AddTaskView()
                     .presentationDetents([.height(300)])
@@ -101,10 +101,12 @@ fileprivate struct TaskPickerView: View {
     let tabOptions = ["Incomplete", "Complete"]
 
     var body: some View {
-        Picker("Goals", selection: $selectedTab) {
+        Picker(selection: $selectedTab) {
             ForEach(tabOptions, id: \.self) { tab in
                 Text(tab)
             }
+        } label: {
+            Text("Goals", comment: "Title for goals picker")
         }
         .pickerStyle(.segmented)
         .padding()
@@ -118,8 +120,12 @@ fileprivate struct AddGoalButton: View {
         Button {
             isShowingSheet.toggle()
         } label: {
-            Label("Add Goal", systemImage: "plus")
-                .fontWeight(.semibold)
+            Label {
+                Text("Add Goal", comment: "Button title to add a goal.")
+            } icon: {
+                Image(systemName: "plus")
+            }
+            .fontWeight(.semibold)
         }
         .buttonStyle(.bordered)
         .tint(.indigo)
