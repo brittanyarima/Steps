@@ -121,6 +121,7 @@
 		184E933629401A98005FE1E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		184E934129401D8E005FE1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		184E9342294025D7005FE1E0 /* Steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steps.entitlements; sourceTree = "<group>"; };
+		184EBC5F2AD7C4FC006E95CF /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		184FD8B4294BE788000E4576 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		185B74CC295CDDD9000AD18A /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStepsCardView.swift; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 		184E932329401A97005FE1E0 = {
 			isa = PBXGroup;
 			children = (
+				184EBC5F2AD7C4FC006E95CF /* .gitattributes */,
 				185DE12D2968D59100AD81F2 /* StepsWidgetExtension.entitlements */,
 				184E932E29401A97005FE1E0 /* Steps */,
 				185DB4062949514D003BCC48 /* StepsWidget */,
