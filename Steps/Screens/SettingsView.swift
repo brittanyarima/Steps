@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UserNotifications
+import PhotosUI
 
 struct SettingsView: View {
     @StateObject var viewModel = SettingsViewModel()
@@ -24,9 +25,33 @@ struct SettingsView: View {
                     } header: {
                         Label(Constants.notificationSettings, systemImage: "bell")
                     }
+                    
+                    Section {
+                        if stepsViewModel.backgroundImage != nil {
+                            Button("Reset background image") {
+                                stepsViewModel.backgroundImageSelection = nil
+                            }
+                            .buttonStyle(.borderless)
+                        } else {
+                            PhotosPicker(selection: $stepsViewModel.backgroundImageSelection,
+                                         matching: .images,
+                                         photoLibrary: .shared()) {
+                                Text("Set background image")
+                            }
+                            .buttonStyle(.borderless)
+                        }
+                    } header: {
+                        Label("Home Screen", systemImage: "iphone.gen3")
+                    }
 
                     Link(Constants.termsOfUse, destination: URL(string: Constants.termsURL)!)
                     Link(Constants.privacyPolicy, destination: URL(string: Constants.privacyURL)!)
+
+                    Button {
+                        viewModel.showContributors = true
+                    } label: {
+                        Text("Contributors")
+                    }
                 }
                 .scrollContentBackground(.hidden)
             }
@@ -36,11 +61,20 @@ struct SettingsView: View {
                 EditStepsGoalView(goal: $stepsViewModel.goal)
                     .presentationDetents([.height(250)])
             })
+            .sheet(isPresented: $viewModel.showContributors, content: {
+                NavigationStack {
+                    ContributorsView()
+                }
+            })
             .onChange(of: viewModel.notificationsOn, perform: { _ in
                 viewModel.requestNotificationAuth()
             })
             .navigationTitle("⚙️ \(Constants.settingsTitle)")
             .tint(.indigo)
+        }
+        .alert(isPresented: $stepsViewModel.showBackgroundImageAlert) {
+            Alert(title: Text("Failed to set background image."),
+                              message: Text("Please choose another image."))
         }
     }
 }

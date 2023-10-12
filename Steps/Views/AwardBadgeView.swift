@@ -11,34 +11,34 @@ struct AwardBadgeView: View {
     let award: Award
     @ObservedObject var viewModel: StepsViewModel
     @FetchRequest(
-        entity: Task.entity(),
-        sortDescriptors: []) var tasks: FetchedResults<Task>
+        entity: Goal.entity(),
+        sortDescriptors: []) var goals: FetchedResults<Goal>
 
     var isAwardUnlocked: Bool {
-        switch award {
-        case .firstStep:
+        switch award.name {
+        case Constants.firstStepsName:
             return viewModel.steps.contains { $0.count > 100 }
-        case .goal:
+        case Constants.goalName:
             return viewModel.steps.contains { $0.count >= viewModel.goal }
-        case .doubleTrouble:
+        case Constants.doubleTroubleName:
             return viewModel.steps.contains { $0.count >= (viewModel.goal * 2)}
-        case .threes:
+        case Constants.threesName:
             return viewModel.steps.contains { $0.count >= (viewModel.goal * 3)}
-        case .perfectweek:
+        case Constants.perfectWeekName:
             if viewModel.steps.count == 0 { return false }
             return viewModel.steps.allSatisfy { $0.count > viewModel.goal }
-        case .messi:
+        case Constants.messiName:
             return viewModel.steps.contains { $0.count >= 14400 } // about 100 soccer fields
-        case .motivated:
-            return tasks.count > 1
-        case .firstGoal:
-            return tasks.count > 1 && tasks.last?.isComplete == true
-        case .dreamerGoal:
-            return tasks.count > 4
-        case .goGetter:
+        case Constants.motivatedName:
+            return goals.count > 1
+        case Constants.firstGoalName:
+            return goals.count > 1 && goals.last?.isComplete == true
+        case Constants.dreamerGoalName:
+            return goals.count > 4
+        case Constants.goGetterName:
             var completed = 0
-            for task in tasks {
-                if task.isComplete {
+            for goal in goals {
+                if goal.isComplete {
                     completed += 1
                 }
             }

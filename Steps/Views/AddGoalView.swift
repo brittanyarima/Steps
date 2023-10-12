@@ -1,5 +1,5 @@
 //
-//  AddTaskView.swift
+//  AddGoalView.swift
 //  Steps
 //
 //  Created by Brittany Rima on 1/7/23.
@@ -7,10 +7,20 @@
 
 import SwiftUI
 
-struct AddTaskView: View {
+struct AddGoalView: View {
     @Environment(\.managedObjectContext) var context
     @Environment(\.dismiss) var dismiss
-    @State private var taskName: String = ""
+<<<<<<< HEAD:Steps/Views/AddGoalView.swift
+    @ObservedObject var vm: AddGoalViewModel
+    
+    init(viewModel: AddGoalViewModel = .init()) {
+=======
+    @ObservedObject var vm: AddTaskViewModel
+
+    init(viewModel: AddTaskViewModel = .init()) {
+>>>>>>> dev:Steps/Views/AddTaskView.swift
+        self.vm = viewModel
+    }
 
     var body: some View {
         VStack() {
@@ -34,7 +44,7 @@ struct AddTaskView: View {
 
             Spacer()
 
-            TextField(Constants.newGoalField, text: $taskName)
+            TextField(Constants.newGoalField, text: $vm.name)
                 .padding(.horizontal)
                 .frame(height: 55)
                 .background(Color(.tertiarySystemFill))
@@ -42,7 +52,7 @@ struct AddTaskView: View {
                 .foregroundColor(.indigo)
 
             Button {
-                addTask()
+                vm.addGoal()
                 dismiss()
             } label: {
                 Text(Constants.save)
@@ -55,26 +65,11 @@ struct AddTaskView: View {
         }
         .padding(14)
     }
-
-    func addTask() {
-        let newTask = Task(context: context)
-        newTask.id = UUID()
-        newTask.isComplete = false
-        newTask.name = taskName
-        newTask.date = Date()
-
-        do {
-            try context.save()
-        } catch {
-            // show error
-            print(error)
-        }
-    }
 }
 
-struct AddTaskView_Previews: PreviewProvider {
+struct AddGoalView_Previews: PreviewProvider {
     static var previews: some View {
-        AddTaskView()
+        AddGoalView()
             .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
     }
 }

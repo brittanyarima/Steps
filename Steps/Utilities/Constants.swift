@@ -15,6 +15,7 @@ struct Constants {
     // MARK: Messages
     static let goalKey = "goal"
     static let notificationKey = "notifications"
+    static let backgroundImageKey = "backgroundImage"
     static let steps = "Steps"
     static let weeklySteps = "Weekly Steps"
     static let monthlySteps = "Monthly Steps"
@@ -70,7 +71,7 @@ struct Constants {
     static let month = "Month"
     static let incomplete = "Incomplete"
     static let complete = "Complete"
-    static let coreDataError = "❗️ Error saving delete task to core data"
+    static let coreDataError = "❗️ Error saving delete goal to core data"
     static let goodMorningTitle = "Good Morning!"
     static let reachStepGoalDescription = "Try to reach your steps goal today. We believe in you!"
     static let walkedOneSoccerFieldToday = "You've walked about 1 soccer field today so far. Keep it up!"

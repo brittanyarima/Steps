@@ -13,7 +13,7 @@ struct StepsCountView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            TaskPickerView(selectedTab: $selectedTab)
+            GoalPickerView(selectedTab: $selectedTab)
             
             if selectedTab == Constants.week {
                 NewWeekStepsView(viewModel: viewModel)
@@ -36,7 +36,7 @@ struct StepsCountView_Previews: PreviewProvider {
 
 //MARK: - SUPPORTING VIEWS
 
-fileprivate struct TaskPickerView: View {
+fileprivate struct GoalPickerView: View {
     @Binding var selectedTab: String
     let tabOptions = [Constants.week, Constants.month]
 
