@@ -17,6 +17,7 @@ struct Constants {
     static let notificationKey = "notifications"
     static let steps = "Steps"
     static let weeklySteps = "Weekly Steps"
+    static let monthlySteps = "Monthly Steps"
     static let goal = "Goal"
     static let day = "Day"
     static let dailyGoal = "Daily Goal"
