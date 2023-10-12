@@ -10,6 +10,8 @@ import HealthKit
 import DependenciesAdditions
 import Dependencies
 import _AppStorageDependency
+import PhotosUI
+import CoreTransferable
 
 
 
