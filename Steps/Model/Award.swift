@@ -19,6 +19,7 @@ enum Award: String, CaseIterable {
     case dreamerGoal
     case goGetter
 
+
     var name: String {
         switch self {
         case .firstStep:
