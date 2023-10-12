@@ -1,3 +1,4 @@
+
 //
 //  AddGoalViewModel.swift
 //  Steps
@@ -5,7 +6,6 @@
 //  Created by Daniel Lyons on 10/6/23.
 //
 
-import Foundation
 import SwiftUI
 import Combine
 import CoreData
@@ -15,7 +15,7 @@ final class AddGoalViewModel: ObservableObject {
     @Published var name = ""
     @Published var isComplete = false
     @Published var date = Date()
-    
+
     init(
         context: NSManagedObjectContext = PersistenceController.shared.container.viewContext,
         name: String = "",
@@ -27,6 +27,7 @@ final class AddGoalViewModel: ObservableObject {
         self.isComplete = isComplete
         self.date = date
     }
+<<<<<<< HEAD:Steps/ViewModel/AddGoalViewModel.swift
     
     func addGoal() {
         let newGoal = Goal(context: self.context)
@@ -35,12 +36,20 @@ final class AddGoalViewModel: ObservableObject {
         newGoal.date = self.date
         newGoal.id = UUID()
         
+=======
+
+    func addTask() {
+        let newTask = Task(context: self.context)
+        newTask.name = self.name
+        newTask.isComplete = self.isComplete
+        newTask.date = self.date
+        newTask.id = UUID()
+
+>>>>>>> dev:Steps/ViewModel/AddTaskViewModel.swift
         do {
             try context.save()
         } catch {
             print(error)
         }
     }
-    
-    
 }

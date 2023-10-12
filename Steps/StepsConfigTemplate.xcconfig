@@ -8,5 +8,5 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-DEVELOPMENT_TEAM = 2KMN827G7Y
-PRODUCT_BUNDLE_IDENTIFIER = com.DandyLyons.Rima.Steps
+DEVELOPMENT_TEAM = ID_HERE
+PRODUCT_BUNDLE_IDENTIFIER = com.BundleID.here

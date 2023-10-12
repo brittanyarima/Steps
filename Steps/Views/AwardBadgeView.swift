@@ -67,6 +67,6 @@ struct AwardBadgeView: View {
 
 struct AwardBadgeView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardBadgeView(award: AwardData.awards[4], viewModel: StepsViewModel())
+        AwardBadgeView(award: .perfectweek, viewModel: StepsViewModel())
     }
 }

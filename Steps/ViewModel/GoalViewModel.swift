@@ -1,3 +1,4 @@
+
 //
 //  GoalViewModel.swift
 //  Steps
@@ -13,7 +14,7 @@ final class GoalViewModel: ObservableObject {
     @Published var selectedTab = Constants.incomplete
     @Published var isShowingSheet = false
     @Published var isShowingPaywall = true
-    
+
     init(
         context: NSManagedObjectContext = PersistenceController.shared.container.viewContext,
         selectedTab: String = Constants.incomplete,
