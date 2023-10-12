@@ -10,6 +10,8 @@ import UserNotifications
 
 class SettingsViewModel: ObservableObject {
     @Published var showingEditView = false
+    @Published var showContributors: Bool = false
+
     @AppStorage(Constants.notificationKey) var notificationsOn = false
 
     func requestNotificationAuth() {

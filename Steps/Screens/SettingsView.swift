@@ -46,6 +46,12 @@ struct SettingsView: View {
 
                     Link(Constants.termsOfUse, destination: URL(string: Constants.termsURL)!)
                     Link(Constants.privacyPolicy, destination: URL(string: Constants.privacyURL)!)
+
+                    Button {
+                        viewModel.showContributors = true
+                    } label: {
+                        Text("Contributors")
+                    }
                 }
                 .scrollContentBackground(.hidden)
             }
@@ -54,6 +60,11 @@ struct SettingsView: View {
             .sheet(isPresented: $viewModel.showingEditView, content: {
                 EditStepsGoalView(goal: $stepsViewModel.goal)
                     .presentationDetents([.height(250)])
+            })
+            .sheet(isPresented: $viewModel.showContributors, content: {
+                NavigationStack {
+                    ContributorsView()
+                }
             })
             .onChange(of: viewModel.notificationsOn, perform: { _ in
                 viewModel.requestNotificationAuth()

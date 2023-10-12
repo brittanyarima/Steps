@@ -16,6 +16,11 @@
 		1838FC1F296A7B6000EAA116 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC1E296A7B6000EAA116 /* PersistenceController.swift */; };
 		1838FC21296A7E8A00EAA116 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC20296A7E8A00EAA116 /* AddTaskView.swift */; };
 		1838FC23296A846200EAA116 /* TaskListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC22296A846200EAA116 /* TaskListRowView.swift */; };
+		184BFB252AD7B3090063A739 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB242AD7B3090063A739 /* Contributor.swift */; };
+		184BFB272AD7B4AE0063A739 /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB262AD7B4AE0063A739 /* AddTaskViewModel.swift */; };
+		184BFB292AD7B4E30063A739 /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB282AD7B4E30063A739 /* ContributorsViewModel.swift */; };
+		184BFB2B2AD7B53C0063A739 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB2A2AD7B53C0063A739 /* TaskViewModel.swift */; };
+		184BFB2D2AD7B7200063A739 /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB2C2AD7B7200063A739 /* ContributorsView.swift */; };
 		184E933029401A97005FE1E0 /* StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E932F29401A97005FE1E0 /* StepsApp.swift */; };
 		184E933229401A97005FE1E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* HomeView.swift */; };
 		184E933429401A98005FE1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184E933329401A98005FE1E0 /* Assets.xcassets */; };
@@ -104,6 +109,11 @@
 		1838FC1E296A7B6000EAA116 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		1838FC20296A7E8A00EAA116 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		1838FC22296A846200EAA116 /* TaskListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListRowView.swift; sourceTree = "<group>"; };
+		184BFB242AD7B3090063A739 /* Contributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
+		184BFB262AD7B4AE0063A739 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
+		184BFB282AD7B4E30063A739 /* ContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
+		184BFB2A2AD7B53C0063A739 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		184BFB2C2AD7B7200063A739 /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184E932F29401A97005FE1E0 /* StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsApp.swift; sourceTree = "<group>"; };
 		184E933129401A97005FE1E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -247,6 +257,7 @@
 			children = (
 				184FD8B4294BE788000E4576 /* Step.swift */,
 				189BDCEF294D3B8A00E8237F /* Award.swift */,
+				184BFB242AD7B3090063A739 /* Contributor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +296,7 @@
 				1838FC20296A7E8A00EAA116 /* AddTaskView.swift */,
 				1838FC22296A846200EAA116 /* TaskListRowView.swift */,
 				64B742A92AD5C7F000811110 /* BackgroundView.swift */,
+				184BFB2C2AD7B7200063A739 /* ContributorsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +338,9 @@
 			children = (
 				18C81E15294A934B0058138F /* StepsViewModel.swift */,
 				188042D329527BD700E14D9D /* SettingsViewModel.swift */,
+				184BFB262AD7B4AE0063A739 /* AddTaskViewModel.swift */,
+				184BFB282AD7B4E30063A739 /* ContributorsViewModel.swift */,
+				184BFB2A2AD7B53C0063A739 /* TaskViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -446,6 +461,7 @@
 				184FD8B5294BE788000E4576 /* Step.swift in Sources */,
 				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
 				18E3D95C2AD4C06D00E33E0F /* MonthStepsView.swift in Sources */,
+				184BFB272AD7B4AE0063A739 /* AddTaskViewModel.swift in Sources */,
 				185DB3F929494947003BCC48 /* AwardView.swift in Sources */,
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
 				185B74CF295CEA02000AD18A /* CurrentStepsCardView.swift in Sources */,
@@ -455,7 +471,9 @@
 				18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */,
 				1838FC1F296A7B6000EAA116 /* PersistenceController.swift in Sources */,
 				185B74CD295CDDD9000AD18A /* CircleView.swift in Sources */,
+				184BFB2B2AD7B53C0063A739 /* TaskViewModel.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
+				184BFB252AD7B3090063A739 /* Contributor.swift in Sources */,
 				189BDCF0294D3B8A00E8237F /* Award.swift in Sources */,
 				18E3D9592AD4C04D00E33E0F /* StepsCountView.swift in Sources */,
 				181AE8662953AB9800BAD40D /* AwardDetailView.swift in Sources */,
@@ -471,6 +489,7 @@
 				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,
 				1876B8222956774600346975 /* MountainView.swift in Sources */,
+				184BFB2D2AD7B7200063A739 /* ContributorsView.swift in Sources */,
 				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
 				1838FC1C296A7A5A00EAA116 /* Steps.xcdatamodeld in Sources */,
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,
@@ -478,6 +497,7 @@
 				184E933229401A97005FE1E0 /* HomeView.swift in Sources */,
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 				18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */,
+				184BFB292AD7B4E30063A739 /* ContributorsViewModel.swift in Sources */,
 				1838FC21296A7E8A00EAA116 /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

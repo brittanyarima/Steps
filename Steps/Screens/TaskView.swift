@@ -9,9 +9,17 @@ import SwiftUI
 
 struct TaskView: View {
     @Environment(\.managedObjectContext) var context
-    @State private var isShowingSheet = false
-    @State private var selectedTab = Constants.incomplete
-    @State private var isShowingPaywall = true
+//    @State private var isShowingSheet = false
+//    @State private var selectedTab = Constants.incomplete
+//    @State private var isShowingPaywall = true
+
+    @ObservedObject var vm: TaskViewModel
+
+    init(
+        viewModel: TaskViewModel
+    ) {
+        self.vm = viewModel
+    }
 
     @FetchRequest(
         entity: Task.entity(),
@@ -26,16 +34,16 @@ struct TaskView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                TaskPickerView(selectedTab: $selectedTab)
+                TaskPickerView(selectedTab: $vm.selectedTab)
 
-                if selectedTab == Constants.incomplete && incompleteTasks.isEmpty {
+                if vm.selectedTab == Constants.incomplete && incompleteTasks.isEmpty {
                     Text("🥳 \(Constants.addSomeMoreGoals)")
                         .fontWeight(.semibold)
                         .foregroundColor(.secondary)
                 }
 
                 List {
-                    if selectedTab == Constants.incomplete {
+                    if vm.selectedTab == Constants.incomplete {
                         ForEach(incompleteTasks) { task in
                             TaskListRowView(task: task)
                         }
@@ -51,10 +59,10 @@ struct TaskView: View {
                 .listRowSeparator(.hidden)
                 .toolbar { EditButton() }
 
-                AddGoalButton(isShowingSheet: $isShowingSheet)
+                AddGoalButton(isShowingSheet: $vm.isShowingSheet)
             }
             .navigationTitle("✅ \(Constants.myGoals)")
-            .sheet(isPresented: $isShowingSheet) {
+            .sheet(isPresented: $vm.isShowingSheet) {
                 AddTaskView()
                     .presentationDetents([.height(300)])
             }
@@ -90,7 +98,7 @@ struct TaskView: View {
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView()
+        TaskView(viewModel: .init())
     }
 }
 
