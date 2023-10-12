@@ -1,5 +1,5 @@
 //
-//  TaskView.swift
+//  GoalView.swift
 //  Steps
 //
 //  Created by Brittany Rima on 1/7/23.
@@ -7,36 +7,41 @@
 
 import SwiftUI
 
-struct TaskView: View {
+struct GoalView: View {
     @Environment(\.managedObjectContext) var context
+<<<<<<< HEAD:Steps/Screens/GoalView.swift
+    @ObservedObject var vm: GoalViewModel
+    
+=======
 //    @State private var isShowingSheet = false
 //    @State private var selectedTab = Constants.incomplete
 //    @State private var isShowingPaywall = true
 
     @ObservedObject var vm: TaskViewModel
 
+>>>>>>> dev:Steps/Screens/TaskView.swift
     init(
-        viewModel: TaskViewModel
+        viewModel: GoalViewModel
     ) {
         self.vm = viewModel
     }
 
     @FetchRequest(
-        entity: Task.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \Task.date, ascending: false)],
-        predicate: NSPredicate(format: "isComplete == false")) var incompleteTasks: FetchedResults<Task>
+        entity: Goal.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Goal.date, ascending: false)],
+        predicate: NSPredicate(format: "isComplete == false")) var incompleteGoals: FetchedResults<Goal>
 
     @FetchRequest(
-        entity: Task.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \Task.date, ascending: false)],
-        predicate: NSPredicate(format: "isComplete == true")) var completeTasks: FetchedResults<Task>
+        entity: Goal.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Goal.date, ascending: false)],
+        predicate: NSPredicate(format: "isComplete == true")) var completeGoals: FetchedResults<Goal>
 
     var body: some View {
         NavigationStack {
             VStack {
-                TaskPickerView(selectedTab: $vm.selectedTab)
+                GoalPickerView(selectedTab: $vm.selectedTab)
 
-                if vm.selectedTab == Constants.incomplete && incompleteTasks.isEmpty {
+                if vm.selectedTab == Constants.incomplete && incompleteGoals.isEmpty {
                     Text("🥳 \(Constants.addSomeMoreGoals)")
                         .fontWeight(.semibold)
                         .foregroundColor(.secondary)
@@ -44,15 +49,15 @@ struct TaskView: View {
 
                 List {
                     if vm.selectedTab == Constants.incomplete {
-                        ForEach(incompleteTasks) { task in
-                            TaskListRowView(task: task)
+                        ForEach(incompleteGoals) { goal in
+                            GoalListRowView(goal: goal)
                         }
-                        .onDelete(perform: removeIncompleteTask)
+                        .onDelete(perform: removeIncompleteGoal)
                     } else {
-                        ForEach(completeTasks) { task in
-                            TaskListRowView(task: task)
+                        ForEach(completeGoals) { goal in
+                            GoalListRowView(goal: goal)
                         }
-                        .onDelete(perform: removeCompleteTask)
+                        .onDelete(perform: removeCompleteGoal)
                     }
                 }
                 .scrollContentBackground(.hidden)
@@ -63,16 +68,16 @@ struct TaskView: View {
             }
             .navigationTitle("✅ \(Constants.myGoals)")
             .sheet(isPresented: $vm.isShowingSheet) {
-                AddTaskView()
+                AddGoalView()
                     .presentationDetents([.height(300)])
             }
         }
     }
 
-    func removeIncompleteTask(at offsets: IndexSet) {
+    func removeIncompleteGoal(at offsets: IndexSet) {
         for index in offsets {
-            let task = incompleteTasks[index]
-            context.delete(task)
+            let goal = incompleteGoals[index]
+            context.delete(goal)
         }
 
         do {
@@ -82,10 +87,10 @@ struct TaskView: View {
         }
     }
 
-    func removeCompleteTask(at offsets: IndexSet) {
+    func removeCompleteGoal(at offsets: IndexSet) {
         for index in offsets {
-            let task = completeTasks[index]
-            context.delete(task)
+            let goal = completeGoals[index]
+            context.delete(goal)
         }
 
         do {
@@ -96,15 +101,15 @@ struct TaskView: View {
     }
 }
 
-struct TaskView_Previews: PreviewProvider {
+struct GoalView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView(viewModel: .init())
+        GoalView(viewModel: .init())
     }
 }
 
 //MARK: - SUPPORTING VIEWS
 
-fileprivate struct TaskPickerView: View {
+fileprivate struct GoalPickerView: View {
     @Binding var selectedTab: String
     let tabOptions = [Constants.incomplete, Constants.complete]
 

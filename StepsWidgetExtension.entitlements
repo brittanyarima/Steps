@@ -4,7 +4,9 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.KritiAgarwal.Steps</string>
+
+		<string>group.com.BrittanyRima.Steps</string>
+
 	</array>
 </dict>
 </plist>

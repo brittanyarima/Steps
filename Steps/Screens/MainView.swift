@@ -17,7 +17,7 @@ struct MainView: View {
                     Label(Constants.homeTab, systemImage: "house")
                 }
             
-            TaskView(viewModel: .init())
+            GoalView(viewModel: .init())
                 .tabItem {
                     Label(Constants.goalsTab, systemImage: "checklist")
                 }

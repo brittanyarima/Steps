@@ -16,11 +16,11 @@ struct PersistenceController {
         let controller = PersistenceController(inMemory: true)
 
         for _ in 0..<10 {
-            let task = Task(context: controller.container.viewContext)
-            task.id = UUID()
-            task.name = "Run a marathon"
-            task.date = Date()
-            task.isComplete = Bool.random()
+            let goal = Goal(context: controller.container.viewContext)
+            goal.id = UUID()
+            goal.name = "Run a marathon"
+            goal.date = Date()
+            goal.isComplete = Bool.random()
         }
         return controller
     }()
