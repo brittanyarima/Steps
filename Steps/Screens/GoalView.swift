@@ -9,17 +9,13 @@ import SwiftUI
 
 struct GoalView: View {
     @Environment(\.managedObjectContext) var context
-<<<<<<< HEAD:Steps/Screens/GoalView.swift
     @ObservedObject var vm: GoalViewModel
-    
-=======
+
 //    @State private var isShowingSheet = false
 //    @State private var selectedTab = Constants.incomplete
 //    @State private var isShowingPaywall = true
 
-    @ObservedObject var vm: TaskViewModel
 
->>>>>>> dev:Steps/Screens/TaskView.swift
     init(
         viewModel: GoalViewModel
     ) {

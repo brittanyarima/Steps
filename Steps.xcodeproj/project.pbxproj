@@ -14,14 +14,8 @@
 		1838FC19296A785E00EAA116 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC18296A785E00EAA116 /* GoalView.swift */; };
 		1838FC1C296A7A5A00EAA116 /* Steps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC1A296A7A5A00EAA116 /* Steps.xcdatamodeld */; };
 		1838FC1F296A7B6000EAA116 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC1E296A7B6000EAA116 /* PersistenceController.swift */; };
-		1838FC21296A7E8A00EAA116 /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC20296A7E8A00EAA116 /* AddGoalView.swift */; };
-		1838FC23296A846200EAA116 /* GoalListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC22296A846200EAA116 /* GoalListRowView.swift */; };
-		1838FC21296A7E8A00EAA116 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC20296A7E8A00EAA116 /* AddTaskView.swift */; };
-		1838FC23296A846200EAA116 /* TaskListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838FC22296A846200EAA116 /* TaskListRowView.swift */; };
 		184BFB252AD7B3090063A739 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB242AD7B3090063A739 /* Contributor.swift */; };
-		184BFB272AD7B4AE0063A739 /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB262AD7B4AE0063A739 /* AddTaskViewModel.swift */; };
 		184BFB292AD7B4E30063A739 /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB282AD7B4E30063A739 /* ContributorsViewModel.swift */; };
-		184BFB2B2AD7B53C0063A739 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB2A2AD7B53C0063A739 /* TaskViewModel.swift */; };
 		184BFB2D2AD7B7200063A739 /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFB2C2AD7B7200063A739 /* ContributorsView.swift */; };
 		184E933029401A97005FE1E0 /* StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E932F29401A97005FE1E0 /* StepsApp.swift */; };
 		184E933229401A97005FE1E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E933129401A97005FE1E0 /* HomeView.swift */; };
@@ -45,6 +39,8 @@
 		185F75DF295E1A5400F48560 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
 		1876B8222956774600346975 /* MountainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876B8212956774600346975 /* MountainView.swift */; };
 		188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188042D329527BD700E14D9D /* SettingsViewModel.swift */; };
+		18967B2C2AD8A2F200B19BB5 /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18967B2B2AD8A2F200B19BB5 /* AddGoalView.swift */; };
+		18967B2E2AD8A30200B19BB5 /* GoalListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18967B2D2AD8A30200B19BB5 /* GoalListRowView.swift */; };
 		189BDCEA294D163700E8237F /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCE9294D163700E8237F /* FactView.swift */; };
 		189BDCF0294D3B8A00E8237F /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCEF294D3B8A00E8237F /* Award.swift */; };
 		189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */; };
@@ -68,15 +64,7 @@
 		18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
 		18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
-		5E0BDF912ACDAFED00F7038E /* StepsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */; };
-		5E0BDF932ACDB01500F7038E /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */; };
 		5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */; };
-		800E1FFB2ACD1A7D000C5CE4 /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */; };
-		803417DF2AD0BAA4000C70B4 /* AddGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803417DE2AD0BAA4000C70B4 /* AddGoalViewModel.swift */; };
-		80372CDE2AD0C7F200B25DB9 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80372CDD2AD0C7F200B25DB9 /* GoalViewModel.swift */; };
-		892079CB2ACF4EEB001E050B /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CA2ACF4EEB001E050B /* ContributorsView.swift */; };
-		892079CD2ACF4F05001E050B /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */; };
-		892079CF2ACF4F21001E050B /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892079CE2ACF4F21001E050B /* Contributor.swift */; };
 		64B742A12AD5C79500811110 /* FileManager+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B742A02AD5C79500811110 /* FileManager+Ext.swift */; };
 		64B742A22AD5C79500811110 /* FileManager+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B742A02AD5C79500811110 /* FileManager+Ext.swift */; };
 		64B742A42AD5C7B300811110 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B742A32AD5C7B300811110 /* UIImage+Ext.swift */; };
@@ -84,6 +72,8 @@
 		64B742A72AD5C7CF00811110 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B742A62AD5C7CF00811110 /* ImageStorage.swift */; };
 		64B742A82AD5C7CF00811110 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B742A62AD5C7CF00811110 /* ImageStorage.swift */; };
 		64B742AA2AD5C7F000811110 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B742A92AD5C7F000811110 /* BackgroundView.swift */; };
+		803417DF2AD0BAA4000C70B4 /* AddGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803417DE2AD0BAA4000C70B4 /* AddGoalViewModel.swift */; };
+		80372CDE2AD0C7F200B25DB9 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80372CDD2AD0C7F200B25DB9 /* GoalViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,14 +108,8 @@
 		1838FC18296A785E00EAA116 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		1838FC1B296A7A5A00EAA116 /* Steps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Steps.xcdatamodel; sourceTree = "<group>"; };
 		1838FC1E296A7B6000EAA116 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		1838FC20296A7E8A00EAA116 /* AddGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
-		1838FC22296A846200EAA116 /* GoalListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListRowView.swift; sourceTree = "<group>"; };
-		1838FC20296A7E8A00EAA116 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
-		1838FC22296A846200EAA116 /* TaskListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListRowView.swift; sourceTree = "<group>"; };
 		184BFB242AD7B3090063A739 /* Contributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
-		184BFB262AD7B4AE0063A739 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
 		184BFB282AD7B4E30063A739 /* ContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
-		184BFB2A2AD7B53C0063A739 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		184BFB2C2AD7B7200063A739 /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
 		184E932C29401A97005FE1E0 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184E932F29401A97005FE1E0 /* StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsApp.swift; sourceTree = "<group>"; };
@@ -151,6 +135,8 @@
 		185DE12D2968D59100AD81F2 /* StepsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepsWidgetExtension.entitlements; sourceTree = "<group>"; };
 		1876B8212956774600346975 /* MountainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainView.swift; sourceTree = "<group>"; };
 		188042D329527BD700E14D9D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		18967B2B2AD8A2F200B19BB5 /* AddGoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
+		18967B2D2AD8A30200B19BB5 /* GoalListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListRowView.swift; sourceTree = "<group>"; };
 		189BDCE9294D163700E8237F /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 		189BDCEF294D3B8A00E8237F /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardBadgeView.swift; sourceTree = "<group>"; };
@@ -173,16 +159,12 @@
 		5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCountView.swift; sourceTree = "<group>"; };
 		5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
 		5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
-		800E1FF92ACD13C8000C5CE4 /* StepsGraphWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGraphWidget.swift; sourceTree = "<group>"; };
-		803417DE2AD0BAA4000C70B4 /* AddGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewModel.swift; sourceTree = "<group>"; };
-		80372CDD2AD0C7F200B25DB9 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
-		892079CA2ACF4EEB001E050B /* ContributorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
-		892079CC2ACF4F05001E050B /* ContributorsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
-		892079CE2ACF4F21001E050B /* Contributor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
 		64B742A02AD5C79500811110 /* FileManager+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Ext.swift"; sourceTree = "<group>"; };
 		64B742A32AD5C7B300811110 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		64B742A62AD5C7CF00811110 /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
 		64B742A92AD5C7F000811110 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		803417DE2AD0BAA4000C70B4 /* AddGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewModel.swift; sourceTree = "<group>"; };
+		80372CDD2AD0C7F200B25DB9 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,9 +280,8 @@
 				18E37431294E91B100D6B253 /* EditStepsGoalView.swift */,
 				181AE8652953AB9800BAD40D /* AwardDetailView.swift */,
 				181AE8672953B83000BAD40D /* AwardLockedView.swift */,
-				1838FC18296A785E00EAA116 /* GoalView.swift */,
 				5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */,
-				1838FC18296A785E00EAA116 /* TaskView.swift */,
+				1838FC18296A785E00EAA116 /* GoalView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -308,6 +289,8 @@
 		185DB3F7294948E1003BCC48 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18967B2D2AD8A30200B19BB5 /* GoalListRowView.swift */,
+				18967B2B2AD8A2F200B19BB5 /* AddGoalView.swift */,
 				18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */,
 				18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */,
 				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
@@ -319,12 +302,8 @@
 				1876B8212956774600346975 /* MountainView.swift */,
 				185B74CC295CDDD9000AD18A /* CircleView.swift */,
 				185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */,
-				1838FC20296A7E8A00EAA116 /* AddGoalView.swift */,
-				1838FC22296A846200EAA116 /* GoalListRowView.swift */,
 				5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */,
 				5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */,
-				1838FC20296A7E8A00EAA116 /* AddTaskView.swift */,
-				1838FC22296A846200EAA116 /* TaskListRowView.swift */,
 				64B742A92AD5C7F000811110 /* BackgroundView.swift */,
 				184BFB2C2AD7B7200063A739 /* ContributorsView.swift */,
 			);
@@ -370,9 +349,7 @@
 				188042D329527BD700E14D9D /* SettingsViewModel.swift */,
 				803417DE2AD0BAA4000C70B4 /* AddGoalViewModel.swift */,
 				80372CDD2AD0C7F200B25DB9 /* GoalViewModel.swift */,
-				184BFB262AD7B4AE0063A739 /* AddTaskViewModel.swift */,
 				184BFB282AD7B4E30063A739 /* ContributorsViewModel.swift */,
-				184BFB2A2AD7B53C0063A739 /* TaskViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -490,11 +467,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18967B2C2AD8A2F200B19BB5 /* AddGoalView.swift in Sources */,
 				184FD8B5294BE788000E4576 /* Step.swift in Sources */,
 				803417DF2AD0BAA4000C70B4 /* AddGoalViewModel.swift in Sources */,
 				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
 				18E3D95C2AD4C06D00E33E0F /* MonthStepsView.swift in Sources */,
-				184BFB272AD7B4AE0063A739 /* AddTaskViewModel.swift in Sources */,
 				185DB3F929494947003BCC48 /* AwardView.swift in Sources */,
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
 				185B74CF295CEA02000AD18A /* CurrentStepsCardView.swift in Sources */,
@@ -504,7 +481,6 @@
 				18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */,
 				1838FC1F296A7B6000EAA116 /* PersistenceController.swift in Sources */,
 				185B74CD295CDDD9000AD18A /* CircleView.swift in Sources */,
-				184BFB2B2AD7B53C0063A739 /* TaskViewModel.swift in Sources */,
 				185DB3F5294948D2003BCC48 /* MainView.swift in Sources */,
 				184BFB252AD7B3090063A739 /* Contributor.swift in Sources */,
 				189BDCF0294D3B8A00E8237F /* Award.swift in Sources */,
@@ -513,13 +489,11 @@
 				188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */,
 				1838FC19296A785E00EAA116 /* GoalView.swift in Sources */,
 				18F1F9E52956362E00156D4C /* Constants.swift in Sources */,
-				1838FC23296A846200EAA116 /* GoalListRowView.swift in Sources */,
-				1838FC19296A785E00EAA116 /* TaskView.swift in Sources */,
+				1838FC19296A785E00EAA116 /* GoalView.swift in Sources */,
 				64B742AA2AD5C7F000811110 /* BackgroundView.swift in Sources */,
 				18E3D95D2AD4C06D00E33E0F /* NewWeekStepsView.swift in Sources */,
 				64B742A42AD5C7B300811110 /* UIImage+Ext.swift in Sources */,
 				18F1F9E52956362E00156D4C /* Constants.swift in Sources */,
-				1838FC23296A846200EAA116 /* TaskListRowView.swift in Sources */,
 				64B742A72AD5C7CF00811110 /* ImageStorage.swift in Sources */,
 				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
 				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
@@ -531,13 +505,12 @@
 				185DB3FB2949495B003BCC48 /* SettingsView.swift in Sources */,
 				181AE86A2953D06100BAD40D /* BadgeImageView.swift in Sources */,
 				184E933229401A97005FE1E0 /* HomeView.swift in Sources */,
+				18967B2E2AD8A30200B19BB5 /* GoalListRowView.swift in Sources */,
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 				18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */,
-				1838FC21296A7E8A00EAA116 /* AddGoalView.swift in Sources */,
 				80372CDE2AD0C7F200B25DB9 /* GoalViewModel.swift in Sources */,
 				5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */,
 				184BFB292AD7B4E30063A739 /* ContributorsViewModel.swift in Sources */,
-				1838FC21296A7E8A00EAA116 /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
