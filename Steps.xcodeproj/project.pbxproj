@@ -37,6 +37,7 @@
 		185F75DF295E1A5400F48560 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
 		1876B8222956774600346975 /* MountainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876B8212956774600346975 /* MountainView.swift */; };
 		188042D429527BD700E14D9D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188042D329527BD700E14D9D /* SettingsViewModel.swift */; };
+		18967B302AD8E27600B19BB5 /* ContributorsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18967B2F2AD8E27600B19BB5 /* ContributorsClient.swift */; };
 		189BDCEA294D163700E8237F /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCE9294D163700E8237F /* FactView.swift */; };
 		189BDCF0294D3B8A00E8237F /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCEF294D3B8A00E8237F /* Award.swift */; };
 		189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */; };
@@ -55,7 +56,6 @@
 		802300A52ACF6F880051C404 /* StepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802300A42ACF6F880051C404 /* StepsTests.swift */; };
 		804270D62AD063B100D48422 /* _AppStorageDependency in Frameworks */ = {isa = PBXBuildFile; productRef = 804270D52AD063B100D48422 /* _AppStorageDependency */; };
 		804270D82AD06A7700D48422 /* ContributorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270D72AD06A7700D48422 /* ContributorsTests.swift */; };
-		804270DB2AD06F3200D48422 /* ContributorsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DA2AD06F3200D48422 /* ContributorsClient.swift */; };
 		804270DD2AD0757E00D48422 /* AddTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */; };
 		804270DF2AD0788F00D48422 /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DE2AD0788F00D48422 /* SettingsViewTests.swift */; };
 		80535E6A2ACF93B3000DD465 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E692ACF93B3000DD465 /* Dependencies */; };
@@ -131,6 +131,7 @@
 		185DE12D2968D59100AD81F2 /* StepsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepsWidgetExtension.entitlements; sourceTree = "<group>"; };
 		1876B8212956774600346975 /* MountainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainView.swift; sourceTree = "<group>"; };
 		188042D329527BD700E14D9D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		18967B2F2AD8E27600B19BB5 /* ContributorsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContributorsClient.swift; path = Steps/Views/ContributorsClient.swift; sourceTree = SOURCE_ROOT; };
 		189BDCE9294D163700E8237F /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 		189BDCEF294D3B8A00E8237F /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardBadgeView.swift; sourceTree = "<group>"; };
@@ -152,7 +153,6 @@
 		802300A22ACF6F870051C404 /* StepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		802300A42ACF6F880051C404 /* StepsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsTests.swift; sourceTree = "<group>"; };
 		804270D72AD06A7700D48422 /* ContributorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsTests.swift; sourceTree = "<group>"; };
-		804270DA2AD06F3200D48422 /* ContributorsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsClient.swift; sourceTree = "<group>"; };
 		804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewTests.swift; sourceTree = "<group>"; };
 		804270DE2AD0788F00D48422 /* SettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
 		892079CA2ACF4EEB001E050B /* ContributorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
@@ -365,7 +365,7 @@
 		804270D92AD06F1A00D48422 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				804270DA2AD06F3200D48422 /* ContributorsClient.swift */,
+				18967B2F2AD8E27600B19BB5 /* ContributorsClient.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -522,6 +522,7 @@
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
 				185B74CF295CEA02000AD18A /* CurrentStepsCardView.swift in Sources */,
 				181AE8682953B83000BAD40D /* AwardLockedView.swift in Sources */,
+				18967B302AD8E27600B19BB5 /* ContributorsClient.swift in Sources */,
 				189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */,
 				18E37432294E91B100D6B253 /* EditStepsGoalView.swift in Sources */,
 				1838FC1F296A7B6000EAA116 /* PersistenceController.swift in Sources */,
@@ -540,7 +541,6 @@
 				18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */,
 				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,
-				804270DB2AD06F3200D48422 /* ContributorsClient.swift in Sources */,
 				1876B8222956774600346975 /* MountainView.swift in Sources */,
 				892079CD2ACF4F05001E050B /* ContributorsViewModel.swift in Sources */,
 				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
@@ -802,6 +802,7 @@
 				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGU49S8C2X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StepsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StepsWidget;
@@ -812,6 +813,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.StepsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -829,6 +831,7 @@
 				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGU49S8C2X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StepsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StepsWidget;
@@ -839,6 +842,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrittanyRima.Steps.StepsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
