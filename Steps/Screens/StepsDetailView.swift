@@ -11,14 +11,18 @@ struct StepsDetailView: View {
     @ObservedObject var viewModel: StepsViewModel
 
     var body: some View {
-        VStack(spacing: 20) {
-            FactView(viewModel: viewModel)
-            CircleProgressBar(value: viewModel.currentSteps, maxValue: viewModel.goal)
-                .padding()
-            WeekStepsView(viewModel: viewModel)
-            Spacer()
+        ScrollView{
+            VStack(spacing: 20) {
+                FactView(viewModel: viewModel)
+                CircleProgressBar(value: viewModel.currentSteps, maxValue: viewModel.goal)
+                    .padding()
+                WeekStepsView(viewModel: viewModel)
+                Spacer()
+                MonthStepsView(viewModel: viewModel)
+                Spacer()
+            }
+            .padding(.top, 30)
         }
-        .padding(.top, 30)
     }
 }
 
