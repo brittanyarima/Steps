@@ -7,26 +7,41 @@
 
 import SwiftUI
 import HealthKit
+
+import DependenciesAdditions
+import Dependencies
+import _AppStorageDependency
 import PhotosUI
 import CoreTransferable
+
 
 class StepsViewModel: ObservableObject {
     var healthStore: HKHealthStore?
     var query: HKStatisticsCollectionQuery?
-    @AppStorage("stepCount", store: UserDefaults(suiteName: "group.com.BrittanyRima.Steps")) var stepCount: Int = 0
+    @AppStorage(Constants.stepCountKey, store: UserDefaults(suiteName: Constants.appGroupID)) var stepCount: Int = 0
+    
+    // 👇🏼 Still experimental
+//    @Dependency.AppStorage(
+//        Constants.stepCountKey,
+//        store: .init(suitename: Constants.appGroupID)
+//    ) var stepCount: Int = 0
+    
+    
+    
+    @Dependency(\.userDefaults) var userDefaults
 
     @Published var weekSteps: [Step] = [] // Data for the week chart
     @Published var monthSteps: [Step] = [] // Data for the month chart
     
     @Published var steps: [Step] = []
-    @Published var goal: Int = 10000 {
+    @Published var goal: Int = 10_000 {
         didSet {
-            UserDefaults.standard.set(goal, forKey: Constants.goalKey)
+            self.userDefaults.set(goal, forKey: Constants.goalKey)
         }
     }
 
     init() {
-        self.goal = UserDefaults.standard.integer(forKey: Constants.goalKey)
+        self.goal = self.userDefaults.integer(forKey: Constants.goalKey) ?? 10_000
 
         if HKHealthStore.isHealthDataAvailable() {
             healthStore = HKHealthStore()

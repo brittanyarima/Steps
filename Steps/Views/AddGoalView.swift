@@ -6,19 +6,14 @@
 //
 
 import SwiftUI
+import Dependencies
 
 struct AddGoalView: View {
     @Environment(\.managedObjectContext) var context
     @Environment(\.dismiss) var dismiss
-<<<<<<< HEAD:Steps/Views/AddGoalView.swift
     @ObservedObject var vm: AddGoalViewModel
     
     init(viewModel: AddGoalViewModel = .init()) {
-=======
-    @ObservedObject var vm: AddTaskViewModel
-
-    init(viewModel: AddTaskViewModel = .init()) {
->>>>>>> dev:Steps/Views/AddTaskView.swift
         self.vm = viewModel
     }
 

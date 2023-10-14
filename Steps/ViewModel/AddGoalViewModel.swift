@@ -27,29 +27,12 @@ final class AddGoalViewModel: ObservableObject {
         self.isComplete = isComplete
         self.date = date
     }
-<<<<<<< HEAD:Steps/ViewModel/AddGoalViewModel.swift
-    
+
     func addGoal() {
         let newGoal = Goal(context: self.context)
         newGoal.name = self.name
         newGoal.isComplete = self.isComplete
         newGoal.date = self.date
         newGoal.id = UUID()
-        
-=======
-
-    func addTask() {
-        let newTask = Task(context: self.context)
-        newTask.name = self.name
-        newTask.isComplete = self.isComplete
-        newTask.date = self.date
-        newTask.id = UUID()
-
->>>>>>> dev:Steps/ViewModel/AddTaskViewModel.swift
-        do {
-            try context.save()
-        } catch {
-            print(error)
-        }
     }
 }
