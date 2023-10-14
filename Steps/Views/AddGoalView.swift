@@ -14,10 +14,6 @@ struct AddGoalView: View {
     @ObservedObject var vm: AddGoalViewModel
     
     init(viewModel: AddGoalViewModel = .init()) {
-
-    @ObservedObject var vm: AddTaskViewModel
-
-    init(viewModel: AddTaskViewModel = .init()) {
         self.vm = viewModel
     }
 
@@ -64,24 +60,6 @@ struct AddGoalView: View {
         }
         .padding(14)
     }
-
-    func addTask() {
-        let newTask = Task(context: context)
-        @Dependency(\.uuid) var uuid
-        newTask.id = uuid()
-        newTask.isComplete = false
-        newTask.name = taskName
-        @Dependency(\.date) var date
-        newTask.date = date()
-
-        do {
-            try context.save()
-        } catch {
-            // show error
-            print(error)
-        }
-    }
-
 }
 
 struct AddGoalView_Previews: PreviewProvider {
