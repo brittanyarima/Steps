@@ -1,3 +1,4 @@
+
 //
 //  ContributorsViewModel.swift
 //  Steps
@@ -11,10 +12,12 @@ import Dependencies
 class ContributorsViewModel: ObservableObject {
     @Published var contributors: [Contributor] = []
 
+
     @Dependency(\.contributors) var contributorsClient
 
     func fetchContributors() async {
         self.contributors = await self.contributorsClient.fetchContributors()
+
     }
 
 

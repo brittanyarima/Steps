@@ -23,7 +23,7 @@ struct AwardView: View {
                     .padding()
 
                 LazyVGrid(columns: columns) {
-                    ForEach(AwardData.awards, id: \.name) { award in
+                    ForEach(Award.allCases, id: \.name) { award in
                         AwardBadgeView(award: award, viewModel: viewModel)
                     }
                 }

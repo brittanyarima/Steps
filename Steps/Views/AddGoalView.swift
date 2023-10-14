@@ -1,5 +1,5 @@
 //
-//  AddTaskView.swift
+//  AddGoalView.swift
 //  Steps
 //
 //  Created by Brittany Rima on 1/7/23.
@@ -8,10 +8,18 @@
 import SwiftUI
 import Dependencies
 
-struct AddTaskView: View {
+struct AddGoalView: View {
     @Environment(\.managedObjectContext) var context
     @Environment(\.dismiss) var dismiss
-    @State private var taskName: String = ""
+    @ObservedObject var vm: AddGoalViewModel
+    
+    init(viewModel: AddGoalViewModel = .init()) {
+
+    @ObservedObject var vm: AddTaskViewModel
+
+    init(viewModel: AddTaskViewModel = .init()) {
+        self.vm = viewModel
+    }
 
     var body: some View {
         VStack() {
@@ -35,7 +43,7 @@ struct AddTaskView: View {
 
             Spacer()
 
-            TextField(Constants.newGoalField, text: $taskName)
+            TextField(Constants.newGoalField, text: $vm.name)
                 .padding(.horizontal)
                 .frame(height: 55)
                 .background(Color(.tertiarySystemFill))
@@ -43,7 +51,7 @@ struct AddTaskView: View {
                 .foregroundColor(.indigo)
 
             Button {
-                addTask()
+                vm.addGoal()
                 dismiss()
             } label: {
                 Text(Constants.save)
@@ -73,11 +81,12 @@ struct AddTaskView: View {
             print(error)
         }
     }
+
 }
 
-struct AddTaskView_Previews: PreviewProvider {
+struct AddGoalView_Previews: PreviewProvider {
     static var previews: some View {
-        AddTaskView()
+        AddGoalView()
             .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
     }
 }

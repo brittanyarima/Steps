@@ -25,6 +25,6 @@ struct BadgeImageView: View {
 
 struct BadgeImageView_Previews: PreviewProvider {
     static var previews: some View {
-        BadgeImageView(award: AwardData.awards[0])
+        BadgeImageView(award: .firstStep)
     }
 }

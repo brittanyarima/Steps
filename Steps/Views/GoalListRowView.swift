@@ -1,5 +1,5 @@
 //
-//  TaskListRowView.swift
+//  GoalListRowView.swift
 //  Steps
 //
 //  Created by Brittany Rima on 1/7/23.
@@ -8,14 +8,14 @@
 import CoreData
 import SwiftUI
 
-struct TaskListRowView: View {
-    @ObservedObject var task: Task
+struct GoalListRowView: View {
+    @ObservedObject var goal: Goal
 
     var body: some View {
         HStack {
-            Text(task.name ?? Constants.unknownName)
+            Text(goal.name ?? Constants.unknownName)
             Spacer()
-            if task.isComplete {
+            if goal.isComplete {
                 Image(systemName: "checkmark.circle.fill")
                     .foregroundColor(.indigo)
                     .rotationEffect(.degrees(0))
@@ -24,16 +24,16 @@ struct TaskListRowView: View {
                     .animation(
                         Animation.easeInOut(duration: 0.6)
                             .repeatCount(1, autoreverses: false),
-                        value: task.isComplete
+                        value: goal.isComplete
                     )
                     .onTapGesture {
-                        toggleTask()
+                        toggleGoal()
                     }
             } else {
                 Image(systemName: "circle")
                     .foregroundColor(.indigo)
                     .onTapGesture {
-                        toggleTask()
+                        toggleGoal()
                     }
             }
         }
@@ -47,20 +47,20 @@ struct TaskListRowView: View {
         .multilineTextAlignment(.leading)
     }
     
-    private func toggleTask() {
+    private func toggleGoal() {
         withAnimation {
-            task.isComplete.toggle()
-            if task.hasChanges {
+            goal.isComplete.toggle()
+            if goal.hasChanges {
                 PersistenceController.shared.save()
             }
         }
     }
 }
 
-struct TaskListRowView_Previews: PreviewProvider {
+struct GoalListRowView_Previews: PreviewProvider {
     static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
     static var previews: some View {
-        let task = Task(context: moc)
-        TaskListRowView(task: task)
+        let goal = Goal(context: moc)
+        GoalListRowView(goal: goal)
     }
 }

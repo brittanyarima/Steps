@@ -12,7 +12,7 @@ import DependenciesAdditions
 class SettingsViewModel: ObservableObject {
     @Published var showingEditView = false
     @Published var showContributors: Bool = false
-    
+
     @AppStorage(Constants.notificationKey) var notificationsOn = false
     @Dependency(\.userNotificationCenter) var userNotificationCenter
     @Dependency(\.logger) var logger

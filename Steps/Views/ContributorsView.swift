@@ -1,3 +1,4 @@
+
 //
 //  ContributorsView.swift
 //  Steps
@@ -12,11 +13,11 @@ struct ContributorsView: View {
     @Environment(\.dismiss) private var dismiss
 
     @StateObject var viewModel = ContributorsViewModel()
-    
+
     let columns = [
             GridItem(.adaptive(minimum: 100))
         ]
-        
+
     var body: some View {
         Group {
             if !viewModel.contributors.isEmpty {
@@ -28,15 +29,15 @@ struct ContributorsView: View {
                                     image
                                         .resizable()
                                         .scaledToFit()
-                                } placeholder: { 
+                                } placeholder: {
                                     ProgressView()
                                 }
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
-                                
+
                                 Text(element.login)
                                     .font(.caption)
                             }
-                            .onTapGesture { 
+                            .onTapGesture {
                                 openURL(URL(string: element.htmlURL)!)
                             }
                         }
@@ -49,9 +50,9 @@ struct ContributorsView: View {
         }
         .navigationTitle("Contributors")
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) { 
+            ToolbarItem(placement: .topBarTrailing) {
                 Image(systemName: "xmark")
-                    .onTapGesture { 
+                    .onTapGesture {
                         dismiss()
                     }
             }
