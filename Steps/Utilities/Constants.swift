@@ -91,6 +91,8 @@ struct Constants {
     static let stepsGraphWidget = "StepsGraphWidget"
     static let stepsGraphWidgetName = "Steps Graph"
     static let stepsGraphWidgetDescription = "View your steps progress throughout the day."
+    static let caloriesBurned = "Calories Burned"
+    static let distance = "Distance Walked"
 
     // MARK: Tabs
     static let homeTab = "Home"

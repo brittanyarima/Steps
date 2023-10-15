@@ -32,6 +32,8 @@ class StepsViewModel: ObservableObject {
 
     @Published var weekSteps: [Step] = [] // Data for the week chart
     @Published var monthSteps: [Step] = [] // Data for the month chart
+    @Published var calories: [Calorie] = []
+    @Published var totalDistance: [Distance] = []
     
     @Published var steps: [Step] = []
     @Published var goal: Int = 10_000 {
@@ -53,7 +55,15 @@ class StepsViewModel: ObservableObject {
     var currentSteps: Int {
         steps.last?.count ?? 0
     }
-
+    
+    var currentCalories: Int {
+        calories.last?.value ?? 0
+    }
+    
+    var currentDistance: Int {
+        totalDistance.last?.value ?? 0
+    }
+    
     var soccerFieldsWalkedString: String {
         let numOfFields = currentSteps / 144 // For every 144 Steps you've walked about 1 soccer field.
 
@@ -146,7 +156,50 @@ class StepsViewModel: ObservableObject {
             healthStore.execute(query)
         }
     }
-
+    
+    func calculateCalories(completion: @escaping (HKStatisticsCollection?) -> Void) {
+        let calories = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.activeEnergyBurned)!
+        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+        let anchorDate = Date.sundayAt12AM()
+        let daily = DateComponents(day: 1)
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: calories,
+                                            quantitySamplePredicate: predicate,
+                                            options: .cumulativeSum,
+                                            anchorDate: anchorDate,
+                                            intervalComponents: daily)
+        query!.initialResultsHandler = { query, statsCollection, error in
+            completion(statsCollection)
+        }
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
+    
+    func calculateDistance(completion: @escaping (HKStatisticsCollection?) -> Void) {
+        
+        let distance = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
+        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+        let anchorDate = Date.sundayAt12AM()
+        let daily = DateComponents(day: 1)
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: distance,
+                                            quantitySamplePredicate: predicate,
+                                            options: .cumulativeSum,
+                                            anchorDate: anchorDate,
+                                            intervalComponents: daily)
+        
+        query!.initialResultsHandler = { query, statsCollection, error in
+            completion(statsCollection)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
+    
     func updateUIFromStats(_ statsCollection: HKStatisticsCollection) {
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
         let endDate = Date()
@@ -188,12 +241,42 @@ class StepsViewModel: ObservableObject {
             }
         }
     }
-
+    
+    func updateCalorieUIFromStats(_ statsCollection: HKStatisticsCollection) {
+        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
+        let endDate = Date()
+        
+        statsCollection.enumerateStatistics(from: startDate, to: endDate) { stats, stop in
+            let caloriesBurned = stats.sumQuantity()?.doubleValue(for: .largeCalorie())
+            let calorie = Calorie(value: Int(caloriesBurned ?? 0), date: stats.startDate)
+            
+            DispatchQueue.main.async {
+                self.calories.append(calorie)
+            }
+        }
+    }
+    
+    func updateDistanceUIFromStats(_ statsCollection: HKStatisticsCollection) {
+        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
+        let endDate = Date()
+        
+        statsCollection.enumerateStatistics(from: startDate, to: endDate) { stats, stop in
+            let distanceWalked = stats.sumQuantity()?.doubleValue(for: .meter())
+            let distance = Distance(value: Int(distanceWalked ?? 0), date: stats.startDate)
+            
+            DispatchQueue.main.async {
+                self.totalDistance.append(distance)
+            }
+        }
+    }
+    
     func requestAuthorization(completion: @escaping (Bool) -> Void) {
         let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
+        let calorieType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.activeEnergyBurned)!
+        let distanceType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
         guard let healthStore = self.healthStore else { return  completion(false) }
-
-        healthStore.requestAuthorization(toShare: [], read: [stepType]) { success, error in
+        
+        healthStore.requestAuthorization(toShare: [], read: [stepType, calorieType, distanceType]) { success, error in
             completion(success)
         }
     }
