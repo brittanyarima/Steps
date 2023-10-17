@@ -7,23 +7,41 @@
 
 import SwiftUI
 import HealthKit
+
+import DependenciesAdditions
+import Dependencies
+import _AppStorageDependency
 import PhotosUI
 import CoreTransferable
+
 
 class StepsViewModel: ObservableObject {
     var healthStore: HKHealthStore?
     var query: HKStatisticsCollectionQuery?
-    @AppStorage("stepCount", store: UserDefaults(suiteName: "group.com.BrittanyRima.Steps")) var stepCount: Int = 0
+    @AppStorage(Constants.stepCountKey, store: UserDefaults(suiteName: Constants.appGroupID)) var stepCount: Int = 0
+    
+    // 👇🏼 Still experimental
+//    @Dependency.AppStorage(
+//        Constants.stepCountKey,
+//        store: .init(suitename: Constants.appGroupID)
+//    ) var stepCount: Int = 0
+    
+    
+    
+    @Dependency(\.userDefaults) var userDefaults
 
+    @Published var weekSteps: [Step] = [] // Data for the week chart
+    @Published var monthSteps: [Step] = [] // Data for the month chart
+    
     @Published var steps: [Step] = []
-    @Published var goal: Int = 10000 {
+    @Published var goal: Int = 10_000 {
         didSet {
-            UserDefaults.standard.set(goal, forKey: Constants.goalKey)
+            self.userDefaults.set(goal, forKey: Constants.goalKey)
         }
     }
 
     init() {
-        self.goal = UserDefaults.standard.integer(forKey: Constants.goalKey)
+        self.goal = self.userDefaults.integer(forKey: Constants.goalKey) ?? 10_000
 
         if HKHealthStore.isHealthDataAvailable() {
             healthStore = HKHealthStore()
@@ -84,11 +102,54 @@ class StepsViewModel: ObservableObject {
             healthStore.execute(query)
         }
     }
+    
+    func calculateLastWeeksSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
+        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
+        let startDate = Calendar.current.date(byAdding: .weekOfYear, value: -6, to: Date())
+        let anchorDate = Date.sundayAt12AM()
+        let week = DateComponents(day: 1)
+        
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: stepType,
+                                            quantitySamplePredicate: predicate,
+                                            options: .cumulativeSum,
+                                            anchorDate: anchorDate,
+                                            intervalComponents: week)
+        query!.initialResultsHandler = { query, statsCollection, error in
+            completion(statsCollection)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
+    
+    func calculateMonthSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
+        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
+        let startDate = Calendar.current.date(byAdding: .day, value: -30, to: Date())
+        let anchorDate = Date.sundayAt12AM()
+        let month = DateComponents(day: 1)
+        
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: stepType,
+                                            quantitySamplePredicate: predicate,
+                                            options: .cumulativeSum,
+                                            anchorDate: anchorDate,
+                                            intervalComponents: month)
+        query!.initialResultsHandler = { query, statsCollection, error in
+            completion(statsCollection)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
 
     func updateUIFromStats(_ statsCollection: HKStatisticsCollection) {
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
         let endDate = Date()
-
         statsCollection.enumerateStatistics(from: startDate, to: endDate) { stats, stop in
             let count = stats.sumQuantity()?.doubleValue(for: .count())
             let step = Step(count: Int(count ?? 0), date: stats.startDate)
@@ -96,6 +157,34 @@ class StepsViewModel: ObservableObject {
             DispatchQueue.main.async {
                 self.steps.append(step)
                 self.stepCount = self.steps.last?.count ?? 0
+            }
+        }
+    }
+    
+    func updateWeekUIFromStats(_ statsCollection: HKStatisticsCollection) {
+        let startDate = Calendar.current.date(byAdding: .day, value: -6, to: Date())!
+        let endDate = Date()
+        statsCollection.enumerateStatistics(from: startDate, to: endDate) { stats, stop in
+            let count = stats.sumQuantity()?.doubleValue(for: .count())
+            let step = Step(count: Int(count ?? 0), date: stats.startDate)
+            
+            DispatchQueue.main.async {
+                self.weekSteps.append(step)
+                self.stepCount = self.weekSteps.last?.count ?? 0
+            }
+        }
+    }
+    
+    func updateMonthUIFromStats(_ statsCollection: HKStatisticsCollection) {
+        let startDate = Calendar.current.date(byAdding: .day, value: -30, to: Date())!
+        let endDate = Date()
+        statsCollection.enumerateStatistics(from: startDate, to: endDate) { stats, stop in
+            let count = stats.sumQuantity()?.doubleValue(for: .count())
+            let step = Step(count: Int(count ?? 0), date: stats.endDate)
+            
+            DispatchQueue.main.async {
+                self.monthSteps.append(step)
+                self.stepCount = self.monthSteps.last?.count ?? 0
             }
         }
     }

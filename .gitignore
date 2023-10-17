@@ -1,6 +1,5 @@
 SECRETS.swift
 StepsConfig.xcconfig
-StepsWidgetConfig.xcconfig
 *.xcuserstate
 
 *.pbxproj
@@ -86,10 +85,6 @@ Package.resolved
 
 Carthage/Build/
 
-# Accio dependency management
-Dependencies/
-.accio/
-
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo.
@@ -109,4 +104,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-Steps/StepsWidgetConfig.xcconfig
+.DS_Store

@@ -20,7 +20,7 @@ struct WeekStepsView: View {
                     .foregroundStyle(.mint)
                     .lineStyle(StrokeStyle(lineWidth: 1, dash: [5]))
 
-                ForEach(viewModel.steps) { step in
+                ForEach(viewModel.weekSteps) { step in
                     BarMark(
                         x: .value(Constants.day, step.date, unit: .weekday),
                         y: .value(Constants.steps, step.count)
@@ -31,8 +31,8 @@ struct WeekStepsView: View {
             .frame(height: 150)
             .padding()
             .chartXAxis {
-                AxisMarks(values: viewModel.steps.map { $0.date}) { date in
-                    AxisValueLabel(format: .dateTime.weekday(.abbreviated))
+                AxisMarks(values: viewModel.weekSteps.map { $0.date}) { date in
+                    AxisValueLabel(format: .dateTime.weekday(.narrow))
                         .offset(x: 5)
                 }
             }

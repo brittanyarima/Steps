@@ -11,13 +11,19 @@ struct Constants {
     // MARK: URLs
     static let termsURL = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
     static let privacyURL = "https://sites.google.com/view/steptrackerapp/home"
+    
+    // MARK: Identifiers
+    static let appGroupID = "group.com.BrittanyRima.Steps"
 
     // MARK: Messages
     static let goalKey = "goal"
     static let notificationKey = "notifications"
+
+    static let stepCountKey = "stepCount"
     static let backgroundImageKey = "backgroundImage"
     static let steps = "Steps"
     static let weeklySteps = "Weekly Steps"
+    static let monthlySteps = "Monthly Steps"
     static let goal = "Goal"
     static let day = "Day"
     static let dailyGoal = "Daily Goal"
@@ -56,6 +62,9 @@ struct Constants {
     static let weeklyAwards = "Weekly Awards"
     static let notifications = "Notifications"
     static let notificationSettings = "Notification settings"
+    
+    /// The string to be passed into UNNotificationRequest
+    static let notificationsIdentifier = "daily-notification"
     static let termsOfUse = "Terms of Use"
     static let privacyPolicy = "Privacy Policy"
     static let settingsTitle = "Settings"
@@ -70,7 +79,7 @@ struct Constants {
     static let month = "Month"
     static let incomplete = "Incomplete"
     static let complete = "Complete"
-    static let coreDataError = "❗️ Error saving delete task to core data"
+    static let coreDataError = "❗️ Error saving delete goal to core data"
     static let goodMorningTitle = "Good Morning!"
     static let reachStepGoalDescription = "Try to reach your steps goal today. We believe in you!"
     static let walkedOneSoccerFieldToday = "You've walked about 1 soccer field today so far. Keep it up!"
@@ -89,4 +98,8 @@ struct Constants {
     static let awardsTab = "Awards"
     static let stepsTab = "Steps"
     static let settingsTab = "Settings"
+}
+
+extension UserDefaults {
+    static let appGroup: UserDefaults? = UserDefaults(suiteName: Constants.appGroupID)
 }
