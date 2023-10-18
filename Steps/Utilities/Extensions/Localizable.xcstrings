@@ -1,0 +1,493 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    " Goal ideas" : {
+      "comment" : "Title for goal ideas",
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💡 Ideas para metas"
+          }
+        }
+      }
+    },
+    " My Goals" : {
+      "comment" : "✅ My Goals view title ",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mis Metas"
+          }
+        }
+      }
+    },
+    "%i steps" : {
+      "comment" : "# and steps title inside the widget. EX: 2000 (steps)",
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%i pasos"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld steps" : {
+      "comment" : "Title for number of steps\nNumber of steps",
+      "extractionState" : "stale",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numero de pasos"
+          }
+        }
+      }
+    },
+    "Add Goal" : {
+      "comment" : "Add goal label to add new a goal",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar Nueva meta"
+          }
+        }
+      }
+    },
+    "Add New Goal" : {
+      "comment" : "🖋️ Add New goal title",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añade nueva meta\n"
+          }
+        }
+      }
+    },
+    "Awards" : {
+      "comment" : "Awards tab title",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premios"
+          }
+        }
+      }
+    },
+    "Can you can unlock all of these awards this week?" : {
+      "comment" : "label below the Weekly award title inside weekly awards view",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podrás  desbloquear todas estas recompensas esta semana? "
+          }
+        }
+      }
+    },
+    "Complete" : {
+      "comment" : "complete label to see completed goals",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completado"
+          }
+        }
+      }
+    },
+    "Contributors" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colaboradores"
+          }
+        }
+      }
+    },
+    "Current Steps" : {
+      "comment" : "Title for current steps",
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pasos actuales"
+          }
+        }
+      }
+    },
+    "Daily Goal" : {
+      "comment" : "daily goal label in the graph view of steps.",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metas Diarias "
+          }
+        }
+      }
+    },
+    "Daily Steps Goal" : {
+      "comment" : "Title for daily steps goal",
+      "extractionState" : "stale",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metas de Pasos Diarios "
+          }
+        }
+      }
+    },
+    "Day" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Día"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "comment" : "Button title to edit steps goal",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hecho"
+          }
+        }
+      }
+    },
+    "Failed to set background image." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fallo al intentar establecer nueva imagen de fondo de pantalla. "
+          }
+        }
+      }
+    },
+    "Goal" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta"
+          }
+        }
+      }
+    },
+    "Goal ideas" : {
+      "comment" : "💡Goal ideas label when creating new goal",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ideas para metas"
+          }
+        }
+      }
+    },
+    "Goals" : {
+      "comment" : "Goals tab title",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metas"
+          }
+        }
+      }
+    },
+    "Home" : {
+      "comment" : "Home tab title",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicio"
+          }
+        }
+      }
+    },
+    "Home Screen" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Página de inicio"
+          }
+        }
+      }
+    },
+    "Incomplete" : {
+      "comment" : "Incomplete label to see incompleted goals",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inconmpleto"
+          }
+        }
+      }
+    },
+    "Keep walking. You've almost walked a full soccer field today so far!" : {
+      "comment" : "Comment in the header of Steps View",
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sigue caminando. Casi has caminado una cancha de fútbol entera!"
+          }
+        }
+      }
+    },
+    "Locked" : {
+      "comment" : "label title for locked",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloqueado"
+          }
+        }
+      }
+    },
+    "Month" : {
+      "comment" : "Label title for Month",
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mes"
+          }
+        }
+      }
+    },
+    "New goal..." : {
+      "comment" : "New goal... label for text field in add new goal view.",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nueva meta..."
+          }
+        }
+      }
+    },
+    "Notification settings" : {
+      "comment" : "Notifications settings label",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajuste de notificaciones"
+          }
+        }
+      }
+    },
+    "Notifications" : {
+      "comment" : "Notifications label",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noticicaciones"
+          }
+        }
+      }
+    },
+    "Please choose another image." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor elige otra imagen. "
+          }
+        }
+      }
+    },
+    "Privacy Policy" : {
+      "comment" : "privacy policy label",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Política de Privacidad"
+          }
+        }
+      }
+    },
+    "Reset background image" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revertir cambios en el fondo de pantalla de la pagina de inicio"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "comment" : "Save label inside add new goal view.",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar"
+          }
+        }
+      }
+    },
+    "Set a New Daily Steps Goal" : {
+      "comment" : "Title for set a new daily steps goal",
+      "extractionState" : "stale",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establecer una Nueva Meta Diaria de Pasos"
+          }
+        }
+      }
+    },
+    "Set background image" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establecer fondo de pantalla"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "comment" : "Settings tab title\n   Settings title screen",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
+          }
+        }
+      }
+    },
+    "Steps" : {
+      "comment" : "Steps tab title",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pasos"
+          }
+        }
+      }
+    },
+    "Terms of Use" : {
+      "comment" : "Terms of use label",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Términos de Uso"
+          }
+        }
+      }
+    },
+    "Time to add some more goals!" : {
+      "comment" : "🥳 Time to add some more goals label inside Goals view.",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiempo de añadir nuevas metas!\n"
+          }
+        }
+      }
+    },
+    "Walk a 5K, Walk with a friend, Increase steps goal" : {
+      "comment" : "label message when creating a new goal.",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caminar un 5k, Aumentar mis pasos..."
+          }
+        }
+      }
+    },
+    "Week" : {
+      "comment" : "label title for week",
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semana"
+          }
+        }
+      }
+    },
+    "Weekly Awards" : {
+      "comment" : "Awards navigation title",
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premios Semanales"
+          }
+        }
+      }
+    },
+    "Weekly Steps" : {
+      "comment" : "Title for weekly steps",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pasos Semanales"
+          }
+        }
+      }
+    },
+    "You haven't unlocked this award yet this week. Keep getting those steps in and completing goals to unlock it. You can do it!" : {
+      "comment" : "message of weekly award blocked.",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aún no has desbloqueado este premio esta semana. Continúe realizando esos pasos y completando objetivos para desbloquearlo. ¡Puedes hacerlo!"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
