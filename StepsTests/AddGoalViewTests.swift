@@ -10,10 +10,10 @@ import Dependencies
 @testable import Steps
 
 @MainActor
-final class AddTaskViewTests: XCTestCase {
+final class AddGoalViewTests: XCTestCase {
     func testAddTask() {
         let persistenceController = PersistenceController.preview
-        let addTaskView = AddTaskView()
+        let addTaskView = AddGoalView()
             .environment(\.managedObjectContext, persistenceController.container.viewContext)
         
     }
