@@ -21,14 +21,14 @@ struct Constants {
 
     static let stepCountKey = "stepCount"
     static let backgroundImageKey = "backgroundImage"
-    static let steps = "Steps"
-    static let weeklySteps = "Weekly Steps"
+    static let steps = NSLocalizedString("Steps", comment: "")
+    static let weeklySteps = NSLocalizedString("Weekly Steps", comment: "Title for weekly steps")
     static let monthlySteps = "Monthly Steps"
     static let goal = "Goal"
     static let day = "Day"
-    static let dailyGoal = "Daily Goal"
+    static let dailyGoal = NSLocalizedString("Daily Goal", comment: "daily goal label in the graph view of steps.")
     static let soccerball = "soccerball"
-    static let done = "Done"
+    static let done = NSLocalizedString("Done", comment: "Button title to edit steps goal")
     static let firstStepsName = "First Steps"
     static let firstStepsDescription = "You took more than 100 steps this week, you're on your way to your goal. Keep it up!"
     static let goalName = "Gooooaaaaal"
@@ -50,43 +50,43 @@ struct Constants {
     static let goGetterName = "Go Getter"
     static let goGetterDescription = "You completed 5 goals!"
     static let dailyStepsGoal = "Daily Steps Goal"
-    static let enterSteps = "%i steps"
-    static let currentSteps = "Current Steps"
-    static let addNewGoal = "Add New Goal"
-    static let goalIdeas = "Goal ideas"
-    static let walkWithFriend = "Walk a 5K, Walk with a friend, Increase steps goal"
-    static let newGoalField = "New goal..."
-    static let save = "Save"
+    static let enterSteps = NSLocalizedString("%i steps", comment: "")
+    static let currentSteps = NSLocalizedString("Current Steps", comment: "Title for current steps")
+    static let addNewGoal = NSLocalizedString("Add New Goal", comment: "🖋️ Add New goal title")
+    static let goalIdeas = NSLocalizedString("Goal ideas", comment: "💡Goal ideas label when creating new goal")
+    static let walkWithFriend = NSLocalizedString("Walk a 5K, Walk with a friend, Increase steps goal", comment: "label message when creating a new goal.")
+    static let newGoalField = NSLocalizedString("New goal...", comment: "New goal... label for text field in add new goal view.")
+    static let save = NSLocalizedString("Save", comment: "Save label inside add new goal view.")
     static let unknownName = "Unknown Name"
-    static let unlockAwardsDesc = "Can you can unlock all of these awards this week?"
-    static let weeklyAwards = "Weekly Awards"
-    static let notifications = "Notifications"
-    static let notificationSettings = "Notification settings"
+    static let unlockAwardsDesc = NSLocalizedString("Can you can unlock all of these awards this week?", comment: "label below the Weekly award title inside weekly awards view")
+    static let weeklyAwards = NSLocalizedString("Weekly Awards", comment: "Weekly awards title")
+    static let notifications = NSLocalizedString("Notifications", comment: "Notifications label")
+    static let notificationSettings = NSLocalizedString("Notification settings", comment: "Notifications settings label")
     
     /// The string to be passed into UNNotificationRequest
     static let notificationsIdentifier = "daily-notification"
-    static let termsOfUse = "Terms of Use"
-    static let privacyPolicy = "Privacy Policy"
-    static let settingsTitle = "Settings"
+    static let termsOfUse = NSLocalizedString("Terms of Use", comment: "Terms of use label")
+    static let privacyPolicy = NSLocalizedString("Privacy Policy", comment: "privacy policy label")
+    static let settingsTitle = NSLocalizedString("Settings", comment: "Settings title screen")
     static let newDailyStepsGoal = "Set a New Daily Steps Goal"
-    static let haveNotUnlockedAwardDesc = "You haven't unlocked this award yet this week. Keep getting those steps in and completing goals to unlock it. You can do it!"
-    static let locked = "Locked"
-    static let myGoals = "My Goals"
-    static let addGoal = "Add Goal"
+    static let haveNotUnlockedAwardDesc = NSLocalizedString("You haven't unlocked this award yet this week. Keep getting those steps in and completing goals to unlock it. You can do it!", comment: "message of weekly award blocked.")
+    static let locked = NSLocalizedString("Locked", comment: "label title for locked")
+    static let myGoals = NSLocalizedString(" My Goals", comment: "✅ My Goals view title ")
+    static let addGoal = NSLocalizedString("Add Goal", comment: "Add goal label to add new a goal")
     static let goalsTitle = "Goals"
-    static let addSomeMoreGoals = "Time to add some more goals!"
-    static let week = "Week"
-    static let month = "Month"
-    static let incomplete = "Incomplete"
-    static let complete = "Complete"
+    static let addSomeMoreGoals = NSLocalizedString("Time to add some more goals!", comment: "🥳 Time to add some more goals label inside Goals view.")
+    static let week = NSLocalizedString("Week", comment: "label title for week")
+    static let month = NSLocalizedString("Month", comment: "label title for Month")
+    static let incomplete = NSLocalizedString("Incomplete", comment: "Incomplete label to see incompleted goals")
+    static let complete = NSLocalizedString("Complete", comment: "complete label to see completed goals")
     static let coreDataError = "❗️ Error saving delete goal to core data"
     static let goodMorningTitle = "Good Morning!"
     static let reachStepGoalDescription = "Try to reach your steps goal today. We believe in you!"
     static let walkedOneSoccerFieldToday = "You've walked about 1 soccer field today so far. Keep it up!"
-    static let walkedFullSoccerFieldToday = "Keep walking. You've almost walked a full soccer field today so far!"
+    static let walkedFullSoccerFieldToday = NSLocalizedString("Keep walking. You've almost walked a full soccer field today so far!", comment: "Comment in the header of Steps view")
     static let walkedCustomSoccerFieldToday = "You've walked about %i soccer fields today so far. Keep it up!"
     static let stepsWidget = "StepsWidget"
-    static let stepsWidgetName = "Current Steps"
+    static let stepsWidgetName = NSLocalizedString("Current Steps", comment: "current steps label in the steps widget")
     static let stepsWidgetDescription = "View your current steps count and progress."
     static let stepsGraphWidget = "StepsGraphWidget"
     static let stepsGraphWidgetName = "Steps Graph"
@@ -95,11 +95,11 @@ struct Constants {
     static let distance = "Distance Walked"
 
     // MARK: Tabs
-    static let homeTab = "Home"
-    static let goalsTab = "Goals"
-    static let awardsTab = "Awards"
-    static let stepsTab = "Steps"
-    static let settingsTab = "Settings"
+    static let homeTab = NSLocalizedString("Home", comment: "Home tab title")
+    static let goalsTab = NSLocalizedString("Goals", comment: "Goals tab title")
+    static let awardsTab = NSLocalizedString("Awards", comment: "Awards tab title")
+    static let stepsTab = NSLocalizedString("Steps", comment: "Steps tab title")
+    static let settingsTab = NSLocalizedString("Settings", comment: "Settings tab title")
 }
 
 extension UserDefaults {

@@ -88,6 +88,7 @@
 		80535E6C2ACF93B3000DD465 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E6B2ACF93B3000DD465 /* DependenciesAdditions */; };
 		80F756942ACF92C900FBB260 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80F756932ACF92C900FBB260 /* Dependencies */; };
 		80F756962ACF92C900FBB260 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 80F756952ACF92C900FBB260 /* DependenciesAdditions */; };
+		D547BF0A2ADC8E2D0006D2B4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = D547BF092ADC8E2D0006D2B4 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +196,7 @@
 		804270D72AD06A7700D48422 /* ContributorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsTests.swift; sourceTree = "<group>"; };
 		804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewTests.swift; sourceTree = "<group>"; };
 		804270DE2AD0788F00D48422 /* SettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
+		D547BF092ADC8E2D0006D2B4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 				18A1FB1A294AAB93009B87EF /* Date+Ext.swift */,
 				64B742A02AD5C79500811110 /* FileManager+Ext.swift */,
 				64B742A32AD5C7B300811110 /* UIImage+Ext.swift */,
+				D547BF092ADC8E2D0006D2B4 /* Localizable.xcstrings */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -518,6 +521,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
+				fr,
 			);
 			mainGroup = 184E932329401A97005FE1E0;
 			packageReferences = (
@@ -541,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */,
+				D547BF0A2ADC8E2D0006D2B4 /* Localizable.xcstrings in Resources */,
 				184E933729401A98005FE1E0 /* Preview Assets.xcassets in Resources */,
 				184E933429401A98005FE1E0 /* Assets.xcassets in Resources */,
 				18F27C0A2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */,
