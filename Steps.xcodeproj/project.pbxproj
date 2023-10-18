@@ -73,7 +73,7 @@
 		80372CDE2AD0C7F200B25DB9 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80372CDD2AD0C7F200B25DB9 /* GoalViewModel.swift */; };
 		804270D62AD063B100D48422 /* _AppStorageDependency in Frameworks */ = {isa = PBXBuildFile; productRef = 804270D52AD063B100D48422 /* _AppStorageDependency */; };
 		804270D82AD06A7700D48422 /* ContributorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270D72AD06A7700D48422 /* ContributorsTests.swift */; };
-		804270DD2AD0757E00D48422 /* AddTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */; };
+		804270DD2AD0757E00D48422 /* AddGoalViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DC2AD0757E00D48422 /* AddGoalViewTests.swift */; };
 		804270DF2AD0788F00D48422 /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804270DE2AD0788F00D48422 /* SettingsViewTests.swift */; };
 		80535E6A2ACF93B3000DD465 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E692ACF93B3000DD465 /* Dependencies */; };
 		80535E6C2ACF93B3000DD465 /* DependenciesAdditions in Frameworks */ = {isa = PBXBuildFile; productRef = 80535E6B2ACF93B3000DD465 /* DependenciesAdditions */; };
@@ -182,7 +182,7 @@
 		803417DE2AD0BAA4000C70B4 /* AddGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewModel.swift; sourceTree = "<group>"; };
 		80372CDD2AD0C7F200B25DB9 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
 		804270D72AD06A7700D48422 /* ContributorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsTests.swift; sourceTree = "<group>"; };
-		804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewTests.swift; sourceTree = "<group>"; };
+		804270DC2AD0757E00D48422 /* AddGoalViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewTests.swift; sourceTree = "<group>"; };
 		804270DE2AD0788F00D48422 /* SettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
 		D547BF092ADC8E2D0006D2B4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -395,7 +395,7 @@
 			children = (
 				802300A42ACF6F880051C404 /* StepsTests.swift */,
 				804270D72AD06A7700D48422 /* ContributorsTests.swift */,
-				804270DC2AD0757E00D48422 /* AddTaskViewTests.swift */,
+				804270DC2AD0757E00D48422 /* AddGoalViewTests.swift */,
 				804270DE2AD0788F00D48422 /* SettingsViewTests.swift */,
 			);
 			path = StepsTests;
@@ -630,7 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804270DD2AD0757E00D48422 /* AddTaskViewTests.swift in Sources */,
+				804270DD2AD0757E00D48422 /* AddGoalViewTests.swift in Sources */,
 				804270DF2AD0788F00D48422 /* SettingsViewTests.swift in Sources */,
 				802300A52ACF6F880051C404 /* StepsTests.swift in Sources */,
 				804270D82AD06A7700D48422 /* ContributorsTests.swift in Sources */,
