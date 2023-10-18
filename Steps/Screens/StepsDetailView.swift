@@ -16,9 +16,10 @@ struct StepsDetailView: View {
                 FactView(viewModel: viewModel)
                 CircleProgressBar(value: viewModel.currentSteps, maxValue: viewModel.goal)
                     .padding()
-                WeekStepsView(viewModel: viewModel)
-                Spacer()
-                MonthStepsView(viewModel: viewModel)
+                LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2), content: {
+                    StepsDetailCardView(title: Constants.caloriesBurned, image: "flame.fill", value: "\(viewModel.currentCalories) kcal")
+                    StepsDetailCardView(title: Constants.distance, image: "figure.walk", value: "\(viewModel.currentDistance) metre")
+                }).padding(.horizontal)
                 Spacer()
             }
             .padding(.top, 30)
