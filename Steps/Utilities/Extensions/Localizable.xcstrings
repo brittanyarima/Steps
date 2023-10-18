@@ -10,6 +10,12 @@
             "state" : "translated",
             "value" : "💡 Ideas para metas"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💡Idées d'objectifs"
+          }
         }
       }
     },
@@ -20,6 +26,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mis Metas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mes objectifs"
           }
         }
       }
@@ -33,12 +45,24 @@
             "state" : "translated",
             "value" : "%i pasos"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%i étapes"
+          }
         }
       }
     },
     "%lld" : {
       "localizations" : {
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -54,6 +78,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Numero de pasos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld étapes"
           }
         }
       }
@@ -84,6 +114,12 @@
             "state" : "translated",
             "value" : "Agregar Nueva meta"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un objectif"
+          }
         }
       }
     },
@@ -94,6 +130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Añade nueva meta\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un nouvel objectif"
           }
         }
       }
@@ -106,6 +148,12 @@
             "state" : "translated",
             "value" : "Premios"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prix"
+          }
         }
       }
     },
@@ -116,6 +164,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Podrás  desbloquear todas estas recompensas esta semana? "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pouvez-vous débloquer toutes ces récompenses cette semaine ?"
           }
         }
       }
@@ -128,6 +182,12 @@
             "state" : "translated",
             "value" : "Completado"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Complet"
+          }
         }
       }
     },
@@ -137,6 +197,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Colaboradores"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contributeurs"
           }
         }
       }
@@ -150,6 +216,12 @@
             "state" : "translated",
             "value" : "Pasos actuales"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étapes actuelles"
+          }
         }
       }
     },
@@ -160,6 +232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metas Diarias "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectif quotidien"
           }
         }
       }
@@ -173,6 +251,12 @@
             "state" : "translated",
             "value" : "Metas de Pasos Diarios "
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectif de pas quotidiens"
+          }
         }
       }
     },
@@ -183,6 +267,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Día"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jour"
           }
         }
       }
@@ -195,6 +285,12 @@
             "state" : "translated",
             "value" : "Hecho"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fait"
+          }
         }
       }
     },
@@ -204,6 +300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fallo al intentar establecer nueva imagen de fondo de pantalla. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échec de la définition de l'image d'arrière-plan."
           }
         }
       }
@@ -216,6 +318,12 @@
             "state" : "translated",
             "value" : "Meta"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "But"
+          }
         }
       }
     },
@@ -226,6 +334,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ideas para metas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idées d'objectifs"
           }
         }
       }
@@ -238,6 +352,12 @@
             "state" : "translated",
             "value" : "Metas"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buts"
+          }
         }
       }
     },
@@ -249,6 +369,12 @@
             "state" : "translated",
             "value" : "Inicio"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domicile"
+          }
         }
       }
     },
@@ -258,6 +384,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Página de inicio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écran d’accueil"
           }
         }
       }
@@ -269,6 +401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inconmpleto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incomplet"
           }
         }
       }
@@ -282,6 +420,12 @@
             "state" : "translated",
             "value" : "Sigue caminando. Casi has caminado una cancha de fútbol entera!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuer à marcher. Vous avez presque parcouru un terrain de football complet aujourd’hui jusqu’à présent !"
+          }
         }
       }
     },
@@ -292,6 +436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bloqueado"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verrouillé"
           }
         }
       }
@@ -305,6 +455,12 @@
             "state" : "translated",
             "value" : "Mes"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mois"
+          }
         }
       }
     },
@@ -315,6 +471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nueva meta..."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvel objectif..."
           }
         }
       }
@@ -327,6 +489,12 @@
             "state" : "translated",
             "value" : "Ajuste de notificaciones"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres de notification"
+          }
         }
       }
     },
@@ -338,6 +506,12 @@
             "state" : "translated",
             "value" : "Noticicaciones"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
+          }
         }
       }
     },
@@ -347,6 +521,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Por favor elige otra imagen. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez choisir une autre image."
           }
         }
       }
@@ -359,6 +539,12 @@
             "state" : "translated",
             "value" : "Política de Privacidad"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Politique de confidentialité"
+          }
         }
       }
     },
@@ -368,6 +554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Revertir cambios en el fondo de pantalla de la pagina de inicio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réinitialiser l’image d’arrière-plan"
           }
         }
       }
@@ -379,6 +571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guardar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarder"
           }
         }
       }
@@ -392,6 +590,12 @@
             "state" : "translated",
             "value" : "Establecer una Nueva Meta Diaria de Pasos"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définir un nouvel objectif de pas quotidiens"
+          }
         }
       }
     },
@@ -401,6 +605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Establecer fondo de pantalla"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définir l’image d’arrière-plan"
           }
         }
       }
@@ -413,6 +623,12 @@
             "state" : "translated",
             "value" : "Ajustes"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres"
+          }
         }
       }
     },
@@ -423,6 +639,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pasos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escalier"
           }
         }
       }
@@ -435,6 +657,12 @@
             "state" : "translated",
             "value" : "Términos de Uso"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditions d’utilisation"
+          }
         }
       }
     },
@@ -446,6 +674,12 @@
             "state" : "translated",
             "value" : "Tiempo de añadir nuevas metas!\n"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il est temps d’ajouter d’autres buts !"
+          }
         }
       }
     },
@@ -456,6 +690,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Caminar un 5k, Aumentar mis pasos..."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Marcher un 5 km, marcher avec un ami, augmenter l’objectif de pas"
           }
         }
       }
@@ -469,6 +709,12 @@
             "state" : "translated",
             "value" : "Semana"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semaine"
+          }
         }
       }
     },
@@ -481,6 +727,12 @@
             "state" : "translated",
             "value" : "Premios Semanales"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Récompenses hebdomadaires"
+          }
         }
       }
     },
@@ -492,6 +744,12 @@
             "state" : "translated",
             "value" : "Pasos Semanales"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étapes hebdomadaires"
+          }
         }
       }
     },
@@ -502,6 +760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aún no has desbloqueado este premio esta semana. Continúe realizando esos pasos y completando objetivos para desbloquearlo. ¡Puedes hacerlo!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous n’avez pas encore débloqué ce prix cette semaine. Continuez à suivre ces étapes et à remplir des objectifs pour le débloquer. Tu peux le faire!"
           }
         }
       }
