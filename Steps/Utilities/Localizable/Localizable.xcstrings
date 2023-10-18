@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%@" : {
-
-    },
     "%i steps" : {
 
     },
@@ -13,7 +10,7 @@
     "⚙️ Settings" : {
 
     },
-    "✅ %@" : {
+    "✅ My Goals" : {
 
     },
     "❗️ Error saving delete goal to core data" : {
@@ -22,19 +19,16 @@
     "🏆 Weekly Awards" : {
 
     },
-    "💡 %@" : {
+    "💡 Goal ideas" : {
 
     },
-    "🖋️ %@" : {
+    "🖋️ Add New Goal" : {
 
     },
-    "🥳 %@" : {
+    "🥳 Time to add some more goals!" : {
 
     },
     "Add Goal" : {
-
-    },
-    "Add New Goal" : {
 
     },
     "Awards" : {
@@ -88,9 +82,6 @@
     "Goal" : {
 
     },
-    "Goal ideas" : {
-
-    },
     "Goals" : {
 
     },
@@ -119,9 +110,6 @@
 
     },
     "Motivated" : {
-
-    },
-    "My Goals" : {
 
     },
     "New goal..." : {
@@ -176,9 +164,6 @@
 
     },
     "Threes" : {
-
-    },
-    "Time to add some more goals!" : {
 
     },
     "Try to reach your steps goal today. We believe in you!" : {

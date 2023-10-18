@@ -16,9 +16,9 @@ struct Constants {
     // MARK: Identifiers
     static let appGroupID = "group.com.BrittanyRima.Steps"
 
-    // MARK: Messages
     static let goalKey = "goal"
     static let notificationKey = "notifications"
+    static let notificationsIdentifier = "daily-notification"
 
     static let stepCountKey = "stepCount"
     static let backgroundImageKey = "backgroundImage"
