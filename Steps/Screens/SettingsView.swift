@@ -66,9 +66,9 @@ struct SettingsView: View {
                     ContributorsView()
                 }
             })
-            .onChange(of: viewModel.notificationsOn, perform: { _ in
-                viewModel.requestNotificationAuth()
-            })
+            .task(id: viewModel.notificationsOn) {
+                await viewModel.requestNotificationAuth()
+            }
             .navigationTitle(TextConstants.settingsTitle.value)
             .tint(.indigo)
         }

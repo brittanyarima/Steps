@@ -12,8 +12,8 @@ import HealthKit
 import Charts
 
 struct StepsGraphProvider: TimelineProvider {
-    @AppStorage("stepCount", store: UserDefaults(suiteName: "group.com.BrittanyRima.Steps")) var stepCount: Int = 0
-    @AppStorage("goal", store: UserDefaults(suiteName: "group.com.BrittanyRima.Steps")) var goal: Int = 10_000
+    @AppStorage("stepCount", store: UserDefaults.appGroup) var stepCount: Int = 0
+    @AppStorage("goal", store: UserDefaults.appGroup) var goal: Int = 10_000
     var healthStore: HKHealthStore?
     var query: HKStatisticsCollectionQuery?
     

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Dependencies
 
 struct AddGoalView: View {
     @Environment(\.managedObjectContext) var context
