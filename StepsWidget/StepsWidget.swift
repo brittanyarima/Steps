@@ -107,15 +107,15 @@ extension View {
 
 
 struct StepsWidget: Widget {
-    let kind: String = Constants.stepsWidget
+    let kind: String = TextConstants.stepsWidget.value
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: StepsProvider()) { entry in
             StepsWidgetEntryView(entry: entry)
             
         }
-        .configurationDisplayName(Constants.stepsWidgetName)
-        .description(Constants.stepsWidgetDescription)
+        .configurationDisplayName(TextConstants.stepsWidgetName.value)
+        .description(TextConstants.stepsWidgetDescription.value)
         .supportedFamilies([.accessoryRectangular, .systemSmall])
     }
 }

@@ -20,7 +20,7 @@ struct StepsGoalCardView: View {
 
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Text(Constants.dailyStepsGoal)
+                    Text(TextConstants.dailyStepsGoal.value)
                     Spacer()
 
                     Button {
@@ -31,7 +31,7 @@ struct StepsGoalCardView: View {
                 }
                 .foregroundColor(.indigo)
 
-                Text(String(format: Constants.enterSteps, steps))
+                Text(String(format: TextConstants.enterSteps.value, steps))
                     .font(.system(size: 32))
                     .bold()
                     .foregroundColor(.indigo)

@@ -19,12 +19,12 @@ struct CurrentStepsCardView: View {
 
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Text(Constants.currentSteps)
+                    Text(TextConstants.currentSteps.value)
                     Spacer()
                 }
 
                 HStack {
-                    Text(String(format: Constants.enterSteps, steps))
+                    Text(String(format: TextConstants.enterSteps.value, steps))
                         .font(.system(size: 32))
                         .bold()
 

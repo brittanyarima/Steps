@@ -14,27 +14,27 @@ struct MainView: View {
         TabView {
             HomeView(viewModel: stepsViewModel)
                 .tabItem {
-                    Label(Constants.homeTab, systemImage: "house")
+                    Label(TextConstants.homeTab.value, systemImage: "house")
                 }
             
             GoalView(viewModel: .init())
                 .tabItem {
-                    Label(Constants.goalsTab, systemImage: "checklist")
+                    Label(TextConstants.goalsTab.value, systemImage: "checklist")
                 }
             
             AwardView(viewModel: stepsViewModel)
                 .tabItem {
-                    Label(Constants.awardsTab, systemImage: "trophy")
+                    Label(TextConstants.awardsTab.value, systemImage: "trophy")
                 }
             
             StepsCountView(viewModel: stepsViewModel)
                 .tabItem {
-                    Label(Constants.stepsTab, systemImage: "chart.bar")
+                    Label(TextConstants.stepsTab.value, systemImage: "chart.bar")
                 }
             
             SettingsView(stepsViewModel: stepsViewModel)
                 .tabItem {
-                    Label(Constants.settingsTab, systemImage: "slider.vertical.3")
+                    Label(TextConstants.settingsTab.value, systemImage: "slider.vertical.3")
                 }
         }
         .tint(.indigo)

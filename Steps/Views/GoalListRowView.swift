@@ -13,7 +13,7 @@ struct GoalListRowView: View {
 
     var body: some View {
         HStack {
-            Text(goal.name ?? Constants.unknownName)
+            Text(goal.name ?? TextConstants.unknownName.value)
             Spacer()
             if goal.isComplete {
                 Image(systemName: "checkmark.circle.fill")

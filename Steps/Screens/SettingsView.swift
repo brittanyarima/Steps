@@ -21,9 +21,9 @@ struct SettingsView: View {
 
                 Form {
                     Section {
-                        Toggle(Constants.notifications, isOn: $viewModel.notificationsOn)
+                        Toggle(TextConstants.notifications.value, isOn: $viewModel.notificationsOn)
                     } header: {
-                        Label(Constants.notificationSettings, systemImage: "bell")
+                        Label(TextConstants.notificationSettings.value, systemImage: "bell")
                     }
                     
                     Section {
@@ -38,15 +38,15 @@ struct SettingsView: View {
                                          photoLibrary: .shared()) {
                                 Text("Set background image")
                             }
-                            .buttonStyle(.borderless)
+                                         .buttonStyle(.borderless)
                         }
                     } header: {
                         Label("Home Screen", systemImage: "iphone.gen3")
                     }
-
-                    Link(Constants.termsOfUse, destination: URL(string: Constants.termsURL)!)
-                    Link(Constants.privacyPolicy, destination: URL(string: Constants.privacyURL)!)
-
+                    
+                    Link(TextConstants.termsOfUse.value, destination: URL(string: Constants.termsURL)!)
+                    Link(TextConstants.privacyPolicy.value, destination: URL(string: Constants.privacyURL)!)
+                    
                     Button {
                         viewModel.showContributors = true
                     } label: {
@@ -69,12 +69,12 @@ struct SettingsView: View {
             .onChange(of: viewModel.notificationsOn, perform: { _ in
                 viewModel.requestNotificationAuth()
             })
-            .navigationTitle("⚙️ \(Constants.settingsTitle)")
+            .navigationTitle(TextConstants.settingsTitle.value)
             .tint(.indigo)
         }
         .alert(isPresented: $stepsViewModel.showBackgroundImageAlert) {
             Alert(title: Text("Failed to set background image."),
-                              message: Text("Please choose another image."))
+                  message: Text("Please choose another image."))
         }
     }
 }

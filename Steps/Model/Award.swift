@@ -23,50 +23,50 @@ enum Award: String, CaseIterable {
     var name: String {
         switch self {
         case .firstStep:
-            return Constants.firstStepsName
+            return TextConstants.firstStepsName.value
         case .goal:
-            return Constants.goalName
+            return TextConstants.goalName.value
         case .doubleTrouble:
-            return Constants.doubleTroubleName
+            return TextConstants.doubleTroubleName.value
         case .threes:
-            return Constants.threesName
+            return TextConstants.threesName.value
         case .perfectweek:
-            return Constants.perfectWeekName
+            return TextConstants.perfectWeekName.value
         case .messi:
-            return Constants.messiName
+            return TextConstants.messiName.value
         case .motivated:
-            return Constants.motivatedName
+            return TextConstants.motivatedName.value
         case .firstGoal:
-            return Constants.firstGoalName
+            return TextConstants.firstGoalName.value
         case .dreamerGoal:
-            return Constants.dreamerGoalName
+            return TextConstants.dreamerGoalName.value
         case .goGetter:
-            return Constants.goGetterName
+            return TextConstants.goGetterName.value
         }
     }
 
     var description: String {
         switch self {
         case .firstStep:
-            return Constants.firstStepsDescription
+            return TextConstants.firstStepsDescription.value
         case .goal:
-            return Constants.goalDescription
+            return TextConstants.goalDescription.value
         case .doubleTrouble:
-            return Constants.doubleTroubleDescription
+            return TextConstants.doubleTroubleDescription.value
         case .threes:
-            return Constants.threesDescription
+            return TextConstants.threesDescription.value
         case .perfectweek:
-            return Constants.perfectWeekDescription
+            return TextConstants.perfectWeekDescription.value
         case .messi:
-            return Constants.soccerFieldDescription
+            return TextConstants.soccerFieldDescription.value
         case .motivated:
-            return Constants.motivatedDescription
+            return TextConstants.motivatedDescription.value
         case .firstGoal:
-            return Constants.firstGoalDescription
+            return TextConstants.firstGoalDescription.value
         case .dreamerGoal:
-            return Constants.dreamerGoalDescription
+            return TextConstants.dreamerGoalDescription.value
         case .goGetter:
-            return Constants.goGetterDescription
+            return TextConstants.goGetterDescription.value
         }
     }
 

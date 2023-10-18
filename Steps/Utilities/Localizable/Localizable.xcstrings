@@ -1,0 +1,246 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "%i steps" : {
+
+    },
+    "%lld" : {
+
+    },
+    "⚙️ Settings" : {
+
+    },
+    "✅ %@" : {
+
+    },
+    "❗️ Error saving delete goal to core data" : {
+
+    },
+    "🏆 Weekly Awards" : {
+
+    },
+    "💡 %@" : {
+
+    },
+    "🖋️ %@" : {
+
+    },
+    "🥳 %@" : {
+
+    },
+    "Add Goal" : {
+
+    },
+    "Add New Goal" : {
+
+    },
+    "Awards" : {
+
+    },
+    "Can you can unlock all of these awards this week?" : {
+
+    },
+    "Complete" : {
+
+    },
+    "Contributors" : {
+
+    },
+    "Current Steps" : {
+
+    },
+    "Daily Goal" : {
+
+    },
+    "Daily Steps Goal" : {
+
+    },
+    "Day" : {
+
+    },
+    "Don't Messi With You" : {
+
+    },
+    "Done" : {
+
+    },
+    "Double Trouble" : {
+
+    },
+    "Dreamer" : {
+
+    },
+    "Failed to set background image." : {
+
+    },
+    "First Goal!" : {
+
+    },
+    "First Steps" : {
+
+    },
+    "Go Getter" : {
+
+    },
+    "Goal" : {
+
+    },
+    "Goal ideas" : {
+
+    },
+    "Goals" : {
+
+    },
+    "Good Morning!" : {
+
+    },
+    "Gooooaaaaal" : {
+
+    },
+    "Home" : {
+
+    },
+    "Home Screen" : {
+
+    },
+    "Incomplete" : {
+
+    },
+    "Keep walking. You've almost walked a full soccer field today so far!" : {
+
+    },
+    "Locked" : {
+
+    },
+    "Month" : {
+
+    },
+    "Motivated" : {
+
+    },
+    "My Goals" : {
+
+    },
+    "New goal..." : {
+
+    },
+    "Notification settings" : {
+
+    },
+    "Notifications" : {
+
+    },
+    "Perfect Week" : {
+
+    },
+    "Please choose another image." : {
+
+    },
+    "Privacy Policy" : {
+
+    },
+    "Reset background image" : {
+
+    },
+    "Save" : {
+
+    },
+    "Set a New Daily Steps Goal" : {
+
+    },
+    "Set background image" : {
+
+    },
+    "Settings" : {
+
+    },
+    "soccerball" : {
+
+    },
+    "Steps" : {
+
+    },
+    "Steps Graph" : {
+
+    },
+    "StepsGraphWidget" : {
+
+    },
+    "StepsWidget" : {
+
+    },
+    "Terms of Use" : {
+
+    },
+    "Threes" : {
+
+    },
+    "Time to add some more goals!" : {
+
+    },
+    "Try to reach your steps goal today. We believe in you!" : {
+
+    },
+    "Unknown Name" : {
+
+    },
+    "View your current steps count and progress." : {
+
+    },
+    "View your steps progress throughout the day." : {
+
+    },
+    "Walk a 5K, Walk with a friend, Increase steps goal" : {
+
+    },
+    "Week" : {
+
+    },
+    "Weekly Steps" : {
+
+    },
+    "You completed 5 goals!" : {
+
+    },
+    "You completed your first goal!" : {
+
+    },
+    "You created 5 goals!" : {
+
+    },
+    "You created your first goal!" : {
+
+    },
+    "You doubled your steps goal this week! You are incredible!" : {
+
+    },
+    "You haven't unlocked this award yet this week. Keep getting those steps case completing goals to unlock it. You can do it!" : {
+
+    },
+    "You reached your step goal at least once this week!" : {
+
+    },
+    "You reached your steps goal every day the past 7 days. You are incredible!" : {
+
+    },
+    "You took more than 100 steps this week, you're on your way to your goal. caset up!" : {
+
+    },
+    "You tripled your steps goal this week! Wow!" : {
+
+    },
+    "You walked 100 soccer fields in a single day this week! " : {
+
+    },
+    "You've walked about %i soccer fields today so far. Keep it up!" : {
+
+    },
+    "You've walked about 1 soccer field today so far. Keep it up!" : {
+
+    }
+  },
+  "version" : "1.0"
+}

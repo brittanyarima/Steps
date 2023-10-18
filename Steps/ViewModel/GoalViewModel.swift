@@ -11,13 +11,13 @@ import CoreData
 
 final class GoalViewModel: ObservableObject {
     let context: NSManagedObjectContext
-    @Published var selectedTab = Constants.incomplete
+    @Published var selectedTab = TextConstants.incomplete.value
     @Published var isShowingSheet = false
     @Published var isShowingPaywall = true
 
     init(
         context: NSManagedObjectContext = PersistenceController.shared.container.viewContext,
-        selectedTab: String = Constants.incomplete,
+        selectedTab: String = TextConstants.incomplete.value,
         isShowingSheet: Bool = false,
         isShowingPaywall: Bool = true
     ) {

@@ -13,17 +13,17 @@ struct WeekStepsView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text(Constants.weeklySteps)
+            Text(TextConstants.weeklySteps.value)
 
             Chart {
-                RuleMark(y: .value(Constants.goal, viewModel.goal))
+                RuleMark(y: .value(TextConstants.goal.value, viewModel.goal))
                     .foregroundStyle(.mint)
                     .lineStyle(StrokeStyle(lineWidth: 1, dash: [5]))
 
                 ForEach(viewModel.steps) { step in
                     BarMark(
-                        x: .value(Constants.day, step.date, unit: .weekday),
-                        y: .value(Constants.steps, step.count)
+                        x: .value(TextConstants.day.value, step.date, unit: .weekday),
+                        y: .value(TextConstants.steps.value, step.count)
                     )
                     .foregroundStyle(.indigo)
                 }
@@ -42,7 +42,7 @@ struct WeekStepsView: View {
                     .rotationEffect(Angle(degrees: 45))
                     .foregroundColor(.mint)
 
-                Text(Constants.dailyGoal)
+                Text(TextConstants.dailyGoal.value)
                     .foregroundColor(.secondary)
             }
             .font(.caption2)

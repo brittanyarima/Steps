@@ -40,11 +40,11 @@ class StepsViewModel: ObservableObject {
         let numOfFields = currentSteps / 144 // For every 144 Steps you've walked about 1 soccer field.
 
         if numOfFields > 1 {
-            return String(format: Constants.walkedCustomSoccerFieldToday, numOfFields)
+            return String(format: TextConstants.walkedCustomSoccerFieldToday.value, numOfFields)
         } else if numOfFields == 0 {
-            return Constants.walkedFullSoccerFieldToday
+            return TextConstants.walkedFullSoccerFieldToday.value
         } else {
-            return Constants.walkedOneSoccerFieldToday
+            return TextConstants.walkedOneSoccerFieldToday.value
         }
     }
 

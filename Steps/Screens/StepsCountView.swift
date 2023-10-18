@@ -9,13 +9,13 @@ import SwiftUI
 
 struct StepsCountView: View {
     @ObservedObject var viewModel: StepsViewModel
-    @State private var selectedTab = Constants.week
+    @State private var selectedTab = TextConstants.week.value
 
     var body: some View {
         VStack(spacing: 20) {
             GoalPickerView(selectedTab: $selectedTab)
             
-            if selectedTab == Constants.week {
+            if selectedTab == TextConstants.week.value {
                 NewWeekStepsView(viewModel: viewModel)
             }
             else {
@@ -38,10 +38,10 @@ struct StepsCountView_Previews: PreviewProvider {
 
 fileprivate struct GoalPickerView: View {
     @Binding var selectedTab: String
-    let tabOptions = [Constants.week, Constants.month]
+    let tabOptions = [TextConstants.week.value, TextConstants.month.value]
 
     var body: some View {
-        Picker(Constants.goalsTitle, selection: $selectedTab) {
+        Picker(TextConstants.goalsTitle.value, selection: $selectedTab) {
             ForEach(tabOptions, id: \.self) { tab in
                 Text(tab)
             }

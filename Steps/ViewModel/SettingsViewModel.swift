@@ -28,8 +28,8 @@ class SettingsViewModel: ObservableObject {
 
     func scheduleDailyNotification() {
         let content = UNMutableNotificationContent()
-        content.title = Constants.goodMorningTitle
-        content.body = Constants.reachStepGoalDescription
+        content.title = TextConstants.goodMorningTitle.value
+        content.body = TextConstants.reachStepGoalDescription.value
 
         var dateComponents = DateComponents()
         dateComponents.hour = 9

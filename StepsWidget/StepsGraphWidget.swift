@@ -206,14 +206,14 @@ struct StepsGraphWidgetEntryView: View {
 }
 
 struct StepsGraphWidget: Widget {
-    let kind: String = Constants.stepsGraphWidget
+    let kind: String = TextConstants.stepsGraphWidget.value
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: StepsGraphProvider()) { entry in
             StepsGraphWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName(Constants.stepsGraphWidgetName)
-        .description(Constants.stepsGraphWidgetDescription)
+        .configurationDisplayName(TextConstants.stepsGraphWidgetName.value)
+        .description(TextConstants.stepsGraphWidgetDescription.value)
         .supportedFamilies([.systemMedium, .systemLarge, .accessoryRectangular])
     }
 }

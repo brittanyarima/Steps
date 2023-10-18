@@ -10,32 +10,26 @@ import SwiftUI
 struct AddGoalView: View {
     @Environment(\.managedObjectContext) var context
     @Environment(\.dismiss) var dismiss
-<<<<<<< HEAD:Steps/Views/AddGoalView.swift
     @ObservedObject var vm: AddGoalViewModel
     
     init(viewModel: AddGoalViewModel = .init()) {
-=======
-    @ObservedObject var vm: AddTaskViewModel
-
-    init(viewModel: AddTaskViewModel = .init()) {
->>>>>>> dev:Steps/Views/AddTaskView.swift
         self.vm = viewModel
     }
 
     var body: some View {
         VStack() {
             VStack(spacing: 7) {
-                Text("🖋️ \(Constants.addNewGoal)")
+                Text(TextConstants.addNewGoal.value)
                     .font(.title)
                     .bold()
                     .padding(.bottom)
 
-                Text("💡 \(Constants.goalIdeas)")
+                Text(TextConstants.goalIdeas.value)
                     .bold()
                     .foregroundColor(.secondary)
                     .font(.caption)
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(Constants.walkWithFriend)
+                    Text(TextConstants.walkWithFriend.value)
                 }
                 .foregroundColor(.secondary)
                 .font(.caption)
@@ -44,7 +38,7 @@ struct AddGoalView: View {
 
             Spacer()
 
-            TextField(Constants.newGoalField, text: $vm.name)
+            TextField(TextConstants.newGoalField.value, text: $vm.name)
                 .padding(.horizontal)
                 .frame(height: 55)
                 .background(Color(.tertiarySystemFill))
@@ -55,7 +49,7 @@ struct AddGoalView: View {
                 vm.addGoal()
                 dismiss()
             } label: {
-                Text(Constants.save)
+                Text(TextConstants.save.value)
                     .fontWeight(.semibold)
             }
             .buttonStyle(.bordered)

@@ -17,7 +17,7 @@ struct AwardView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                Text(Constants.unlockAwardsDesc)
+                Text(TextConstants.unlockAwardsDesc.value)
                     .font(.caption)
                     .foregroundColor(.secondary)
                     .padding()
@@ -28,7 +28,7 @@ struct AwardView: View {
                     }
                 }
             }
-            .navigationTitle("🏆 \(Constants.weeklyAwards)")
+            .navigationTitle(TextConstants.weeklyAwards.value)
         }
     }
 }

@@ -37,14 +37,14 @@ struct GoalView: View {
             VStack {
                 GoalPickerView(selectedTab: $vm.selectedTab)
 
-                if vm.selectedTab == Constants.incomplete && incompleteGoals.isEmpty {
-                    Text("🥳 \(Constants.addSomeMoreGoals)")
+                if vm.selectedTab == TextConstants.incomplete.value && incompleteGoals.isEmpty {
+                    Text(TextConstants.addSomeMoreGoals.value)
                         .fontWeight(.semibold)
                         .foregroundColor(.secondary)
                 }
 
                 List {
-                    if vm.selectedTab == Constants.incomplete {
+                    if vm.selectedTab == TextConstants.incomplete.value {
                         ForEach(incompleteGoals) { goal in
                             GoalListRowView(goal: goal)
                         }
@@ -62,7 +62,7 @@ struct GoalView: View {
 
                 AddGoalButton(isShowingSheet: $vm.isShowingSheet)
             }
-            .navigationTitle("✅ \(Constants.myGoals)")
+            .navigationTitle(TextConstants.myGoals.value)
             .sheet(isPresented: $vm.isShowingSheet) {
                 AddGoalView()
                     .presentationDetents([.height(300)])
@@ -79,7 +79,7 @@ struct GoalView: View {
         do {
             try context.save()
         } catch {
-            print(Constants.coreDataError)
+            print(TextConstants.coreDataError.value)
         }
     }
 
@@ -92,7 +92,7 @@ struct GoalView: View {
         do {
             try context.save()
         } catch {
-            print(Constants.coreDataError)
+            print(TextConstants.coreDataError.value)
         }
     }
 }
@@ -107,10 +107,10 @@ struct GoalView_Previews: PreviewProvider {
 
 fileprivate struct GoalPickerView: View {
     @Binding var selectedTab: String
-    let tabOptions = [Constants.incomplete, Constants.complete]
+    let tabOptions = [TextConstants.incomplete.value, TextConstants.complete.value]
 
     var body: some View {
-        Picker(Constants.goalsTitle, selection: $selectedTab) {
+        Picker(TextConstants.goalsTitle.value, selection: $selectedTab) {
             ForEach(tabOptions, id: \.self) { tab in
                 Text(tab)
             }
@@ -127,7 +127,7 @@ fileprivate struct AddGoalButton: View {
         Button {
             isShowingSheet.toggle()
         } label: {
-            Label(Constants.addGoal, systemImage: "plus")
+            Label(TextConstants.addGoal.value, systemImage: "plus")
                 .fontWeight(.semibold)
         }
         .buttonStyle(.bordered)
