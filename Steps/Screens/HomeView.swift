@@ -49,6 +49,16 @@ struct HomeView: View {
                                 viewModel.updateMonthUIFromStats(statsCollection)
                             }
                         }
+                        viewModel.calculateCalories { statsCollection in
+                            if let statsCollection = statsCollection {
+                                viewModel.updateCalorieUIFromStats(statsCollection)
+                            }
+                        }
+                        viewModel.calculateDistance { statsCollection in
+                            if let statsCollection = statsCollection {
+                                viewModel.updateDistanceUIFromStats(statsCollection)
+                            }
+                        }
                     }
                 }
             }

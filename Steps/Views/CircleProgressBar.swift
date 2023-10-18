@@ -10,6 +10,7 @@ import SwiftUI
 struct CircleProgressBar: View {
     let value: Int
     let maxValue: Int
+    @State private var drawingStroke = false
 
     var body: some View {
         ZStack {
@@ -17,15 +18,20 @@ struct CircleProgressBar: View {
                 .stroke(.indigo.opacity(0.1), lineWidth: 10)
 
             Circle()
-                .trim(from: 0, to: CGFloat(self.value) / CGFloat(self.maxValue))
+                .trim(from: 0, to: drawingStroke ? CGFloat(self.value) / CGFloat(self.maxValue) : 0)
                 .stroke(.indigo, style: StrokeStyle(lineWidth: 10, lineCap: .round))
                 .rotationEffect(Angle(degrees: -90.0))
+                .animation(.easeOut(duration: 3), value: drawingStroke)
+                                .onAppear {
+                                    drawingStroke = true
+                                }
 
             VStack {
                 Text("\(value)")
                     .font(.system(size: 40))
 
-                Text(Constants.steps)
+
+                Text("Steps")
                     .foregroundColor(.secondary)
             }
         }
