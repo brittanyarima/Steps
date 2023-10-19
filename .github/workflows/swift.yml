@@ -18,4 +18,4 @@ jobs:
     - name: Xcode version
       run: /usr/bin/xcodebuild -version
     - name: Build and test
-      run: xcodebuild clean build test -scheme Steps -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0’
+      run: xcodebuild clean build test -scheme Steps -destination ‘platform=iOS Simulator,name=iPhone 15,OS=17.0’
