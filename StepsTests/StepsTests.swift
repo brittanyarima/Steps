@@ -32,18 +32,17 @@ final class StepsTests: XCTestCase {
     
     // TODO: Test @AppStorage 
     func testUserDefaults() async {
-
+        let newGoal = 1_234
+        
         let vm = StepsViewModel()
-        vm.goal = 1_234
-        @Dependency(\.userDefaults) var userDefaults
-        XCTAssertEqual(1_234, userDefaults.integer(forKey: Constants.goalKey))
-            
-        
-// Not sure yet how to inject UserDefaults dependency into @AppStorage.
-// Even though both @Dependency(\.userDefaults) and @AppStorage write to UserDefaults, @AppStorage is unaware of @Dependency
-//        vm.stepCount = 2_345
-//        XCTAssertEqual(2_345, userDefaults.integer(forKey: Constants.stepCountKey))
-        
-    }
+        vm.goal = newGoal
 
+        let value = UserDefaults.appGroup?.value(forKey: Constants.goalKey) as? Int
+        XCTAssertEqual(newGoal, value)
+        
+        // Not sure yet how to inject UserDefaults dependency into @AppStorage.
+        // Even though both @Dependency(\.userDefaults) and @AppStorage write to UserDefaults, @AppStorage is unaware of @Dependency
+        //        vm.stepCount = 2_345
+        //        XCTAssertEqual(2_345, userDefaults.integer(forKey: Constants.stepCountKey))
+    }
 }
