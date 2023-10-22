@@ -45,6 +45,10 @@
 		189BDCF0294D3B8A00E8237F /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCEF294D3B8A00E8237F /* Award.swift */; };
 		189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */; };
 		18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1FB1A294AAB93009B87EF /* Date+Ext.swift */; };
+		18A6D5582AE4A682009374BD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6D5572AE4A682009374BD /* ProfileView.swift */; };
+		18A6D55A2AE4A690009374BD /* ProfileItemButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6D5592AE4A690009374BD /* ProfileItemButtonView.swift */; };
+		18A6D55C2AE4A6A5009374BD /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6D55B2AE4A6A5009374BD /* ProfileButtonView.swift */; };
+		18A6D55E2AE4A6B0009374BD /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6D55D2AE4A6B0009374BD /* ProfileViewModel.swift */; };
 		18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C35A6E294417DE00A649FC /* CircleProgressBar.swift */; };
 		18C81E14294A923B0058138F /* StepsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E13294A923B0058138F /* StepsDetailView.swift */; };
 		18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C81E15294A934B0058138F /* StepsViewModel.swift */; };
@@ -164,6 +168,10 @@
 		189BDCEF294D3B8A00E8237F /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		189BDCF3294D3E1100E8237F /* AwardBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardBadgeView.swift; sourceTree = "<group>"; };
 		18A1FB1A294AAB93009B87EF /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		18A6D5572AE4A682009374BD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		18A6D5592AE4A690009374BD /* ProfileItemButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileItemButtonView.swift; sourceTree = "<group>"; };
+		18A6D55B2AE4A6A5009374BD /* ProfileButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
+		18A6D55D2AE4A6B0009374BD /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		18C35A6E294417DE00A649FC /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
 		18C81E13294A923B0058138F /* StepsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsDetailView.swift; sourceTree = "<group>"; };
 		18C81E15294A934B0058138F /* StepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewModel.swift; sourceTree = "<group>"; };
@@ -322,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				18E3D9582AD4C04D00E33E0F /* StepsCountView.swift */,
+				18A6D5572AE4A682009374BD /* ProfileView.swift */,
 				185DB3F4294948D2003BCC48 /* MainView.swift */,
 				184E933129401A97005FE1E0 /* HomeView.swift */,
 				185DB3F829494947003BCC48 /* AwardView.swift */,
@@ -340,6 +349,8 @@
 			isa = PBXGroup;
 			children = (
 				18967B2D2AD8A30200B19BB5 /* GoalListRowView.swift */,
+				18A6D55B2AE4A6A5009374BD /* ProfileButtonView.swift */,
+				18A6D5592AE4A690009374BD /* ProfileItemButtonView.swift */,
 				18967B2B2AD8A2F200B19BB5 /* AddGoalView.swift */,
 				18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */,
 				18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */,
@@ -396,6 +407,7 @@
 		18C81E17294A95820058138F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				18A6D55D2AE4A6B0009374BD /* ProfileViewModel.swift */,
 				18C81E15294A934B0058138F /* StepsViewModel.swift */,
 				188042D329527BD700E14D9D /* SettingsViewModel.swift */,
 				803417DE2AD0BAA4000C70B4 /* AddGoalViewModel.swift */,
@@ -587,6 +599,7 @@
 				185B74CF295CEA02000AD18A /* CurrentStepsCardView.swift in Sources */,
 				64B742A12AD5C79500811110 /* FileManager+Ext.swift in Sources */,
 				5E687A952ADC75D900015545 /* Calorie.swift in Sources */,
+				18A6D55E2AE4A6B0009374BD /* ProfileViewModel.swift in Sources */,
 				181AE8682953B83000BAD40D /* AwardLockedView.swift in Sources */,
 				18967B302AD8E27600B19BB5 /* ContributorsClient.swift in Sources */,
 				189BDCF4294D3E1100E8237F /* AwardBadgeView.swift in Sources */,
@@ -603,6 +616,8 @@
 				18F1F9E52956362E00156D4C /* Constants.swift in Sources */,
 				1838FC19296A785E00EAA116 /* GoalView.swift in Sources */,
 				64B742AA2AD5C7F000811110 /* BackgroundView.swift in Sources */,
+				18A6D5582AE4A682009374BD /* ProfileView.swift in Sources */,
+				18A6D55A2AE4A690009374BD /* ProfileItemButtonView.swift in Sources */,
 				18E3D95D2AD4C06D00E33E0F /* NewWeekStepsView.swift in Sources */,
 				5E687A9D2ADC761200015545 /* StepsDetailCardView.swift in Sources */,
 				64B742A42AD5C7B300811110 /* UIImage+Ext.swift in Sources */,
@@ -612,6 +627,7 @@
 				5E687A992ADC75ED00015545 /* Distance.swift in Sources */,
 				18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */,
 				189BDCEA294D163700E8237F /* FactView.swift in Sources */,
+				18A6D55C2AE4A6A5009374BD /* ProfileButtonView.swift in Sources */,
 				1876B8222956774600346975 /* MountainView.swift in Sources */,
 				184BFB2D2AD7B7200063A739 /* ContributorsView.swift in Sources */,
 				18C81E19294A9B350058138F /* WeekStepsView.swift in Sources */,
@@ -653,7 +669,7 @@
 			files = (
 				804270DD2AD0757E00D48422 /* AddGoalViewTests.swift in Sources */,
 				5E687A9B2ADC75ED00015545 /* Distance.swift in Sources */,
-				804270DD2AD0757E00D48422 /* AddTaskViewTests.swift in Sources */,
+				804270DD2AD0757E00D48422 /* AddGoalViewTests.swift in Sources */,
 				804270DF2AD0788F00D48422 /* SettingsViewTests.swift in Sources */,
 				802300A52ACF6F880051C404 /* StepsTests.swift in Sources */,
 				5E687A9F2ADC761200015545 /* StepsDetailCardView.swift in Sources */,
