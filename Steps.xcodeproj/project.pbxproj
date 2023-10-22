@@ -523,6 +523,7 @@
 				Base,
 				"es-419",
 				fr,
+				bn,
 			);
 			mainGroup = 184E932329401A97005FE1E0;
 			packageReferences = (
@@ -653,7 +654,7 @@
 			files = (
 				804270DD2AD0757E00D48422 /* AddGoalViewTests.swift in Sources */,
 				5E687A9B2ADC75ED00015545 /* Distance.swift in Sources */,
-				804270DD2AD0757E00D48422 /* AddTaskViewTests.swift in Sources */,
+				804270DD2AD0757E00D48422 /* AddGoalViewTests.swift in Sources */,
 				804270DF2AD0788F00D48422 /* SettingsViewTests.swift in Sources */,
 				802300A52ACF6F880051C404 /* StepsTests.swift in Sources */,
 				5E687A9F2ADC761200015545 /* StepsDetailCardView.swift in Sources */,
