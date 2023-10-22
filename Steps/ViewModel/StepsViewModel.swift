@@ -36,15 +36,9 @@ class StepsViewModel: ObservableObject {
     @Published var totalDistance: [Distance] = []
     
     @Published var steps: [Step] = []
-    @Published var goal: Int = 10_000 {
-        didSet {
-            self.userDefaults.set(goal, forKey: Constants.goalKey)
-        }
-    }
+    @AppStorage(Constants.goalKey, store: .appGroup) var goal: Int = 10_000
 
     init() {
-        self.goal = self.userDefaults.integer(forKey: Constants.goalKey) ?? 10_000
-
         if HKHealthStore.isHealthDataAvailable() {
             healthStore = HKHealthStore()
         }

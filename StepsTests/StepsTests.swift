@@ -32,11 +32,13 @@ final class StepsTests: XCTestCase {
     
     // TODO: Test @AppStorage 
     func testUserDefaults() async {
-
+        let newGoal = 1_234
+        
         let vm = StepsViewModel()
-        vm.goal = 1_234
-        @Dependency(\.userDefaults) var userDefaults
-        XCTAssertEqual(1_234, userDefaults.integer(forKey: Constants.goalKey))
+        vm.goal = newGoal
+        
+        let resultGoal = UserDefaults.appGroup?.value(forKey: Constants.goalKey) as? Int
+        XCTAssertEqual(newGoal, resultGoal)
             
         
 // Not sure yet how to inject UserDefaults dependency into @AppStorage.
