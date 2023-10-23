@@ -5,6 +5,12 @@
       "comment" : "Title for goal ideas",
       "extractionState" : "manual",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💡গোল আইডিয়া"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17,10 +23,10 @@
             "value" : "💡Idées d'objectifs"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "💡গোল আইডিয়া"
+            "value" : "목표 아이디어"
           }
         }
       }
@@ -28,6 +34,12 @@
     " My Goals" : {
       "comment" : "✅ My Goals view title ",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "আমার গোল"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -40,10 +52,10 @@
             "value" : "Mes objectifs"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "আমার গোল"
+            "value" : "나의 목표"
           }
         }
       }
@@ -52,6 +64,12 @@
       "comment" : "# and steps title inside the widget. EX: 2000 (steps)",
       "extractionState" : "manual",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%i স্টেপস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -64,16 +82,22 @@
             "value" : "%i étapes"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%i স্টেপস"
+            "value" : "%i보"
           }
         }
       }
     },
     "%lld" : {
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -86,7 +110,7 @@
             "value" : "%lld"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -98,6 +122,12 @@
       "comment" : "Title for number of steps\nNumber of steps",
       "extractionState" : "stale",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld স্টেপস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -110,35 +140,83 @@
             "value" : "%lld étapes"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld স্টেপস"
+            "value" : "%lld보"
           }
         }
       }
     },
     "⚙️ %@" : {
-
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚙️ %@"
+          }
+        }
+      }
     },
     "✅ %@" : {
-
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✅ %@"
+          }
+        }
+      }
     },
     "🏆 %@" : {
-
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🏆 %@"
+          }
+        }
+      }
     },
     "💡 %@" : {
-
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💡 %@"
+          }
+        }
+      }
     },
     "🖋️ %@" : {
-
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🖋️ %@"
+          }
+        }
+      }
     },
     "🥳 %@" : {
-
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🥳 %@"
+          }
+        }
+      }
     },
     "Add Goal" : {
       "comment" : "Add goal label to add new a goal",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "গোল অ্যাড করুন"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -151,10 +229,10 @@
             "value" : "Ajouter un objectif"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "গোল অ্যাড করুন"
+            "value" : "목표 추가"
           }
         }
       }
@@ -162,6 +240,12 @@
     "Add New Goal" : {
       "comment" : "🖋️ Add New goal title",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "নতুন অ্যাড যোগ করুন"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -174,10 +258,10 @@
             "value" : "Ajouter un nouvel objectif"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "নতুন অ্যাড যোগ করুন"
+            "value" : "새로운 목표 추가"
           }
         }
       }
@@ -185,6 +269,12 @@
     "Awards" : {
       "comment" : "Awards tab title",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "অ্যাওয়ার্ডস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -197,10 +287,10 @@
             "value" : "Prix"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "অ্যাওয়ার্ডস"
+            "value" : "수상"
           }
         }
       }
@@ -208,6 +298,12 @@
     "Can you can unlock all of these awards this week?" : {
       "comment" : "label below the Weekly award title inside weekly awards view",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "আপনি কি এই সপ্তাহে এই সমস্ত অ্যাওয়ার্ডস আনলক করতে পারেন?"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -220,10 +316,10 @@
             "value" : "Pouvez-vous débloquer toutes ces récompenses cette semaine ?"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "আপনি কি এই সপ্তাহে এই সমস্ত অ্যাওয়ার্ডস আনলক করতে পারেন?"
+            "value" : "이번 주에 이 모든 상을 해제할 수 있을까요?"
           }
         }
       }
@@ -231,6 +327,12 @@
     "Complete" : {
       "comment" : "complete label to see completed goals",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "কমপ্লিট"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -243,16 +345,22 @@
             "value" : "Complet"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "কমপ্লিট"
+            "value" : "완료"
           }
         }
       }
     },
     "Contributors" : {
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "কন্ট্রিবিউটর"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -265,10 +373,10 @@
             "value" : "Contributeurs"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "কন্ট্রিবিউটর"
+            "value" : "기여자들"
           }
         }
       }
@@ -277,6 +385,12 @@
       "comment" : "Title for current steps",
       "extractionState" : "manual",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "বর্তমান স্টেপস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -289,10 +403,10 @@
             "value" : "Étapes actuelles"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "বর্তমান স্টেপস"
+            "value" : "현재 걸음 수"
           }
         }
       }
@@ -300,6 +414,12 @@
     "Daily Goal" : {
       "comment" : "daily goal label in the graph view of steps.",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ডেইলি গোল"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -312,10 +432,10 @@
             "value" : "Objectif quotidien"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ডেইলি গোল"
+            "value" : "일일 목표"
           }
         }
       }
@@ -324,6 +444,12 @@
       "comment" : "Title for daily steps goal",
       "extractionState" : "stale",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ডেইলি স্টেপ গোল"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -336,10 +462,10 @@
             "value" : "Objectif de pas quotidiens"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ডেইলি স্টেপ গোল"
+            "value" : "일보 목표"
           }
         }
       }
@@ -347,6 +473,12 @@
     "Day" : {
       "extractionState" : "stale",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ডে"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -359,10 +491,10 @@
             "value" : "Jour"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ডে"
+            "value" : "일"
           }
         }
       }
@@ -370,6 +502,12 @@
     "Done" : {
       "comment" : "Button title to edit steps goal",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সম্পন্ন"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -382,16 +520,22 @@
             "value" : "Fait"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সম্পন্ন"
+            "value" : "완료"
           }
         }
       }
     },
     "Failed to set background image." : {
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ব্যাকগ্রাউন্ড ইমেজ সেট করতে ব্যর্থ হয়েছে।"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -404,10 +548,10 @@
             "value" : "Échec de la définition de l'image d'arrière-plan."
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ব্যাকগ্রাউন্ড ইমেজ সেট করতে ব্যর্থ হয়েছে।"
+            "value" : "배경 이미지 설정에 실패했습니다."
           }
         }
       }
@@ -415,6 +559,12 @@
     "Goal" : {
       "extractionState" : "stale",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "গোল"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -427,10 +577,10 @@
             "value" : "But"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "গোল"
+            "value" : "목표"
           }
         }
       }
@@ -438,6 +588,12 @@
     "Goal ideas" : {
       "comment" : "💡Goal ideas label when creating new goal",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "গোল আইডিয়া"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -450,10 +606,10 @@
             "value" : "Idées d'objectifs"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "গোল আইডিয়া"
+            "value" : "목표 아이디어"
           }
         }
       }
@@ -461,6 +617,12 @@
     "Goals" : {
       "comment" : "Goals tab title",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "গোল"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -473,10 +635,10 @@
             "value" : "Buts"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "গোল"
+            "value" : "목표들"
           }
         }
       }
@@ -484,6 +646,12 @@
     "Home" : {
       "comment" : "Home tab title",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "হোম"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -496,16 +664,22 @@
             "value" : "Domicile"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "হোম"
+            "value" : "홈"
           }
         }
       }
     },
     "Home Screen" : {
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "হোম স্ক্রিন"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -518,10 +692,10 @@
             "value" : "Écran d’accueil"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "হোম স্ক্রিন"
+            "value" : "홈 화면"
           }
         }
       }
@@ -529,6 +703,12 @@
     "Incomplete" : {
       "comment" : "Incomplete label to see incompleted goals",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "অসম্পূর্ণ"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -541,10 +721,10 @@
             "value" : "Incomplet"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "অসম্পূর্ণ"
+            "value" : "미완료"
           }
         }
       }
@@ -553,6 +733,12 @@
       "comment" : "Comment in the header of Steps View",
       "extractionState" : "manual",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "হাটতে থাকুন। আপনি আজ এ পর্যন্ত প্রায় পুরো ফুটবল মাঠে হেঁটেছেন!"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -565,10 +751,10 @@
             "value" : "Continuer à marcher. Vous avez presque parcouru un terrain de football complet aujourd’hui jusqu’à présent !"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "হাটতে থাকুন। আপনি আজ এ পর্যন্ত প্রায় পুরো ফুটবল মাঠে হেঁটেছেন!"
+            "value" : "계속 걷으세요. 오늘 당신은 지금까지 축구장 하나를 거의 다 걸었어요!"
           }
         }
       }
@@ -576,6 +762,12 @@
     "Locked" : {
       "comment" : "label title for locked",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "লক্‌ড"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -588,10 +780,10 @@
             "value" : "Verrouillé"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "লক্‌ড"
+            "value" : "잠김"
           }
         }
       }
@@ -600,6 +792,12 @@
       "comment" : "Label title for Month",
       "extractionState" : "manual",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "মাস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -612,10 +810,10 @@
             "value" : "Mois"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "মাস"
+            "value" : "월"
           }
         }
       }
@@ -623,6 +821,12 @@
     "New goal..." : {
       "comment" : "New goal... label for text field in add new goal view.",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "নতুন গোল..."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -635,10 +839,10 @@
             "value" : "Nouvel objectif..."
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "নতুন গোল..."
+            "value" : "새로운 목표..."
           }
         }
       }
@@ -646,6 +850,12 @@
     "Notification settings" : {
       "comment" : "Notifications settings label",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "নোটিফিকেশন সেটিংস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -658,10 +868,10 @@
             "value" : "Paramètres de notification"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "নোটিফিকেশন সেটিংস"
+            "value" : "알림 설정"
           }
         }
       }
@@ -669,6 +879,12 @@
     "Notifications" : {
       "comment" : "Notifications label",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "নটিফিকেশন্স"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -681,16 +897,22 @@
             "value" : "Notifications"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "নটিফিকেশন্স"
+            "value" : "알림"
           }
         }
       }
     },
     "Please choose another image." : {
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "অনুগ্রহ করে অন্য একটি ছবি বেছে নিন।"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -703,10 +925,10 @@
             "value" : "Veuillez choisir une autre image."
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "অনুগ্রহ করে অন্য একটি ছবি বেছে নিন।"
+            "value" : "다른 이미지를 선택해주세요."
           }
         }
       }
@@ -714,6 +936,12 @@
     "Privacy Policy" : {
       "comment" : "privacy policy label",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "গোপনীয়তা নীতি"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -726,16 +954,22 @@
             "value" : "Politique de confidentialité"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "গোপনীয়তা নীতি"
+            "value" : "개인 정보 정책"
           }
         }
       }
     },
     "Reset background image" : {
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ব্যাকগ্রাউন্ড ইমেজ রিসেট করুন"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -748,10 +982,10 @@
             "value" : "Réinitialiser l’image d’arrière-plan"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ব্যাকগ্রাউন্ড ইমেজ রিসেট করুন"
+            "value" : "배경 이미지 재설정"
           }
         }
       }
@@ -759,6 +993,12 @@
     "Save" : {
       "comment" : "Save label inside add new goal view.",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সেভ"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -771,10 +1011,10 @@
             "value" : "Sauvegarder"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সেভ"
+            "value" : "저장"
           }
         }
       }
@@ -783,6 +1023,12 @@
       "comment" : "Title for set a new daily steps goal",
       "extractionState" : "stale",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "একটি নতুন ডেইলি স্টেপ গোল সেট করুন"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -795,16 +1041,22 @@
             "value" : "Définir un nouvel objectif de pas quotidiens"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "একটি নতুন ডেইলি স্টেপ গোল সেট করুন"
+            "value" : "새로운 일일 걸음 수 목표 설정"
           }
         }
       }
     },
     "Set background image" : {
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ব্যাকগ্রাউন্ড ইমেজ সেট করুন"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -817,10 +1069,10 @@
             "value" : "Définir l’image d’arrière-plan"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ব্যাকগ্রাউন্ড ইমেজ সেট করুন"
+            "value" : "배경 이미지 설정"
           }
         }
       }
@@ -828,6 +1080,12 @@
     "Settings" : {
       "comment" : "Settings tab title\n   Settings title screen",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সেটিংস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -840,10 +1098,10 @@
             "value" : "Paramètres"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সেটিংস"
+            "value" : "설정"
           }
         }
       }
@@ -851,6 +1109,12 @@
     "Steps" : {
       "comment" : "Steps tab title",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "স্টেপস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -863,10 +1127,10 @@
             "value" : "Escalier"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "স্টেপস"
+            "value" : "걸음 수"
           }
         }
       }
@@ -874,6 +1138,12 @@
     "Terms of Use" : {
       "comment" : "Terms of use label",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ব্যবহারের শর্তাবলী"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -886,10 +1156,10 @@
             "value" : "Conditions d’utilisation"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ব্যবহারের শর্তাবলী"
+            "value" : "이용 약관"
           }
         }
       }
@@ -897,6 +1167,12 @@
     "Time to add some more goals!" : {
       "comment" : "🥳 Time to add some more goals label inside Goals view.",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "আরও কিছু গোল অ্যাড করার সময়!"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -909,10 +1185,10 @@
             "value" : "Il est temps d’ajouter d’autres buts !"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "আরও কিছু গোল অ্যাড করার সময়!"
+            "value" : "더 많은 목표를 추가할 시간이에요!"
           }
         }
       }
@@ -920,6 +1196,12 @@
     "Walk a 5K, Walk with a friend, Increase steps goal" : {
       "comment" : "label message when creating a new goal.",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "৫ কিমি হাঁটুন, বন্ধুর সাথে হাঁটুন, স্টেপ গোল বাড়ান"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -932,10 +1214,10 @@
             "value" : "Marcher un 5 km, marcher avec un ami, augmenter l’objectif de pas"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "৫ কিমি হাঁটুন, বন্ধুর সাথে হাঁটুন, স্টেপ গোল বাড়ান"
+            "value" : "5K 걷기, 친구와 함께 걷기, 걸음 수 목표 증가"
           }
         }
       }
@@ -944,6 +1226,12 @@
       "comment" : "label title for week",
       "extractionState" : "manual",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সপ্তাহ"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -956,10 +1244,10 @@
             "value" : "Semaine"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সপ্তাহ"
+            "value" : "주"
           }
         }
       }
@@ -968,6 +1256,12 @@
       "comment" : "Awards navigation title",
       "extractionState" : "manual",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সাপ্তাহিক অ্যাওয়ার্ডস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -980,10 +1274,10 @@
             "value" : "Récompenses hebdomadaires"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সাপ্তাহিক অ্যাওয়ার্ডস"
+            "value" : "주간 수상"
           }
         }
       }
@@ -991,6 +1285,12 @@
     "Weekly Steps" : {
       "comment" : "Title for weekly steps",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সাপ্তাহিক স্টেপস"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1003,10 +1303,10 @@
             "value" : "Étapes hebdomadaires"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সাপ্তাহিক স্টেপস"
+            "value" : "주간 걸음 수"
           }
         }
       }
@@ -1014,6 +1314,12 @@
     "You haven't unlocked this award yet this week. Keep getting those steps in and completing goals to unlock it. You can do it!" : {
       "comment" : "message of weekly award blocked.",
       "localizations" : {
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "আপনি এই সপ্তাহে এখনও এই অ্যাওয়ার্ড আনলক করেননি। স্টেপস দিয়ে গোল কমপ্লিট করে অ্যাওয়ার্ড আনলক করে নিন৷ আপনি এটা করতে পারবেন!"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1026,10 +1332,10 @@
             "value" : "Vous n’avez pas encore débloqué ce prix cette semaine. Continuez à suivre ces étapes et à remplir des objectifs pour le débloquer. Tu peux le faire!"
           }
         },
-        "bn" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "আপনি এই সপ্তাহে এখনও এই অ্যাওয়ার্ড আনলক করেননি। স্টেপস দিয়ে গোল কমপ্লিট করে অ্যাওয়ার্ড আনলক করে নিন৷ আপনি এটা করতে পারবেন!"
+            "value" : "이번 주에 아직 이 상을 해제하지 않았어요. 계속해서 걸음 수를 늘리고 목표를 완료하여 해제하세요. 할 수 있어요!"
           }
         }
       }
