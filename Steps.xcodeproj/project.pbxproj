@@ -536,6 +536,7 @@
 				"es-419",
 				fr,
 				bn,
+				ko,
 			);
 			mainGroup = 184E932329401A97005FE1E0;
 			packageReferences = (
