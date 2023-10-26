@@ -643,6 +643,9 @@
         }
       }
     },
+    "Hello" : {
+
+    },
     "Home" : {
       "comment" : "Home tab title",
       "localizations" : {
@@ -818,6 +821,9 @@
         }
       }
     },
+    "Name..." : {
+
+    },
     "New goal..." : {
       "comment" : "New goal... label for text field in add new goal view.",
       "localizations" : {
@@ -904,6 +910,12 @@
           }
         }
       }
+    },
+    "Ok" : {
+
+    },
+    "Oops!" : {
+
     },
     "Please choose another image." : {
       "localizations" : {
@@ -1135,6 +1147,9 @@
         }
       }
     },
+    "Terms of Service" : {
+
+    },
     "Terms of Use" : {
       "comment" : "Terms of use label",
       "localizations" : {
@@ -1221,6 +1236,9 @@
           }
         }
       }
+    },
+    "We were unable to open your mail application. Please make sure you have one installed." : {
+
     },
     "Week" : {
       "comment" : "label title for week",
