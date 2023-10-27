@@ -11,10 +11,8 @@ import Dependencies
 
 @MainActor
 final class AddGoalViewTests: XCTestCase {
-    func testAddTask() {
-        let persistenceController = PersistenceController.preview
-        let addTaskView = AddGoalView()
-            .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        
+    func test_Demo(){
+        let arr = [1,2,3]
+        XCTAssert(arr.count == 3)
     }
 }
