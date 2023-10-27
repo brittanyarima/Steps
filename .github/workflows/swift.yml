@@ -15,4 +15,4 @@ jobs:
       - name: Run a multi-line script
         run: |
             sudo xcode-select -s /Applications/Xcode_15.0.1.app
-            xcodebuild test -scheme Steps -destination "platform=iOS Simulator,name=iPad (10th generation)"
+            xcodebuild test -scheme Steps CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination "platform=iOS Simulator,name=iPad (10th generation)"
