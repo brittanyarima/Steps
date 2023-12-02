@@ -25,6 +25,7 @@ struct StepsDetailView: View {
                 Spacer()
             }
             .padding(.top, 30)
+            .padding(.horizontal)
         }
     }
 }

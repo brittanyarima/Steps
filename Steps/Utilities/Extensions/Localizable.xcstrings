@@ -614,6 +614,9 @@
         }
       }
     },
+    "Goal: %lld" : {
+
+    },
     "Goals" : {
       "comment" : "Goals tab title",
       "localizations" : {
