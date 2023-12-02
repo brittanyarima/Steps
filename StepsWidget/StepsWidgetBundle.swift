@@ -12,6 +12,6 @@ import SwiftUI
 struct StepsWidgetBundle: WidgetBundle {
     var body: some Widget {
         StepsWidget()
-        StepsGraphWidget()
+//        StepsGraphWidget()  TODO: Connect to data
     }
 }
