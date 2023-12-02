@@ -26,7 +26,7 @@ class StepsViewModel: ObservableObject {
 //        store: .init(suitename: Constants.appGroupID)
 //    ) var stepCount: Int = 0
     
-    
+
     
     @Dependency(\.userDefaults) var userDefaults
 
