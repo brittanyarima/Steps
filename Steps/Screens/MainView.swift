@@ -27,11 +27,6 @@ struct MainView: View {
                     Label(Constants.awardsTab, systemImage: "trophy")
                 }
             
-            StepsCountView(viewModel: stepsViewModel)
-                .tabItem {
-                    Label(Constants.stepsTab, systemImage: "chart.bar")
-                }
-            
             SettingsView(stepsViewModel: stepsViewModel)
                 .tabItem {
                     Label(Constants.settingsTab, systemImage: "slider.vertical.3")

@@ -18,8 +18,10 @@ struct StepsDetailView: View {
                     .padding()
                 LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2), content: {
                     StepsDetailCardView(title: Constants.caloriesBurned, image: "flame.fill", value: "\(viewModel.currentCalories) kcal")
-                    StepsDetailCardView(title: Constants.distance, image: "figure.walk", value: "\(viewModel.currentDistance) metre")
+                    StepsDetailCardView(title: Constants.distance, image: "figure.walk", value: "\(viewModel.currentDistance) meters")
                 }).padding(.horizontal)
+
+                NewWeekStepsView(viewModel: viewModel)
                 Spacer()
             }
             .padding(.top, 30)
