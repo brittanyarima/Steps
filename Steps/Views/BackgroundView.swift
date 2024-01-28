@@ -11,12 +11,20 @@ struct BackgroundView: View {
     @ObservedObject var stepsModel: StepsViewModel
 
     var body: some View {
-        if let backgroundImage = stepsModel.backgroundImage {
-            Image(uiImage: backgroundImage)
-                .resizable()
-        } else {
-            Image("background")
-                .resizable()
+        GeometryReader { geo in
+            if let backgroundImage = stepsModel.backgroundImage {
+                Image(uiImage: backgroundImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geo.size.width, height: geo.size.height)
+                    .clipped()
+            } else {
+                Image("background")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geo.size.width, height: geo.size.height)
+                    .clipped()
+            }
         }
     }
 }
