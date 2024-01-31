@@ -295,7 +295,6 @@
 				184E933329401A98005FE1E0 /* Assets.xcassets */,
 				184E934129401D8E005FE1E0 /* Info.plist */,
 				1838FC1D296A7B2C00EAA116 /* CoreData */,
-				804270D92AD06F1A00D48422 /* Dependencies */,
 				18C81E17294A95820058138F /* ViewModel */,
 				185DB3F6294948DA003BCC48 /* Screens */,
 				18A1FB1C294AAC1B009B87EF /* Utilities */,
@@ -354,6 +353,7 @@
 				18967B2B2AD8A2F200B19BB5 /* AddGoalView.swift */,
 				18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */,
 				18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */,
+				18967B2F2AD8E27600B19BB5 /* ContributorsClient.swift */,
 				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
 				18C81E18294A9B350058138F /* WeekStepsView.swift */,
 				189BDCE9294D163700E8237F /* FactView.swift */,
@@ -426,14 +426,6 @@
 				804270DE2AD0788F00D48422 /* SettingsViewTests.swift */,
 			);
 			path = StepsTests;
-			sourceTree = "<group>";
-		};
-		804270D92AD06F1A00D48422 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				18967B2F2AD8E27600B19BB5 /* ContributorsClient.swift */,
-			);
-			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
