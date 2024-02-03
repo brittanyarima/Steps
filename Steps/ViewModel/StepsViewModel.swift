@@ -197,6 +197,12 @@ class StepsViewModel: ObservableObject {
     func updateUIFromStats(_ statsCollection: HKStatisticsCollection) {
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
         let endDate = Date()
+        
+        // Clear the array before enumerating
+        DispatchQueue.main.async {
+            self.steps.removeAll()
+        }
+        
         statsCollection.enumerateStatistics(from: startDate, to: endDate) { stats, stop in
             let count = stats.sumQuantity()?.doubleValue(for: .count())
             let step = Step(count: Int(count ?? 0), date: stats.startDate)
