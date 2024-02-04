@@ -57,14 +57,12 @@
 		18E37434294E925100D6B253 /* StepsGoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37433294E925100D6B253 /* StepsGoalCardView.swift */; };
 		18E3D9572AD4C03400E33E0F /* StepsGraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3D9562AD4C03400E33E0F /* StepsGraphWidget.swift */; };
 		18E3D9592AD4C04D00E33E0F /* StepsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3D9582AD4C04D00E33E0F /* StepsCountView.swift */; };
-		18E3D95C2AD4C06D00E33E0F /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */; };
 		18E3D95D2AD4C06D00E33E0F /* NewWeekStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */; };
 		18F1F9E52956362E00156D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F9E42956362E00156D4C /* Constants.swift */; };
 		18F27C0A2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0B2ACBD26B00413DB4 /* StepsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */; };
 		18F27C0D2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
 		18F27C0E2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */; };
-		5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */; };
 		5E687A952ADC75D900015545 /* Calorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E687A942ADC75D900015545 /* Calorie.swift */; };
 		5E687A962ADC75D900015545 /* Calorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E687A942ADC75D900015545 /* Calorie.swift */; };
 		5E687A972ADC75D900015545 /* Calorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E687A942ADC75D900015545 /* Calorie.swift */; };
@@ -182,14 +180,12 @@
 		18E37433294E925100D6B253 /* StepsGoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGoalCardView.swift; sourceTree = "<group>"; };
 		18E3D9562AD4C03400E33E0F /* StepsGraphWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsGraphWidget.swift; sourceTree = "<group>"; };
 		18E3D9582AD4C04D00E33E0F /* StepsCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsCountView.swift; sourceTree = "<group>"; };
-		18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
 		18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
 		18F1F9E42956362E00156D4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F27C092ACBD26B00413DB4 /* StepsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfig.xcconfig; sourceTree = "<group>"; };
 		18F27C0C2ACBD2F500413DB4 /* StepsConfigTemplate.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StepsConfigTemplate.xcconfig; sourceTree = "<group>"; };
 		5E0BDF902ACDAFED00F7038E /* StepsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCountView.swift; sourceTree = "<group>"; };
 		5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeekStepsView.swift; sourceTree = "<group>"; };
-		5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStepsView.swift; sourceTree = "<group>"; };
 		5E687A942ADC75D900015545 /* Calorie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calorie.swift; sourceTree = "<group>"; };
 		5E687A982ADC75EC00015545 /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		5E687A9C2ADC761200015545 /* StepsDetailCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsDetailCardView.swift; sourceTree = "<group>"; };
@@ -351,7 +347,6 @@
 				18A6D55B2AE4A6A5009374BD /* ProfileButtonView.swift */,
 				18A6D5592AE4A690009374BD /* ProfileItemButtonView.swift */,
 				18967B2B2AD8A2F200B19BB5 /* AddGoalView.swift */,
-				18E3D95A2AD4C06D00E33E0F /* MonthStepsView.swift */,
 				18E3D95B2AD4C06D00E33E0F /* NewWeekStepsView.swift */,
 				18967B2F2AD8E27600B19BB5 /* ContributorsClient.swift */,
 				18C35A6E294417DE00A649FC /* CircleProgressBar.swift */,
@@ -364,7 +359,6 @@
 				185B74CC295CDDD9000AD18A /* CircleView.swift */,
 				185B74CE295CEA02000AD18A /* CurrentStepsCardView.swift */,
 				5E0BDF922ACDB01500F7038E /* NewWeekStepsView.swift */,
-				5E0BDF942ACDB03200F7038E /* MonthStepsView.swift */,
 				64B742A92AD5C7F000811110 /* BackgroundView.swift */,
 				184BFB2C2AD7B7200063A739 /* ContributorsView.swift */,
 				5E687A9C2ADC761200015545 /* StepsDetailCardView.swift */,
@@ -587,7 +581,6 @@
 				184FD8B5294BE788000E4576 /* Step.swift in Sources */,
 				803417DF2AD0BAA4000C70B4 /* AddGoalViewModel.swift in Sources */,
 				18C35A6F294417DE00A649FC /* CircleProgressBar.swift in Sources */,
-				18E3D95C2AD4C06D00E33E0F /* MonthStepsView.swift in Sources */,
 				185DB3F929494947003BCC48 /* AwardView.swift in Sources */,
 				18C81E16294A934B0058138F /* StepsViewModel.swift in Sources */,
 				185B74CF295CEA02000AD18A /* CurrentStepsCardView.swift in Sources */,
@@ -633,7 +626,6 @@
 				184E933029401A97005FE1E0 /* StepsApp.swift in Sources */,
 				18A1FB1B294AAB93009B87EF /* Date+Ext.swift in Sources */,
 				80372CDE2AD0C7F200B25DB9 /* GoalViewModel.swift in Sources */,
-				5E0BDF952ACDB03200F7038E /* MonthStepsView.swift in Sources */,
 				184BFB292AD7B4E30063A739 /* ContributorsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

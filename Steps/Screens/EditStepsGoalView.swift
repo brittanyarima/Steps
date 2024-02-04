@@ -28,8 +28,8 @@ struct EditStepsGoalView: View {
             }
 
             Button(Constants.done) { dismiss() }
-            .tint(.mint)
-            .buttonStyle(.bordered)
+                .tint(.mint)
+                .buttonStyle(.bordered)
 
             Spacer()
         }

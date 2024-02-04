@@ -12,7 +12,7 @@ struct AddGoalView: View {
     @Environment(\.managedObjectContext) var context
     @Environment(\.dismiss) var dismiss
     @ObservedObject var vm: AddGoalViewModel
-    
+
     init(viewModel: AddGoalViewModel = .init()) {
         self.vm = viewModel
     }
@@ -56,7 +56,6 @@ struct AddGoalView: View {
             .buttonStyle(.bordered)
             .tint(.indigo)
             .padding()
-
         }
         .padding(14)
     }

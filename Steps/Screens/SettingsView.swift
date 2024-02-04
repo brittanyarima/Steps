@@ -25,7 +25,7 @@ struct SettingsView: View {
                     } header: {
                         Label(Constants.notificationSettings, systemImage: "bell")
                     }
-                    
+
                     Section {
                         if stepsViewModel.backgroundImage != nil {
                             Button("Reset background image") {
@@ -38,7 +38,7 @@ struct SettingsView: View {
                                          photoLibrary: .shared()) {
                                 Text("Set background image")
                             }
-                            .buttonStyle(.borderless)
+                                         .buttonStyle(.borderless)
                         }
                     } header: {
                         Label("Home Screen", systemImage: "iphone.gen3")
@@ -74,7 +74,7 @@ struct SettingsView: View {
         }
         .alert(isPresented: $stepsViewModel.showBackgroundImageAlert) {
             Alert(title: Text("Failed to set background image."),
-                              message: Text("Please choose another image."))
+                  message: Text("Please choose another image."))
         }
     }
 }

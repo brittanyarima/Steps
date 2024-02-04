@@ -30,7 +30,7 @@ struct StepsGoalCardView: View {
                     }
                 }
                 .foregroundColor(.indigo)
-
+                
                 Text(String(format: Constants.enterSteps, steps))
                     .font(.system(size: 32))
                     .bold()

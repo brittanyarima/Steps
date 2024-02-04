@@ -22,9 +22,9 @@ struct CircleProgressBar: View {
                 .stroke(.indigo, style: StrokeStyle(lineWidth: 10, lineCap: .round))
                 .rotationEffect(Angle(degrees: -90.0))
                 .animation(.easeOut(duration: 3), value: drawingStroke)
-                                .onAppear {
-                                    drawingStroke = true
-                                }
+                .onAppear {
+                    drawingStroke = true
+                }
 
             VStack {
                 Text("\(value)")

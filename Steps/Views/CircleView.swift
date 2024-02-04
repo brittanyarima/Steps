@@ -9,14 +9,14 @@ import SwiftUI
 
 struct CircleView: View {
     let opacity: CGFloat
-
+    
     var body: some View {
         ZStack {
             Circle()
                 .stroke(style: StrokeStyle(lineWidth: 5))
                 .frame(width: 20)
                 .foregroundColor(.indigo)
-
+            
             Circle()
                 .frame(width: 11)
                 .opacity(opacity)

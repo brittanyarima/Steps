@@ -34,7 +34,7 @@ struct CurrentStepsCardView: View {
                         .font(.title2)
                 }
                 .foregroundColor(.indigo)
-                
+
                 Spacer()
             }
             .padding()

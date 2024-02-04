@@ -15,7 +15,7 @@ struct HomeView: View {
             ZStack {
                 MountainView(viewModel: viewModel)
                     .edgesIgnoringSafeArea(.all)
-                
+
                 NavigationLink {
                     StepsDetailView(viewModel: viewModel)
                 } label: {

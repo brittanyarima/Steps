@@ -9,11 +9,11 @@ import SwiftUI
 
 struct AwardView: View {
     @ObservedObject var viewModel: StepsViewModel
-    
+
     var columns: [GridItem] {
         [GridItem(.adaptive(minimum: 150, maximum: 150))]
     }
-    
+
     var body: some View {
         NavigationStack {
             ScrollView {

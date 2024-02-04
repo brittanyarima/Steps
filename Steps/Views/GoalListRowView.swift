@@ -37,7 +37,6 @@ struct GoalListRowView: View {
                     }
             }
         }
-
         .font(.title3)
         .padding()
         .background(.indigo.opacity(0.2))
@@ -46,7 +45,7 @@ struct GoalListRowView: View {
         .cornerRadius(12)
         .multilineTextAlignment(.leading)
     }
-    
+
     private func toggleGoal() {
         withAnimation {
             goal.isComplete.toggle()

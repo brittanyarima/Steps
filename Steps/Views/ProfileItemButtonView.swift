@@ -11,23 +11,19 @@ struct ProfileItemButtonView: View {
     @State var title : String
     @State var image : String
     var action : (()->Void)
-    
+
     var body: some View {
         Button{
-           action()
+            action()
         } label: {
             HStack{
                 Image(systemName: image)
-                
-                
                 Text(title)
             }
             .foregroundColor(.accentColor)
         }
         .padding()
         .frame(maxWidth: .infinity , alignment: .leading  )
-         
-        
     }
 }
 #Preview {

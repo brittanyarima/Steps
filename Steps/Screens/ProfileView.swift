@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ProfileView: View {
-    
+
     @StateObject var viewModel = ProfileViewModel()
-    
+
     var body: some View {
-        
+
         VStack {
             HStack(spacing: 26) {
                 Image(viewModel.profileImage ?? "avatar 1")
@@ -42,9 +42,7 @@ struct ProfileView: View {
                         .foregroundColor(.accentColor)
                 }
             }
-        
 
-        
             if viewModel.isEditingName {
 
                 TextField("Name...", text: $viewModel.currentName)
@@ -69,7 +67,6 @@ struct ProfileView: View {
                         }
                     }
                     .foregroundColor(Color(uiColor: UIColor.systemBackground))
-
                 }
             }
 
@@ -94,18 +91,16 @@ struct ProfileView: View {
                                             .frame(width: 16, height: 16)
                                             .foregroundColor(Color.primary)
                                     }
-
                                 }
                                 .padding()
                             }
-
                         }
                     }
                 }
                 .background(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.gray.opacity(0.15)))
-                
+
                 ProfileButtonView(title: "Done", backgroundColor: Color.primary) {
                     withAnimation {
                         viewModel.setNewImage()
@@ -126,18 +121,14 @@ struct ProfileView: View {
                     withAnimation {
                         viewModel.presentEditImage()
                     }
-
                 }
             }
-
             .background(
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.gray.opacity(0.15))
-                    
             )
 
             VStack {
-
                 Link(destination: URL(string: Constants.privacyURL)!) {
                     HStack {
                         Image(systemName: "doc")
@@ -160,13 +151,10 @@ struct ProfileView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
-
             .background(
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.gray.opacity(0.15))
-                   
             )
-
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)

@@ -15,8 +15,8 @@ struct ContributorsView: View {
     @StateObject var viewModel = ContributorsViewModel()
 
     let columns = [
-            GridItem(.adaptive(minimum: 100))
-        ]
+        GridItem(.adaptive(minimum: 100))
+    ]
 
     var body: some View {
         Group {

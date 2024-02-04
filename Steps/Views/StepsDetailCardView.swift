@@ -21,16 +21,15 @@ struct StepsDetailCardView: View {
                 HStack(alignment: .top) {
                     Text(title)
                         .font(.system(size: 16))
-                    
+
                     Spacer()
                     Image(systemName: image)
                         .foregroundColor(.indigo)
                 }.padding()
                 Text(value)
                     .font(.system(size: 24))
-                
-                
-            }.padding()
+            }
+            .padding()
         }
     }
 }

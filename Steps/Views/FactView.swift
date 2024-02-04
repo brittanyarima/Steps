@@ -9,19 +9,19 @@ import SwiftUI
 
 struct FactView: View {
     @ObservedObject var viewModel: StepsViewModel
-
+    
     var body: some View {
         HStack {
             Image(systemName: Constants.soccerball)
                 .font(.title)
                 .padding(.horizontal, 2)
                 .foregroundColor(.secondary)
-
+            
             Text(viewModel.soccerFieldsWalkedString)
                 .font(.footnote)
                 .fontWeight(.light)
                 .fixedSize(horizontal: false, vertical: true)
-
+            
             Spacer()
         }
         .frame(width: 300)

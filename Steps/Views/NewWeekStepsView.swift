@@ -10,7 +10,7 @@ import Charts
 
 struct NewWeekStepsView: View {
     @ObservedObject var viewModel: StepsViewModel
-    
+
     var body: some View {
         VStack {
             HStack {
@@ -18,7 +18,6 @@ struct NewWeekStepsView: View {
                 Spacer()
             }
             .padding(.horizontal)
-
 
             Chart {
                 RuleMark(y: .value(Constants.goal, viewModel.goal))
@@ -29,8 +28,6 @@ struct NewWeekStepsView: View {
                             .font(.caption)
                             .foregroundColor(.secondary)
                             .padding()
-
-
                     })
 
                 ForEach(viewModel.steps) { step in
@@ -48,28 +45,25 @@ struct NewWeekStepsView: View {
             }
             .frame(height: 200)
             .padding()
-            .chartXAxis
-            {
+            .chartXAxis {
                 AxisMarks(values: viewModel.steps.map { $0.date}) { date in
                     AxisValueLabel(format:
                             .dateTime.month(.twoDigits).day())
                     .font(.caption2)
-
                 }
             }
             .chartYAxis(.hidden)
-            
+
             HStack {
                 Image(systemName: "line.diagonal")
                     .rotationEffect(Angle(degrees: 45))
                     .foregroundColor(.mint)
-                
+
                 Text(Constants.dailyGoal)
                     .foregroundColor(.secondary)
             }
             .font(.caption2)
             .padding(.leading)
-            
         }
         .frame(maxWidth: 500)
     }

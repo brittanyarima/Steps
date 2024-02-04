@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BackgroundView: View {
     @ObservedObject var stepsModel: StepsViewModel
-
+    
     var body: some View {
         GeometryReader { geo in
             if let backgroundImage = stepsModel.backgroundImage {
